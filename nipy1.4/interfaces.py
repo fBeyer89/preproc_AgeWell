@@ -157,9 +157,12 @@ class DicomInfo(BaseInterface):
                     by_series[s_num]["acq_matrix_n"] = acq_mat[0] or acq_mat[1]
                     by_series[s_num]["acq_matrix_m"] = acq_mat[2] or acq_mat[3]
                 # try to get orientation from header
-                orient = orientation_from_dcm_header(d)
-                if orient:
-                    by_series[s_num]["orientation"] = orient
+                if getattr(d,"SeriesDescription")=='cmrr_mbep2d_DTI_32Ch_ColFA':
+                    print "no header orientation given"
+                else:
+                    orient = orientation_from_dcm_header(d)
+                    if orient:
+                        by_series[s_num]["orientation"] = orient
                 # try to get siemens shadow header
                 #try:
                 #    ss = read_siemens_shadow(f)[0]
@@ -240,20 +243,30 @@ class NiiWranglerInputSpec(BaseInterfaceInputSpec):
             
 
 class NiiWranglerOutputSpec(TraitedSpec):
-    t1 = OutputMultiPath(
+    t1_uni = OutputMultiPath(
             traits.List(File(exists=True)),
             mandatory=True,
-            desc="anatomical t1 nifti (list in chronological order  if repeated)")
+            desc="anatomical uni nifti (list in chronological order  if repeated)")
+    t1_inv2 = OutputMultiPath(
+            traits.List(File(exists=True)),
+            mandatory=True,
+            desc="inv2 nifti (list in chronological order  if repeated)")
+    t1_q  = OutputMultiPath(
+            traits.List(File(exists=True)),
+            mandatory=True,
+            desc="quantitative t1 nifti (list in chronological order  if repeated)")
     rsfmri = OutputMultiPath(
             traits.List(File(exists=True)),
             mandatory=True,
             desc="rsfmri nifti (list in chronological order  if repeated)")
-    mag_fieldmap = traits.Either(traits.Enum("NONE"), traits.File(exists=True),
-            default="NONE", mandatory=False, usedefault=True,
-            desc="magnitude fieldmap image for structural images. first matching image will be used.")
-    phase_fieldmap = traits.Either(traits.Enum("NONE"), traits.File(exists=True),
-            default="NONE", mandatory=False, usedefault=True,
-            desc="phase fieldmap image for structural images. first matching image will be used.")
+    rs_ap = OutputMultiPath(
+            traits.List(File(exists=True)),
+            mandatory=True,
+            desc="rs ap nifti (list in chronological order  if repeated)")
+    rs_pa = OutputMultiPath(
+            traits.List(File(exists=True)),
+            mandatory=True,
+            desc="rs pa (list in chronological order  if repeated)")
     dwi      = traits.List(traits.Str(),
             mandatory=True,
             desc="dwi nifti (list in chronological order  if repeated).")
@@ -266,9 +279,6 @@ class NiiWranglerOutputSpec(TraitedSpec):
     flair   = traits.List(traits.Str(),
             mandatory=True,
             desc="flair nifti (list in chronological order  if repeated).")
-    fieldmap_te = traits.Either(traits.Enum("NONE"), traits.Float(),
-            default="NONE", mandatory=False, usedefault=True,
-            desc="delta TE in ms for magnitude fieldmap or 'NONE' if not used.")
     ep_TR=  traits.Either(traits.Enum("NONE"), traits.Float(),
             value=["NONE"], mandatory=False, usedefault=True,
             desc="rsfmri TR or 'NONE' if not used.")
@@ -304,18 +314,19 @@ class NiiWrangler(BaseInterface):
 
     def __init__(self, *args, **kwargs):
         super(NiiWrangler, self).__init__(*args, **kwargs)
-        self.t1_files = []
+        self.t1_uni_files = []
+        self.t1_inv2_files = []
+        self.t1_q_files = []
         self.rsfmri_files = []
         self.dwi_files = []
         self.dwi_ap_files = []
         self.dwi_pa_files = []
         self.flair_files = []
-        self.fieldmap_mag = []
+        self.rs_ap = []
         self.fieldmap_ph = []
         self.bval = []
         self.bvec = []
         self.ep_TR= None
-        self.fieldmap_mag_delta_te = "NONE"
         self.t1_sample_spacing = 0.
         self.ep_dwi_echo_spacings = None
         self.ep_rsfmri_echo_spacings = None
@@ -330,10 +341,11 @@ class NiiWrangler(BaseInterface):
         smap = self.inputs.series_map
         dinfo = self.inputs.dicom_info
         #block_averaging = self.inputs.block_struct_averaging
-        s_num_reg = re.compile(".*s(\d+)a(?!.*/)") # sux to use filename. make more robust if needed.
+        s_num_reg = re.compile(".*s(\d+)a(?!.*/)")# sux to use filename. make more robust if needed.
         nii_by_series = {}
         fails = []
         extras = []
+       
         for fn in nii_files:
             try:
                 # we only want the first nii for each series
@@ -353,25 +365,39 @@ class NiiWrangler(BaseInterface):
         m_count = 0
         for sn, fn in nii_by_series.iteritems():
             m = filter(lambda x: x.get("series_num",-1) == sn, dinfo)
+            #print m
             if not m:
                 continue
             m_count += 1
             m[0]["nifti_file"] = fn
+            #print fn
         if not m_count == len(dinfo):
-            raise ValueError("incorrect number of nifti->series matches (%d/%d)" % (m_count, len(dinfo)))
+            print "number of niftis and dicom series doesn't correspond due to AAHScout"
+            #raise ValueError("incorrect number of nifti->series matches (%d/%d)" % (m_count, len(dinfo)))
         
         # time for some data wrangling
         nf = "nifti_file"
         sd = "series_desc"
         it = "image_type"
-        t1fs = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("t1",[]), dinfo) if nf in d]
+        t1_uni = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("t1_UNI",[]), dinfo) if nf in d]
+        t1_inv2 = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("t1_INV2",[]), dinfo) if nf in d]
+        t1_quant = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("t1_quant",[]), dinfo) if nf in d]
         #if block_averaging:
         #    t1fs = [t1fs[0]]
         #    t2fs = [t2fs[0]]
-        self.t1_files = [d[nf] for d in t1fs]
-        #get rsfmri, if no "resting state return default file"
+        self.t1_uni_files = [d[nf] for d in t1_uni]
+        self.t1_inv2_files = [d[nf] for d in t1_inv2]
+        self.t1_q_files = [d[nf] for d in t1_quant]
+
+        #get rsfmri, if no "resting state return default file" and ap/pa scans
         bs = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("rsfmri",[]), dinfo) if nf in d]
         self.rsfmri_files = [d[nf] for d in bs]
+        rs_pa = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("rs_pa",[]), dinfo) if nf in d]
+        self.rs_pa_files = [d[nf] for d in rs_pa]    
+        rs_ap = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("rs_ap",[]), dinfo) if nf in d]
+        self.rs_ap_files = [d[nf] for d in rs_ap] 
+
+
         #get dwi
         dwi = [d for d in filter(lambda x: sd in x and x[sd] in smap.get("dwi",[]), dinfo) if nf in d]
         
@@ -394,21 +420,6 @@ class NiiWrangler(BaseInterface):
         else:
             self.flair_files = [d[nf] for d in flair]
                
-        # we have to do some extra looking at the headers for the mag and phase fieldmaps too
-        mag_fs = filter(lambda x: sd in x and
-                x[sd] in smap.get("fieldmap_magnitude",[]) and
-                it in x and
-                isinstance(x[it], list) and
-                len(x[it]) > 2 and
-                x[it][2].strip().lower() == "m", dinfo) # we want the 3rd field of image type to be 'm'
-        phase_fs = filter(lambda x: sd in x and
-                x[sd] in smap.get("fieldmap_phase",[]) and
-                it in x and
-                isinstance(x[it], list) and
-                len(x[it]) > 2 and
-                x[it][2].strip().lower() == "p", dinfo) # we want the 3rd field of image type to be 'p'
-        self.fieldmap_mag = [d[nf] for d in mag_fs if nf in d]
-        self.fieldmap_ph = [d[nf] for d in phase_fs if nf in d]
         
         # calculate echo spacing for rsfmri:   
         #if more than one resting state scan was acquired:
@@ -437,6 +448,7 @@ class NiiWrangler(BaseInterface):
                  self.ep_TR= ["NONE" for n in self.rsfmri_files]
         else:
             print "one resting-state scan"
+            print bs[0]["TR"]
             if isdefined(self.inputs.ep_rsfmri_echo_spacings):
                 self.ep_rsfmri_echo_spacings = self.inputs.ep_rsfmri_echo_spacings
             elif bs and "bw_per_pix_phase_encode" in bs[0] and "acq_matrix_n" in bs[0]:
@@ -453,9 +465,23 @@ class NiiWrangler(BaseInterface):
                 if not "TR" in bs[0]:
                     ep_TR_fail = True
                 else: 
+                    print "setting TR value"
                     self.ep_TR=bs[0]["TR"]
             else:
                  self.ep_TR= "NONE"
+        
+        if isdefined(self.inputs.ep_unwarp_dir):
+            self.ep_unwarp_dirs = [self.inputs.ep_unwarp_dir for n in self.rsfmri_files]
+            # if you have any polarity swapped series, apply that now
+            pswaps = smap.get("polarity_swapped", [])
+            if pswaps:
+                for b_idx, uw_dir in enumerate(self.ep_unwarp_dirs):
+                    if bs[b_idx].get("series_desc",None) in pswaps:
+                        raw_dir = uw_dir.replace("-","")
+                        self.ep_unwarp_dirs[b_idx] = "-"+raw_dir if not "-" in uw_dir else raw_dir
+        else:
+            # fail. we can do better!
+            raise ValueError("We can't derive ep_unwarp_dir yet. Please set it in the nii wrangler config section.")
 
             
         ep_dwi_echo_fail = False
@@ -482,35 +508,11 @@ class NiiWrangler(BaseInterface):
             else:
                 self.ep_dwi_echo_spacings = "NONE"
          
-        # output delta te for magnitude fieldmap if available
-        if mag_fs and self.fieldmap_mag and self.fieldmap_ph:
-            self.fieldmap_mag_delta_te = mag_fs[0].get("delta_te","NONE")
-        else:
-            self.fieldmap_mag_delta_te = "NONE"
-#        # a BOLD image by any other name...
-#        self.bold_names = ["bold_%d" % n for n in xrange(len(self.bolds))]
-#        # we'll derive the ep unwarp dir in the future... for now, just set it in config
-        if isdefined(self.inputs.ep_unwarp_dir):
-            self.ep_unwarp_dirs = [self.inputs.ep_unwarp_dir for n in self.rsfmri_files]
-            # if you have any polarity swapped series, apply that now
-            pswaps = smap.get("polarity_swapped", [])
-            if pswaps:
-                for b_idx, uw_dir in enumerate(self.ep_unwarp_dirs):
-                    if bs[b_idx].get("series_desc",None) in pswaps:
-                        raw_dir = uw_dir.replace("-","")
-                        self.ep_unwarp_dirs[b_idx] = "-"+raw_dir if not "-" in uw_dir else raw_dir
-        else:
-            # fail. we can do better!
-            raise ValueError("We can't derive ep_unwarp_dir yet. Please set it in the nii wrangler config section.")
-        ### and let's do some sanity checking
-        # warn if you're going to ignore field or magnitude phase maps
-        if not (len(self.fieldmap_mag) and len(self.fieldmap_ph)):
-            print >> sys.stderr, "\nWARNING: found %d magnitude fieldmaps and %d phase fieldmaps.\n" % (len(self.fieldmap_mag), len(self.fieldmap_ph))
-
+       
         ### derive the derived values
         # t1_sample_spacing
-        if t1fs and "RealDwellTime" in t1fs[0].keys():
-            self.t1_sample_spacing = t1fs[0]["RealDwellTime"] * math.pow(10,-9)
+        if t1_uni and "RealDwellTime" in t1_uni[0].keys():
+            self.t1_sample_spacing = t1_uni[0]["RealDwellTime"] * math.pow(10,-9)
         else:
             self.t1_sample_spacing = "NONE"
         # don't continue if there was screwiness around calculating ep echo spacing
@@ -524,19 +526,16 @@ class NiiWrangler(BaseInterface):
 
     def _list_outputs(self):
         outputs = self._outputs().get()
-        outputs["t1"] = self.t1_files
+        outputs["t1_uni"] = self.t1_uni_files
+        outputs["t1_inv2"] = self.t1_inv2_files
+        outputs["t1_q"] = self.t1_q_files
         outputs["rsfmri"] = self.rsfmri_files
         outputs["dwi"] = self.dwi_files
         outputs["dwi_ap"] = self.dwi_ap_files
         outputs["dwi_pa"] = self.dwi_pa_files
         outputs["flair"] = self.flair_files
-        fm = self.fieldmap_mag
-        fp = self.fieldmap_ph
-        outputs["mag_fieldmap"] = fm[0] if fm and fp else "NONE"
-        outputs["phase_fieldmap"] = fp[0] if fm and fp else "NONE"
-        if not (fm and fp):
-            print >> sys.stderr, "\nWARNING: not using magnitude or phase fieldmaps.\n"
-        outputs["fieldmap_te"] = self.fieldmap_mag_delta_te
+        outputs["rs_ap"] = self.rs_ap_files
+        outputs["rs_pa"] = self.rs_pa_files
         outputs["ep_TR"] = self.ep_TR
         outputs["ep_dwi_echo_spacings"] = self.ep_dwi_echo_spacings
         outputs["ep_rsfmri_echo_spacings"] = self.ep_rsfmri_echo_spacings

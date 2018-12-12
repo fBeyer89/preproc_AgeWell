@@ -16,7 +16,7 @@ def calculate_mean_bo_b_images(dwi_file, bval_file=False, bvec_file=False):
     import nibabel as nb
     import numpy as np
     import os
-    
+    print dwi_file
     print len(dwi_file)
     print bval_file
     if (len(dwi_file)==1 and os.path.isfile(dwi_file[0])):
@@ -55,3 +55,6 @@ def calculate_mean_bo_b_images(dwi_file, bval_file=False, bvec_file=False):
         return False, str('not acquired'), str('not acquired')
 
    
+calculate_mean_bo_b_images([u'/data/pt_02030/wd_preprocessing/hcp_prep_workflow/_subject_33219.97/nii_wrangler/cmrrmbep2dDTI32Chs018a001.nii'],
+                           '/data/pt_02030/wd_preprocessing/hcp_prep_workflow/_subject_33219.97/dicom_convert/cmrrmbep2dDTI32Chs018a001.bval',
+                           '/data/pt_02030/wd_preprocessing/hcp_prep_workflow/_subject_33219.97/dicom_convert/cmrrmbep2dDTI32Chs018a001.bvec')

@@ -73,7 +73,7 @@ def main(argv=None):
         c_file = None
         use_pbs = False
         out_dir = os.getcwd()
-        working_dir="/data/pt_life/LIFE_fu/wd_preprocessing/"
+        working_dir="/data/pt_02030/wd_preprocessing/"
         for option, value in opts:
             if option in ("-h", "--help"):
                 raise Usage()

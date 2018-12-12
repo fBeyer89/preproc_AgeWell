@@ -72,6 +72,23 @@ def create_dti():
     #TODO: to use this for dtifit, needed to creat another brain mask
 
     '''
+    getting first bval/bvec files
+    '''
+    def return_list_element(x):
+        x_file=x[0]
+        return x_file
+    
+    get_bval= Node(util.Function(input_names=["x"],
+                              output_names=["x_file"],
+                              function = return_list_element), name="get_bval")  
+
+    get_bvec= Node(util.Function(input_names=["x"],
+                              output_names=["x_file"],
+                              function = return_list_element), name="get_bvec")
+
+
+
+    '''
     tensor fitting
     --------------
     '''
@@ -83,9 +100,11 @@ def create_dti():
         (inputnode, distor_corr, [('dwi', 'inputnode.dwi')]),
         (inputnode, distor_corr, [('dwi_ap', 'inputnode.dwi_ap')]),
         (inputnode, distor_corr, [('dwi_pa', 'inputnode.dwi_pa')]),
-        (inputnode, distor_corr, [("bvals", "inputnode.bvals")]),
-        (inputnode, distor_corr, [("bvecs", "inputnode.bvecs")]),
-        (inputnode, dti, [("bvals", "bvals")]),
+        (inputnode, get_bval, [("bvals", "x")]),
+        (inputnode, get_bvec, [("bvecs", "x")]),
+        (get_bval, distor_corr, [("x_file", "inputnode.bvals")]),
+        (get_bvec, distor_corr, [("x_file", "inputnode.bvecs")]),
+        (get_bval, dti, [("x_file", "bvals")]),
         (distor_corr, outputnode, [('outputnode.bo_brain', 'bo_brain')]),
         (distor_corr, outputnode, [('outputnode.bo_brainmask', 'bo_brainmask')]),
         (distor_corr, outputnode, [('outputnode.noise', 'noise')]),
@@ -117,15 +136,7 @@ def create_dti():
     coregistration of FA and T1
     ------------------------------------
     '''
-    #have to rename subject for fu
-    def rename_subject_for_fu(input_id):
-        output_id=input_id+"_fu"
-        return output_id
 
-    #modify subject name so it can be saved in the same folder as other LIFE- freesurfer data
-    rename=Node(util.Function(input_names=['input_id'],
-                            output_names=['output_id'],
-                            function = rename_subject_for_fu), name="rename")
     # linear registration with bbregister
     bbreg = Node(fs.BBRegister(contrast_type='t1',
     out_fsl_file='fa2anat.mat',
@@ -138,8 +149,7 @@ def create_dti():
     # connecting the nodes
     dwi_preproc.connect([
 
-        (inputnode, rename, [('subject_id', 'input_id')]),
-        (rename, bbreg, [('output_id', 'subject_id')]),
+        (inputnode, bbreg, [('subject_id', 'subject_id')]),
         (inputnode, bbreg, [('freesurfer_dir', 'subjects_dir')]),
         (dti, bbreg, [("FA", "source_file")]),
         (bbreg, outputnode, [('out_fsl_file', 'fa2anat_mat'),

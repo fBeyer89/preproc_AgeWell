@@ -8,14 +8,14 @@ from util import *
 SCAN_TYPES = [
     "t1",
     "rsfmri",
-    "fieldmap_magnitude",
-    "fieldmap_phase",
+    "rs_ap",
+    "rs_pa",
     "dwi",
     "fieldmap_pa",
     "fieldmap_ap",
     "flair",
-    "swi",
-    "tof_angio"]
+    "cbsasl"
+     ]
 
 RSPREPROC_KEYS = ["epi_resolution","vol_to_remove", "ep_unwarp_dir"]
 

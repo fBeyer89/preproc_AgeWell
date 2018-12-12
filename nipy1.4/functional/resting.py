@@ -12,7 +12,7 @@ import nipype.interfaces.fsl as fsl
 import nipype.interfaces.afni as afni
 from strip_rois import strip_rois_func
 from moco import create_moco_pipeline
-from fieldmap_coreg import create_fmap_coreg_pipeline
+from topup_coreg import create_topup_coreg_pipeline
 from transform_timeseries import create_transform_pipeline
 
 '''
@@ -36,8 +36,8 @@ def create_resting():
     'out_dir',
     'freesurfer_dir',
     'func',
-    'fmap_mag',
-    'fmap_phase',
+    'rs_ap',
+    'rs_pa',
     'anat_head',
     'anat_brain',
     'anat_brain_mask',
@@ -45,7 +45,6 @@ def create_resting():
     'TR',
     'epi_resolution',
     'echo_space', 
-    'te_diff',
     'pe_dir'     
     ]),
     name='inputnode')   
@@ -70,7 +69,7 @@ def create_resting():
     #                        function = rename_subject_for_fu), name="rename")      
     
     
-    fmap_coreg=create_fmap_coreg_pipeline()
+    fmap_coreg=create_topup_coreg_pipeline()
     
     # workflow for applying transformations to timeseries
     transform_ts = create_transform_pipeline()
@@ -101,16 +100,15 @@ def create_resting():
     (remove_vol, moco, [('out_file', 'inputnode.epi')]),
     
     #prepare field map 
-    (inputnode, fmap_coreg,[('subject_id','inputnode.fs_subject_id')]),
-    (inputnode, fmap_coreg, [('fmap_phase', 'inputnode.phase'),
-                             ('freesurfer_dir','inputnode.fs_subjects_dir'),                             
-                             ('echo_space','inputnode.echo_space'),
-                             ('te_diff','inputnode.te_diff'),
-                             ('pe_dir','inputnode.pe_dir'),
-                             ('fmap_mag', 'inputnode.mag'),
-                             ('anat_head', 'inputnode.anat_head'),
-                             ('anat_brain', 'inputnode.anat_brain')
-                             ]),
+    (inputnode, fmap_coreg,[('subject_id','inputnode.fs_subject_id'),
+                            ('rs_ap', 'inputnode.ap'),
+                            ('rs_pa', 'inputnode.pa'),
+                            ('freesurfer_dir','inputnode.fs_subjects_dir'),                             
+                            ('echo_space','inputnode.echo_space'),
+                            ('pe_dir','inputnode.pe_dir'),
+                            ('anat_head', 'inputnode.anat_head'),
+                            ('anat_brain', 'inputnode.anat_brain')
+                            ]),
     (moco, fmap_coreg, [('outputnode.epi_mean', 'inputnode.epi_mean')]),
     #transform ts
     (remove_vol, transform_ts, [('out_file', 'inputnode.orig_ts')]),
