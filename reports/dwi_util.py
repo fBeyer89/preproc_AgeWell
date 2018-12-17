@@ -27,12 +27,12 @@ def calculate_mean_bo_b_images(dwi_file, bval_file=False, bvec_file=False):
         dwi_data = dwi.get_data()
         
         #create average bo image
-        bo_id=bvals==0
+        bo_id=bvals<=5
         print np.shape(dwi_data[:,:,:,bo_id])
         if np.shape(dwi_data[:,:,:,bo_id])[3] != 7:
             print "why there are not 7 B0s"
         mean_bo=np.mean(dwi_data[:,:,:,bo_id],3)    
-        b_id=bvals!=0
+        b_id=bvals>5
         b_images=dwi_data[:,:,:,b_id]
         print np.shape(b_images)
         if np.shape(b_images)[3]!=60:

@@ -6,6 +6,7 @@ from nipype.interfaces.utility import Function, IdentityInterface
 from nipype.interfaces.io import SelectFiles
 from dwi_util import calculate_mean_bo_b_images
 
+
 def create_base_report():
  
     # main workflow
@@ -36,6 +37,22 @@ def create_base_report():
 
     outputnode=Node(IdentityInterface(fields=['report']),
     name='outputnode')    
+    
+    
+    '''
+    getting first bval/bvec files
+    '''
+    def return_list_element(x):
+        x_file=x[0]
+        return x_file
+    
+    get_bval= Node(Function(input_names=["x"],
+                              output_names=["x_file"],
+                              function = return_list_element), name="get_bval")  
+
+    get_bvec= Node(Function(input_names=["x"],
+                              output_names=["x_file"],
+                              function = return_list_element), name="get_bvec")
        
      
     prep_dwi_calc = Node(Function(input_names=["dwi_file", "bval_file", "bvec_file"],
@@ -66,8 +83,8 @@ def create_base_report():
                                          'dti_available',
                                          'mean_bo',
                                          'b_images',
-				         'FA_file',
-					 'reg_file_dwi',
+                                         'FA_file',
+                                         'reg_file_dwi',
                                          'flair_file',
                                          'wm_file', 
                                          'reg_file',
@@ -81,12 +98,13 @@ def create_base_report():
     report.inputs.parameter_source = 'FSL'
 
     
-    
-    create_base_report.connect([(inputnode, make_outfile, [('subject', 'subject_id')]),
+    create_base_report.connect([(inputnode, get_bval, [("bvals", "x")]),
+                                (inputnode, get_bvec, [("bvecs", "x")]),
+                                (get_bval, prep_dwi_calc, [("x_file", "bval_file")]),
+                                (get_bvec, prep_dwi_calc, [("x_file", "bvec_file")]),
+                                (inputnode, make_outfile, [('subject', 'subject_id')]),
                                 (inputnode, make_outfile, [('out_dir', 'out_dir')]),
-                                (inputnode, prep_dwi_calc, [('dwi_file', 'dwi_file'),
-                                                            ('bvals', 'bval_file'),
-                                                            ('bvecs', 'bvec_file')]),
+                                (inputnode, prep_dwi_calc, [('dwi_file', 'dwi_file')]),
                                 (prep_dwi_calc, report, [('dti_available', 'dti_available'),
                                                          ('mean_bo', 'mean_bo'),
                                                          ('bimages', 'b_images')]),

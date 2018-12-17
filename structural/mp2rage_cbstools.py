@@ -1,6 +1,6 @@
 from nipype.pipeline.engine import Workflow, Node
 import nipype.interfaces.utility as util
-from nipype.interfaces.mipav.developer import JistIntensityMp2rageMasking, MedicAlgorithmSPECTRE2010
+from nipype.interfaces.mipav.developer import JistIntensityMp2rageMasking, JistBrainMp2rageSkullStripping
 
 '''
 Workflow to remove noisy background from MP2RAGE images 
@@ -27,7 +27,7 @@ def create_mp2rage_pipeline(name='mp2rage'):
                                                    'background_mask',
                                                    'uni_stripped',
                                                    'skullstrip_mask',
-                                                   'uni_reoriented'
+                                                   
                                                    ]),
                 name='outputnode')
     
@@ -53,14 +53,17 @@ def create_mp2rage_pipeline(name='mp2rage'):
                       name='background')
     
     # skullstrip
-    strip = Node(MedicAlgorithmSPECTRE2010(outStripped=True,
-                                           outMask=True,
-                                           outOriginal=True,
-                                           inOutput='true',
-                                           inFind='true',
-                                           inMMC=4
-                                           ), 
-                 name='strip')
+#    strip = Node(MedicAlgorithmSPECTRE2010(outStripped=True,
+#                                           outMask=True,
+#                                           outOriginal=True,
+#                                           inOutput='true',
+#                                           inFind='true',
+#                                           inMMC=4
+#                                           ), 
+#                 name='strip')
+        
+    strip = Node(JistBrainMp2rageSkullStripping(outBrain=True, outMasked2=True),name='strip')
+
     
     # connections
     mp2rage.connect([(inputnode, get_uni, [('uni','x')]),
@@ -69,12 +72,13 @@ def create_mp2rage_pipeline(name='mp2rage'):
                      (get_inv2, background, [('x_file', 'inSecond')]),
                      (get_t1, background, [('x_file', 'inQuantitative')]),
                      (get_uni, background, [('x_file','inT1weighted')]),                     
-                     (background, strip, [('outMasked2','inInput')]),
+                     (background, strip, [('outMasked2','inT1weighted')]),
+                     (get_inv2, strip, [('x_file', 'inSecond')]),
                      (background, outputnode, [('outMasked2','uni_masked'),
                                                ('outSignal2','background_mask')]),
-                    (strip, outputnode, [('outStripped','uni_stripped'),
-                                         ('outMask', 'skullstrip_mask'),
-                                         ('outOriginal','uni_reoriented')
+                     (strip, outputnode, [('outMasked2','uni_stripped'),
+                                         ('outBrain', 'skullstrip_mask')
+                                         
                                          ])
                      ])
     

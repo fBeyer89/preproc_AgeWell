@@ -37,6 +37,7 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
     else:
         mean_data = nifti_file
    
+    print np.shape(mean_data)
     if image_type=='flair':
             n_images = mean_data.shape[2]
             step=8
@@ -51,8 +52,11 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         #z-direction is in z-dimension
     else:
         n_images=mean_data.shape[2]
+        print n_images
         step=1
         row, col = _calc_rows_columns(figsize[0]/figsize[1], n_images/step)
+        print row
+        print col
         range_plot=np.arange(0,n_images,step)
   
     if overlay_mask:
