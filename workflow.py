@@ -2,7 +2,6 @@ import nipype.interfaces.io as nio           # Data i/o
 import nipype.interfaces.utility as util     # utility
 import nipype.pipeline.engine as pe          # pypeline engine
 from nipype.interfaces.dcm2nii import Dcm2nii
-from nipype.interfaces.freesurfer import ReconAll
 from interfaces import *
 from config import *
 from util import *
@@ -35,7 +34,7 @@ class HCPrepWorkflow(pe.Workflow):
         # dcm grabber
         sub_dir = self.get_conf("general","subject_dir")
         dcm_temp = self.get_conf("general","dicom_template")    
-        fs_dir = "/data/pt_02030/freesurfer/" 
+        fs_dir = "/data/pt_02030/preprocessed/freesurfer"
         out_dir = self.get_conf("general","out_dir")
         report_dir=self.get_conf("general","report_dir")
         standard = self.get_conf("templates","t1_template_2mm")  
@@ -52,6 +51,7 @@ class HCPrepWorkflow(pe.Workflow):
         if dcm_temp:
             self.dicom_grabber.inputs.field_template = {"dicom": dcm_temp}   
         if fs_dir:
+	    print(fs_dir)
             self.structural_wf.inputs.inputnode.freesurfer_dir=fs_dir
             self.resting.inputs.inputnode.freesurfer_dir=fs_dir
 	    self.dwi_wf.inputs.inputnode.freesurfer_dir=fs_dir
@@ -148,7 +148,9 @@ class HCPrepWorkflow(pe.Workflow):
             (self.dwi_wf, self.data_sink_dti, [('outputnode.topup_field', 'diffusion.@topup_field')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.topup_fieldcoef', 'diffusion.@topup_fieldcoef')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.rotated_bvecs', 'diffusion.@rotated_bvecs')]),
-    	       (self.dwi_wf, self.data_sink_dti, [('outputnode.eddy_corr', 'diffusion.@eddy_corr')]),
+    	    (self.dwi_wf, self.data_sink_dti, [('outputnode.eddy_corr', 'diffusion.@eddy_corr')]),
+	    (self.dwi_wf, self.data_sink_dti, [('outputnode.total_movement_rms', 'diffusion.@total_movement_rms')]),
+	    (self.dwi_wf, self.data_sink_dti, [('outputnode.outlier_report', 'diffusion.@outlier_report')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_fa', 'diffusion.@dti_fa')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_md', 'diffusion.@dti_md')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_l1', 'diffusion.@dti_l1')]),
