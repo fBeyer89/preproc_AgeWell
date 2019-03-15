@@ -14,6 +14,7 @@ import numpy as np
 import seaborn as sns
 from misc import plot_vline
 from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
 from pylab import cm
 from matplotlib.gridspec import GridSpec
 from matplotlib.backends.backend_pdf import FigureCanvasPdf as FigureCanvas
@@ -82,7 +83,8 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         if overlay_mask:
             ax.set_rasterized(True)
         if image_type=="flair":
-            ax.imshow(np.fliplr(mean_data[100:480,100:480,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
+            print np.shape(mean_data)
+            ax.imshow(np.fliplr(mean_data[50:256,80:256,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
                       vmax=np.percentile(mean_data[data_mask],99.5), 
                       cmap=cm.Greys_r, interpolation='nearest', origin='lower')  # @UndefinedVariable
         elif image_type=="t1":
@@ -116,8 +118,9 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         _, title = os.path.split(nifti_file)
         title += " (last modified: %s)"%time.ctime(os.path.getmtime(nifti_file))
     fig.suptitle(title, fontsize='14')
-    
+    fig.savefig("/home/raid1/fbeyer/Documents/Scripts/AgeWell/preprocessing_script/nipy1.4/reports/test_plot.png")
     return fig
     
     
-plot_mosaic('/data/pt_02030/wd_preprocessing/hcp_prep_workflow/resting/transform_timeseries/_subject_33219.97/tmean/rest_mean2anat_lowres.nii.gz', 'test', overlay_mask = None,title=None, figsize=(11.7,8.3))
+fig=plot_mosaic('/data/pt_02030/wd_preprocessing/hcp_prep_workflow/_subject_33503.0e/dicom_convert/t2spacesagp209isos025a1001.nii', 'flair', overlay_mask = None,title=None, figsize=(11.7,8.3))
+fig.savefig("/home/raid1/fbeyer/Documents/Scripts/AgeWell/preprocessing_script/nipy1.4/reports/test_plot.png")

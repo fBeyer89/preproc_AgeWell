@@ -75,7 +75,7 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         if overlay_mask:
             ax.set_rasterized(True)
         if image_type=="flair":
-            ax.imshow(np.fliplr(mean_data[100:480,100:480,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
+            ax.imshow(np.fliplr(mean_data[50:256,80:256,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
                       vmax=np.percentile(mean_data[data_mask],99.5), 
                       cmap=cm.Greys_r, interpolation='nearest', origin='lower')  # @UndefinedVariable
         elif image_type=="t1":

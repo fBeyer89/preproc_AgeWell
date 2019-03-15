@@ -111,7 +111,7 @@ def update_conf(conf_path):
     import os
     import sys
     from glob import glob
-    import dicom
+    import pydicom
     from time import sleep
     from numpy import unique
     # TODO: make sure conf is there

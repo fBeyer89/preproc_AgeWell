@@ -1,6 +1,6 @@
 from nipype.pipeline.engine import Workflow, Node
 import nipype.interfaces.utility as util
-from nipype.interfaces.mipav.developer import JistIntensityMp2rageMasking, JistBrainMp2rageSkullStripping, MedicAlgorithmSPECTRE2010
+from nipype.interfaces.mipav.developer import JistIntensityMp2rageMasking, JistBrainMp2rageSkullStripping
 
 '''
 Workflow to remove noisy background from MP2RAGE images 
