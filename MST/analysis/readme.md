@@ -2,13 +2,13 @@
 
 ## To do the analysis on the logfiles:
 
-- run the script run_ausw_1_neu.sh
+- run the script *run_ausw_1_neu.sh* to extract trial-by-trial the correct and given responses
 
-...in the script you have to modify the path to where all the MST logfiles are located.
+   in the script you have to modify the path to where all the MST logfiles are located.
 
-...This script wraps the command (perl  MST_ausw_1_neu.pl  Logfile (ohne Endung)) which extracts trial-by-trial the correct and given responses and writes them into .txt-files.
+   This script wraps the command (perl  MST_ausw_1_neu.pl  Logfile (ohne Endung)) and writes results into .txt-files in the same location as the log-files.
 
-...These can then be further analyzed and summarized to the MST-scores (recognition + pattern separation) with the R script: analysis_MST_scores.R.
+- calculate the MST-scores (recognition + pattern separation) with the R script: *analysis_MST_scores.R*.
 
 
 
