@@ -1,4 +1,4 @@
-#Scripts for AGEWELL_MRI (NRO-211)
+# Scripts for AGEWELL_MRI (NRO-211)
 
 * bash_scripts
   all bash-scripts used for data organization
