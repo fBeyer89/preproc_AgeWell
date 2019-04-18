@@ -36,7 +36,7 @@ class HCDcm2nii(d2n.Dcm2nii):
                     #for gzipped outpus files are not absolute
                     if isdefined(self.inputs.output_dir):
                         output_dir = self.inputs.output_dir
-                        print output_dir
+                        
                     else:
                         output_dir = self._gen_filename('output_dir')
                     file = os.path.abspath(os.path.join(output_dir,
@@ -243,6 +243,11 @@ class NiiWranglerInputSpec(BaseInterfaceInputSpec):
             
 
 class NiiWranglerOutputSpec(TraitedSpec):
+    dicom_info = traits.List(
+            mandatory=True,
+            desc="one dict for each series in the session, in the order they were\
+                  run. each dict should contain at least the series_num (int) and\
+                  the series_desc (str). NiiWrangler writes nifti location here.")
     t1_uni = OutputMultiPath(
             traits.List(File(exists=True)),
             mandatory=True,
@@ -331,6 +336,7 @@ class NiiWrangler(BaseInterface):
         self.ep_dwi_echo_spacings = None
         self.ep_rsfmri_echo_spacings = None
         self.ep_unwarp_dirs = None
+        self.nii_info=[]
 
     def _run_interface(self, runtime):
         import re
@@ -341,7 +347,8 @@ class NiiWrangler(BaseInterface):
         smap = self.inputs.series_map
         dinfo = self.inputs.dicom_info
         #block_averaging = self.inputs.block_struct_averaging
-        s_num_reg = re.compile(".*s(\d+)a(?!.*/)")# sux to use filename. make more robust if needed.
+        s_num_reg = re.compile(".*s(\d+)")
+        #s_num_reg = re.compile(".*s(\d+)a(?!.*/)")# sux to use filename. make more robust if needed.
         nii_by_series = {}
         fails = []
         extras = []
@@ -365,16 +372,16 @@ class NiiWrangler(BaseInterface):
         m_count = 0
         for sn, fn in nii_by_series.iteritems():
             m = filter(lambda x: x.get("series_num",-1) == sn, dinfo)
-            #print m
             if not m:
                 continue
             m_count += 1
             m[0]["nifti_file"] = fn
-            #print fn
+        
         if not m_count == len(dinfo):
             print "number of niftis and dicom series doesn't correspond due to AAHScout"
             #raise ValueError("incorrect number of nifti->series matches (%d/%d)" % (m_count, len(dinfo)))
-        
+            
+        self.nii_info=dinfo    
         # time for some data wrangling
         nf = "nifti_file"
         sd = "series_desc"
@@ -448,7 +455,6 @@ class NiiWrangler(BaseInterface):
                  self.ep_TR= ["NONE" for n in self.rsfmri_files]
         else:
             print "one resting-state scan"
-            print bs[0]["TR"]
             if isdefined(self.inputs.ep_rsfmri_echo_spacings):
                 self.ep_rsfmri_echo_spacings = self.inputs.ep_rsfmri_echo_spacings
             elif bs and "bw_per_pix_phase_encode" in bs[0] and "acq_matrix_n" in bs[0]:
@@ -540,5 +546,6 @@ class NiiWrangler(BaseInterface):
         outputs["ep_dwi_echo_spacings"] = self.ep_dwi_echo_spacings
         outputs["ep_rsfmri_echo_spacings"] = self.ep_rsfmri_echo_spacings
         outputs["ep_unwarp_dirs"] = self.ep_unwarp_dirs
+        outputs["dicom_info"] = self.nii_info
         return outputs
         

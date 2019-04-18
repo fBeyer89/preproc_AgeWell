@@ -16,6 +16,12 @@ from nipype.interfaces import fsl
 from nipype.interfaces.utility import IdentityInterface
 import nipype.interfaces.freesurfer as fs
 import nipype.interfaces.utility as util
+from inspect import getsourcefile
+import os.path as path, sys
+current_dir = path.dirname(path.abspath(getsourcefile(lambda:0)))
+sys.path.insert(0, current_dir[:current_dir.rfind(path.sep)])
+from util import return_list_element
+sys.path.pop(0) 
 
 def create_dti():
     # main workflow for preprocessing diffusion data
@@ -76,9 +82,7 @@ def create_dti():
     '''
     getting first bval/bvec files
     '''
-    def return_list_element(x):
-        x_file=x[0]
-        return x_file
+
     
     get_bval= Node(util.Function(input_names=["x"],
                               output_names=["x_file"],

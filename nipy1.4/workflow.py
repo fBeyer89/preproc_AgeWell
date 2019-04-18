@@ -1,10 +1,12 @@
 import nipype.interfaces.io as nio           # Data i/o
 import nipype.interfaces.utility as util     # utility
-import nipype.pipeline.engine as pe          # pypeline engine
-from nipype.interfaces.dcm2nii import Dcm2nii
+import nipype.pipeline.engine as pe   
+from nipype import Function
+from nipype.interfaces.dcm2nii import Dcm2niix
 from interfaces import *
 from config import *
 from util import *
+from bids_conversion import *
 
 class HCPrepWorkflow(pe.Workflow):
     def __init__(self, config=None, base_dir=None, *args, **kwargs):
@@ -40,6 +42,7 @@ class HCPrepWorkflow(pe.Workflow):
         standard = self.get_conf("templates","t1_template_2mm")  
         outputdir_dti=self.get_conf("general", "outputdir_dti")
         outputdir_resting=self.get_conf("general", "outputdir_resting")
+        bids_outputdir=self.get_conf("general", "bids_outputdir")
         vol_to_remove=self.get_conf("rspreproc","vol_to_remove")
         epi_resolution=self.get_conf("rspreproc","epi_resolution")
         ep_unwarp_dir=self.get_conf("rspreproc","ep_unwarp_dir")
@@ -51,7 +54,6 @@ class HCPrepWorkflow(pe.Workflow):
         if dcm_temp:
             self.dicom_grabber.inputs.field_template = {"dicom": dcm_temp}   
         if fs_dir:
-	    print(fs_dir)
             self.structural_wf.inputs.inputnode.freesurfer_dir=fs_dir
             self.resting.inputs.inputnode.freesurfer_dir=fs_dir
 	    self.dwi_wf.inputs.inputnode.freesurfer_dir=fs_dir
@@ -73,6 +75,8 @@ class HCPrepWorkflow(pe.Workflow):
         if outputdir_dti:
             self.data_sink_dti.inputs.base_directory=outputdir_dti
             self.data_sink_dti.inputs.substitutions=[('_subject_', '')]
+        if bids_outputdir:
+            self.bids.inputs.bids_output=bids_outputdir
         if ep_unwarp_dir:
             self.resting.inputs.inputnode.pe_dir=ep_unwarp_dir
                             
@@ -107,10 +111,11 @@ class HCPrepWorkflow(pe.Workflow):
             (self.subjects_node, self.dicom_grabber, [("subject", "subject")]),
             (self.dicom_grabber, self.dicom_convert, [("dicom", "source_names")]),
             (self.dicom_grabber, self.dicom_info, [("dicom", "files")]),
-            (self.dicom_convert, self.nii_wrangler, [("converted_files", "nii_files")]),
-            (self.dicom_convert, self.data_sink, [("bvals", "nifti.@bval")]),
-            (self.dicom_convert, self.data_sink, [("bvecs", "nifti.@bvecs")]),
+            (self.dicom_convert, self.nii_wrangler, [("converted_files", "nii_files")]),                  
             (self.dicom_info, self.nii_wrangler, [("info", "dicom_info")]),
+            (self.nii_wrangler, self.bids, [('dicom_info', 'dicom_info')]),
+            (self.dicom_convert, self.bids, [('bids', 'bids_info')]),  
+            (self.subjects_node,self.bids, [('subject', 'subj')]),     
             (self.nii_wrangler, self.data_sink, [("t1_uni", "nifti.@t1_uni")]), 
             (self.nii_wrangler, self.data_sink, [("t1_inv2", "nifti.@t1_inv2")]), 
             (self.nii_wrangler, self.data_sink, [("t1_q", "nifti.@t1_q")]), 
@@ -121,6 +126,9 @@ class HCPrepWorkflow(pe.Workflow):
             (self.nii_wrangler, self.data_sink, [("flair", "nifti.@flair")]),
             (self.nii_wrangler, self.data_sink, [("dwi_ap", "nifti.@dwi_ap")]),  
             (self.nii_wrangler, self.data_sink, [("dwi_pa", "nifti.@dwi_pa")]), 
+            (self.dicom_convert, self.data_sink, [("bvals", "nifti.@bval")]),
+            (self.dicom_convert, self.data_sink, [("bvecs", "nifti.@bvecs")]),
+            (self.dicom_convert, self.data_sink, [("bids", "nifti.@bids")]),    
 
             #structural workflow
             (self.nii_wrangler, self.structural_wf, [("t1_uni", "inputnode.uni")]),      
@@ -136,7 +144,7 @@ class HCPrepWorkflow(pe.Workflow):
             
             #diffusion workflow
 
-            (self.subjects_node, self.dwi_wf, [("subject", "inputnode.subject_id")]),
+            (self.structural_wf, self.dwi_wf, [("outputnode.subject_id", "inputnode.subject_id")]),
             (self.nii_wrangler, self.dwi_wf, [("dwi", "inputnode.dwi")]),
             (self.nii_wrangler, self.dwi_wf, [("dwi_ap", "inputnode.dwi_ap")]),
             (self.nii_wrangler, self.dwi_wf, [("dwi_pa", "inputnode.dwi_pa")]),
@@ -148,9 +156,9 @@ class HCPrepWorkflow(pe.Workflow):
             (self.dwi_wf, self.data_sink_dti, [('outputnode.topup_field', 'diffusion.@topup_field')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.topup_fieldcoef', 'diffusion.@topup_fieldcoef')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.rotated_bvecs', 'diffusion.@rotated_bvecs')]),
-    	    (self.dwi_wf, self.data_sink_dti, [('outputnode.eddy_corr', 'diffusion.@eddy_corr')]),
-	    (self.dwi_wf, self.data_sink_dti, [('outputnode.total_movement_rms', 'diffusion.@total_movement_rms')]),
-	    (self.dwi_wf, self.data_sink_dti, [('outputnode.outlier_report', 'diffusion.@outlier_report')]),
+    	       (self.dwi_wf, self.data_sink_dti, [('outputnode.eddy_corr', 'diffusion.@eddy_corr')]),
+	       (self.dwi_wf, self.data_sink_dti, [('outputnode.total_movement_rms', 'diffusion.@total_movement_rms')]),
+	       (self.dwi_wf, self.data_sink_dti, [('outputnode.outlier_report', 'diffusion.@outlier_report')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_fa', 'diffusion.@dti_fa')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_md', 'diffusion.@dti_md')]),
             (self.dwi_wf, self.data_sink_dti, [('outputnode.dti_l1', 'diffusion.@dti_l1')]),
@@ -245,14 +253,16 @@ class HCPrepWorkflow(pe.Workflow):
     def dicom_convert(self):
         if not getattr(self,"_dicom_convert",None):
             #self._dicom_convert = pe.Node(name="dicom_convert", interface=Dcm2nii())
-            self._dicom_convert = pe.Node(name="dicom_convert", interface=HCDcm2nii())
+            #self._dicom_convert = pe.Node(name="dicom_convert", interface=HCDcm2nii())
+            self._dicom_convert = pe.Node(name="dicom_convert", interface=Dcm2niix())
+            self._dicom_convert.inputs.out_filename="%p_s%s"
             #self._dicom_convert.inputs.convert_all_pars = True
-            self._dicom_convert.inputs.gzip_output = False
-            self._dicom_convert.inputs.reorient = False
-            self._dicom_convert.inputs.reorient_and_crop = False
-            self._dicom_convert.inputs.events_in_filename=True
-            self._dicom_convert.inputs.protocol_in_filename=True
-            self._dicom_convert.inputs.date_in_filename= False
+            #self._dicom_convert.inputs.gzip_output = False
+            #self._dicom_convert.inputs.reorient = False
+            #self._dicom_convert.inputs.reorient_and_crop = False
+            #self._dicom_convert.inputs.events_in_filename=True
+            #self._dicom_convert.inputs.protocol_in_filename=True
+            #self._dicom_convert.inputs.date_in_filename= False
         return self._dicom_convert
     @dicom_convert.setter
     def dicom_convert(self, val):
@@ -275,6 +285,20 @@ class HCPrepWorkflow(pe.Workflow):
     @dicom_info.setter
     def dicom_info(self, val):
         self._dicom_info = val
+        
+    @property
+    def bids(self):
+        from bids_conversion import create_bids
+        if not getattr(self,'_bids',None):
+               self._bids = pe.Node(name="bids", interface=Function(
+                           input_names=["dicom_info","bids_info","bids_output","subj","ses"],
+                           output_names=["out"],
+                           function=create_bids))
+               self._bids.inputs.ses = 'bl'
+        return self._bids
+    @bids.setter
+    def bids(self, val):
+        self._bids = val
 
     @property
     def nii_wrangler(self):

@@ -28,6 +28,7 @@ def _calc_rows_columns(ratio, n_images):
     return rows, columns
 
 def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=(11.7,8.3)):
+    
     if isinstance(nifti_file,str):
         nii = nb.load(nifti_file)
         mean_data = nii.get_data()
@@ -36,12 +37,11 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         mean_data = nii.get_data()
     else:
         mean_data = nifti_file
-   
-    print np.shape(mean_data)
+    
     if image_type=='flair':
-            n_images = mean_data.shape[2]
+            n_images = mean_data.shape[0]
             step=8
-            range_plot=np.arange(8,n_images-8,step)   
+            range_plot=np.arange(108,n_images,step)   
             row, col = _calc_rows_columns(figsize[0]/figsize[1], (n_images-16)/step)
             #z-direction in flair image is in y-dimension
     elif image_type=='t1':
@@ -52,12 +52,10 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         #z-direction is in z-dimension
     else:
         n_images=mean_data.shape[2]
-        print n_images
         step=1
         row, col = _calc_rows_columns(figsize[0]/figsize[1], n_images/step)
-        print row
-        print col
         range_plot=np.arange(0,n_images,step)
+  
   
     if overlay_mask:
         overlay_data = nb.load(overlay_mask).get_data()
@@ -75,9 +73,14 @@ def plot_mosaic(nifti_file, image_type, overlay_mask = None,title=None, figsize=
         if overlay_mask:
             ax.set_rasterized(True)
         if image_type=="flair":
-            ax.imshow(np.fliplr(mean_data[50:256,80:256,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
-                      vmax=np.percentile(mean_data[data_mask],99.5), 
-                      cmap=cm.Greys_r, interpolation='nearest', origin='lower')  # @UndefinedVariable
+            #old version of DCM conversion with dcm2nii
+#            ax.imshow(np.flipud(mean_data[50:256,80:256,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
+#                      vmax=np.percentile(mean_data[data_mask],99.5), 
+#                      cmap=cm.Greys_r, interpolation='nearest', origin='lower') 
+            #for new version of DCM conversion with dcm2niix
+            ax.imshow(mean_data[1:216,1:220,image].T, vmin=np.percentile(mean_data[data_mask], 0.5), 
+                  vmax=np.percentile(mean_data[data_mask],99.5), 
+                  cmap=cm.Greys_r, interpolation='nearest', origin='lower') # @UndefinedVariable
         elif image_type=="t1":
             ax.imshow(np.flipud(mean_data[:,:,image].T), vmin=np.percentile(mean_data[data_mask], 0.5), 
                       vmax=np.percentile(mean_data[data_mask],99.5), 

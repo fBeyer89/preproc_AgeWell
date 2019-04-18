@@ -52,6 +52,7 @@ def create_topup_coreg_pipeline(name='fmap_coreg'):
     
     merge_appa=Node(fsl.Merge(),name='merge_appa')
     merge_appa.inputs.dimension='t'
+    merge_appa.inputs.merged_file='cmrr_mbep2d_se_23iso_norm.nii.gz'
     
     #use mean file of ap-pa acquisitions as "Mag"-image from fieldmap, only used for coregistration with mean EPI
     mean_appa=Node(fsl.MeanImage(), name='mean_appa')
@@ -59,7 +60,7 @@ def create_topup_coreg_pipeline(name='fmap_coreg'):
 
     #### use topup --> creates fieldmap
     topup_prep=Node(fsl.TOPUP(), name='topup_prep')
-    topup_prep.inputs.encoding_file='/home/raid1/fbeyer/Documents/Scripts/AgeWell/preprocessing_script/nipy1.4/functional/aquisition_params.txt'
+    topup_prep.inputs.encoding_file='/data/pt_02030/scripts/nipy1.4/functional/aquisition_params.txt'
     
     #multiply topup result to convert to rad/s 
     convertHz_rad=Node(fsl.maths.MathsCommand(args='-mul 6.28'), name='convertHz_rad')

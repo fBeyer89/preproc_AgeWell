@@ -5,6 +5,12 @@ from nipype.pipeline.engine import Workflow, Node
 from nipype.interfaces.utility import Function, IdentityInterface
 from nipype.interfaces.io import SelectFiles
 from dwi_util import calculate_mean_bo_b_images
+from inspect import getsourcefile
+import os.path as path, sys
+current_dir = path.dirname(path.abspath(getsourcefile(lambda:0)))
+sys.path.insert(0, current_dir[:current_dir.rfind(path.sep)])
+from util import return_list_element
+sys.path.pop(0) 
 
 
 def create_base_report():
@@ -42,9 +48,6 @@ def create_base_report():
     '''
     getting first bval/bvec files
     '''
-    def return_list_element(x):
-        x_file=x[0]
-        return x_file
     
     get_bval= Node(Function(input_names=["x"],
                               output_names=["x_file"],
