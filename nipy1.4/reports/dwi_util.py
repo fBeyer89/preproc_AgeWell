@@ -16,14 +16,27 @@ def calculate_mean_bo_b_images(dwi_file, bval_file=False, bvec_file=False):
     import nibabel as nb
     import numpy as np
     import os
-    
-    print len(dwi_file)
-    print bval_file
+    import re
+
+    #for the case that there is one DWI file identified by the nifti wrangler
     if (len(dwi_file)==1 and os.path.isfile(dwi_file[0])):
-        bvals,bvecs = read_bvals_bvecs(bval_file,bvec_file)
-        print dwi_file[0]
+        
+        #if there is more than one element for the bval/bvecs
+        if type(bval_file)==list:
+                
+            series_num_dwi=re.compile(".*cmrr_mbep2d_DTI_32Ch_s(.*).nii.gz*").match(dwi_file[0]).groups()
+            
+            for i in np.arange(0,len(bval_file)):
+                series_num_bval=re.compile(".*cmrr_mbep2d_DTI_32Ch_s(.*).bval*").match(bval_file[i]).groups()
+                
+                if (series_num_dwi==series_num_bval):
+                    index=i
+                    
+            bvals,bvecs = read_bvals_bvecs(bval_file[index],bvec_file[index])
+        else:
+            bvals,bvecs = read_bvals_bvecs(bval_file, bvec_file)        
+               
         dwi = nb.load(dwi_file[0])
-        print dwi.get_affine()
         dwi_data = dwi.get_data()
         
         #create average bo image
@@ -50,6 +63,8 @@ def calculate_mean_bo_b_images(dwi_file, bval_file=False, bvec_file=False):
         nb.save(b_images_nii, base + "_b_images.nii.gz")
         print os.path.abspath(base + "_mean_bo.nii.gz")
         return True, str(os.path.abspath(base + "_mean_bo.nii.gz")), str(os.path.abspath(base + "_b_images.nii.gz"))
+    
+#if there is no or more than 1 dti acquired, we have to manually check what happened.
     else:
         print "no dti or more than 1 dti acquired"
         return False, str('not acquired'), str('not acquired')

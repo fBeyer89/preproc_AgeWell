@@ -1,8 +1,17 @@
 nipy1.4/crash*
 nipy1.4/reports/cmrrmbep2dDTI32Chs018a001_b_images.nii.gz
 nipy1.4/reports/cmrrmbep2dDTI32Chs018a001_mean_bo.nii.gz
+nipy1.4/reports/_b_images.nii.gz
 nipy1.4/reports/test_dwi_util.py
 nipy1.4/reports/test_plot_mosaic.py
+nipy1.4/qa/create_JPowers_plot.py
+nipy1.4/qa/test_figure_plotting.py
+nipy1.4/reports/_b_images.nii.gz
+nipy1.4/reports/_mean_bo.nii.gz
+nipy1.4/reports/dwi_util_standalone_test.py
+nipy1.4/reports/dwi_util_standalone_test.pyc
+nipy1.4/test_debug_functions/
 test.conf
+.Rhistory
 QAtools_v1.2
 freesurfer_6_dev

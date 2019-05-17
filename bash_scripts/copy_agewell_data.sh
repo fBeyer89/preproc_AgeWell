@@ -10,7 +10,7 @@ for subj in $1 $2 $3 $4 $5
 do
 echo "copying $subj"
 
-if [ ! -d /data/p_02030/$subj ];
+if [ ! -d /data/p_02030/$subj/*.SKYRA ];
 then
 rsync -ruv /scr/mrincoming/$subj*201* /data/p_02030/$subj
 else 

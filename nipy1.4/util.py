@@ -5,17 +5,31 @@ Created on Wed Jun 20 11:59:34 2018
 @author: fbeyer
 """
 
-def return_list_element(x):
-    #return list element for bval/bvec files.       
-    if isinstance(x,list):        
-        x_file=x[0]
-    elif isinstance(x,str):
-        x_file=x
-    else:
-        #print "type unknown"
-        #print type(x)
-        x_file=x
-    return x_file
+def return_list_element(bvals,bvecs,dwi):
+    import os
+    import re
+    import numpy as np
+
+    #for the case that there is one DWI file identified by the nifti wrangler
+    if (len(dwi)==1 and os.path.isfile(dwi[0])):
+        
+        #if there is more than one element for the bval/bvecs
+        if type(bvals)==list:
+                
+            series_num_dwi=re.compile(".*cmrr_mbep2d_DTI_32Ch_s(.*).nii.gz*").match(dwi[0]).groups()
+            
+            for i in np.arange(0,len(bvals)):
+                series_num_bval=re.compile(".*cmrr_mbep2d_DTI_32Ch_s(.*).bval*").match(bvals[i]).groups()
+                
+                if (series_num_dwi==series_num_bval):
+                    index=i
+                    
+            bval_file=bvals[index]
+            bvec_file=bvecs[index]
+        else:
+            bval_file=bvals   
+            bvec_file=bvecs
+    return bval_file,bvec_file
 
 def orientation_from_dcm_header(header):
     # borrowed from hcp xnat dicom juggling java

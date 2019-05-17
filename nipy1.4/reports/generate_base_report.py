@@ -45,17 +45,17 @@ def create_base_report():
     name='outputnode')    
     
     
-    '''
-    getting first bval/bvec files
-    '''
-    
-    get_bval= Node(Function(input_names=["x"],
-                              output_names=["x_file"],
-                              function = return_list_element), name="get_bval")  
-
-    get_bvec= Node(Function(input_names=["x"],
-                              output_names=["x_file"],
-                              function = return_list_element), name="get_bvec")
+#    '''
+#    getting first bval/bvec files
+#    '''
+#    
+#    get_bval= Node(Function(input_names=["x"],
+#                              output_names=["x_file"],
+#                              function = return_list_element), name="get_bval")  
+#
+#    get_bvec= Node(Function(input_names=["x"],
+#                              output_names=["x_file"],
+#                              function = return_list_element), name="get_bvec")
        
      
     prep_dwi_calc = Node(Function(input_names=["dwi_file", "bval_file", "bvec_file"],
@@ -101,10 +101,13 @@ def create_base_report():
     report.inputs.parameter_source = 'FSL'
 
     
-    create_base_report.connect([(inputnode, get_bval, [("bvals", "x")]),
-                                (inputnode, get_bvec, [("bvecs", "x")]),
-                                (get_bval, prep_dwi_calc, [("x_file", "bval_file")]),
-                                (get_bvec, prep_dwi_calc, [("x_file", "bvec_file")]),
+    create_base_report.connect([
+#                                (inputnode, get_bval, [("bvals", "x")]),
+#                                (inputnode, get_bvec, [("bvecs", "x")]),
+#                                (get_bval, prep_dwi_calc, [("x_file", "bval_file")]),
+#                                (get_bvec, prep_dwi_calc, [("x_file", "bvec_file")]),
+                                (inputnode, prep_dwi_calc, [("bvals", "bval_file")]),
+                                (inputnode, prep_dwi_calc, [("bvecs", "bvec_file")]),                              
                                 (inputnode, make_outfile, [('subject', 'subject_id')]),
                                 (inputnode, make_outfile, [('out_dir', 'out_dir')]),
                                 (inputnode, prep_dwi_calc, [('dwi_file', 'dwi_file')]),

@@ -84,15 +84,9 @@ def create_dti():
     '''
 
     
-    get_bval= Node(util.Function(input_names=["x"],
-                              output_names=["x_file"],
-                              function = return_list_element), name="get_bval")  
-
-    get_bvec= Node(util.Function(input_names=["x"],
-                              output_names=["x_file"],
-                              function = return_list_element), name="get_bvec")
-
-
+    get_bvalsvecs = Node(util.Function(input_names=["bvals","bvecs","dwi"],
+                              output_names=["bval_file","bvec_file"],
+                              function = return_list_element), name="get_bvalsvecs")  
 
     '''
     tensor fitting
@@ -106,11 +100,12 @@ def create_dti():
         (inputnode, distor_corr, [('dwi', 'inputnode.dwi')]),
         (inputnode, distor_corr, [('dwi_ap', 'inputnode.dwi_ap')]),
         (inputnode, distor_corr, [('dwi_pa', 'inputnode.dwi_pa')]),
-        (inputnode, get_bval, [("bvals", "x")]),
-        (inputnode, get_bvec, [("bvecs", "x")]),
-        (get_bval, distor_corr, [("x_file", "inputnode.bvals")]),
-        (get_bvec, distor_corr, [("x_file", "inputnode.bvecs")]),
-        (get_bval, dti, [("x_file", "bvals")]),
+        (inputnode, get_bvalsvecs, [("bvals", "bvals")]),
+        (inputnode, get_bvalsvecs, [("bvecs", "bvecs")]),
+        (inputnode, get_bvalsvecs, [("dwi", "dwi")]),
+        (get_bvalsvecs, distor_corr, [("bval_file", "inputnode.bvals")]),
+        (get_bvalsvecs, distor_corr, [("bvec_file", "inputnode.bvecs")]),
+        (get_bvalsvecs, dti, [("bval_file", "bvals")]),
         (distor_corr, outputnode, [('outputnode.bo_brain', 'bo_brain')]),
         (distor_corr, outputnode, [('outputnode.bo_brainmask', 'bo_brainmask')]),
         (distor_corr, outputnode, [('outputnode.noise', 'noise')]),
