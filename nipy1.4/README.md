@@ -16,7 +16,7 @@ Preprocessing pipelines for the AGEWELL study (based on HCP pipeline)
 Based on the implementation of HCP pipelines for nipype (https://github.com/beOn/hcpre)
 
 Using software packages and nipype:
-CBSTOOLS --version 3.1 MRICRON AFNI --version '17.2.17' ANTSENV --version '2.2.0' FREESURFER --version 6.0.0p1, nipype version 0.13.0-geb8a930.dev or 1.1.2
+CBSTOOLS --version 3.1 MRICRON AFNI --version '17.2.17' ANTSENV --version '2.2.0' FSL --version 5.0.11 FREESURFER --version 6.0.0p1, nipype version 1.2.0
 
 To run it do:
 python run_workflow_hcplike.py --run -n 8 --config conf_for_Agewell.conf 

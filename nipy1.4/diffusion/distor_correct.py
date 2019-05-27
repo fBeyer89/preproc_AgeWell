@@ -12,7 +12,7 @@ Warp commands dwidenoise & mrdegibbs from MRTrix3.0; eddy-openmp from FSL
 for unkonwn reason they are not included after loading relavant interface
 '''
 from nipype import Node, Workflow
-from dwi_corr_util import (MRdegibbs, DWIdenoise, Eddy)
+from dwi_corr_util import (MRdegibbs, DWIdenoise)
 from nipype.interfaces import fsl
 from nipype.interfaces import utility as util
 import os
@@ -46,8 +46,12 @@ def create_distortion_correct():
         "topup_fieldcoef",
         "eddy_corr",
         "rotated_bvecs",
-	"total_movement_rms",
-	"outlier_report"
+        "total_movement_rms",
+	    "outlier_report",
+        "cnr_maps",
+        "residuals",
+        "shell_params",
+        "eddy_params"
     ]),
         name='outputnode')
 
@@ -59,13 +63,7 @@ def create_distortion_correct():
     ''
     denoise = Node(DWIdenoise(noise='noise.nii.gz'), name="denoise")
 
-    ''
-    # artefact removal
-    ''
-    # run unring: remove the ringing artefacts
-    unring = Node(MRdegibbs(), name="unring")
 
-    ''
     # topup and eddy
     ''
     # merge AP PA files together
@@ -101,12 +99,22 @@ def create_distortion_correct():
 
     # eddy motion correction
     indx = os.path.join(__location__, 'index.txt')
-    eddy = Node(Eddy(), name="eddy")
-    eddy.inputs.num_threads = 8 ## total number of CPUs to use
-    eddy.inputs.args = '--cnr_maps --residuals'
+    eddy = Node(fsl.epi.Eddy(), name="eddy")
+    eddy.inputs.num_threads = 16 ## total number of CPUs to use
     eddy.inputs.repol = True
     eddy.inputs.in_acqp = acqparams
     eddy.inputs.in_index = indx
+    eddy.inputs.cnr_maps=True
+    eddy.inputs.residuals=True
+    eddy.inputs.dont_peas=True
+    #from the eddy user guide
+    #we have single shell data and dispersed acquisition of B0 images.
+    #But, if one has a data set with a single shell (i.e. a single non-zero shell) 
+    #and the assumption of no movement between the first b=0 and the first 
+    #diffusion weighted image is true it can be better to avoid that uncertainty. 
+    #And in that case it may be better to turn off peas by setting the 
+    #--dont_peas flag. 
+
 
     ''
     # connect the nodes
@@ -129,14 +137,18 @@ def create_distortion_correct():
         (topup, eddy, [("out_movpar", "in_topup_movpar")]),
         (inputnode, denoise, [('dwi', 'in_file')]),
         (denoise, outputnode, [('out_file', 'dwi_denoised')]),
-        (denoise, unring, [('out_file', 'in_file')]),
-        (unring, outputnode, [('out_file', 'dwi_unringed')]),
-        (unring, eddy, [("out_file", "in_file")]),
+        (denoise, eddy, [("out_file", "in_file")]),
         (eddy, outputnode, [("out_corrected", "eddy_corr")]),
+        (eddy, outputnode, [("out_parameter", "eddy_params")]),
         (eddy, outputnode, [("out_rotated_bvecs", "rotated_bvecs")]),
-	(eddy, outputnode, [("out_movement_rms", "total_movement_rms")]),
-	(eddy, outputnode, [("out_outlier_report", "outlier_report")])
+        (eddy, outputnode, [("out_movement_rms", "total_movement_rms")]),
+        (eddy, outputnode, [("out_shell_alignment_parameters", "shell_params")]),
+        (eddy, outputnode, [("out_outlier_report", "outlier_report")]),
+        (eddy, outputnode, [("out_cnr_maps", "cnr_maps")]),
+        (eddy, outputnode, [("out_residuals", "residuals")])
 
-    ])
-
+        
+        ]) 
+                             
+                             
     return distor_correct
