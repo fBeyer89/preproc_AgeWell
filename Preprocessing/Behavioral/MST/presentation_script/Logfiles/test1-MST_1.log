@@ -1,0 +1,21 @@
+Scenario - 
+Logfile written - 09/07/2018 15:13:48
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test1	1	Picture	Randonummer_1	333	0	1	500	2	0	next	other	0
+test1	2	Picture	Instr_T1_1	833	0	1	13672	2	0	next	hit	3
+test1	2	Response	4	14488	13655	1
+test1	3	Picture	Instr_T1_2	19674	0	1	21341	3	0	next	hit	5
+test1	3	Response	4	40862	21188	1
+test1	4	Picture	Instr_T1_3	46184	0	1	25344	2	0	next	hit	7
+test1	4	Response	4	71408	25224	2
+test1	5	Picture	Instr_T1_4	71528	0	1	7502	3	0	next	hit	9
+test1	5	Response	4	78911	7383	2
+test1	6	Picture	Instr_T1_18	84199	0	1	62025	2	0	next	hit	11
+test1	6	Response	4	146079	61880	1
+test1	7	Picture	1_T1_Picture_018b_Art:_i	161563	0	1	20175	2	0	next	other	0
+test1	7	Response	3	181388	19825	1
+test1	8	Picture	2_T1_Picture_136a_Art:_a	186740	0	1	20174	3	0	next	other	0
+test1	9	Picture	3_T1_Picture_133a_Art:_a	211916	0	2	16265	3	0	next	other	0
+test1	9	Quit		226531	14615

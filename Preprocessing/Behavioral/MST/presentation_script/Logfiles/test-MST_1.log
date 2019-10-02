@@ -1,0 +1,32 @@
+Scenario - 
+Logfile written - 12/19/2018 10:20:45
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+test	1	Picture	Randonummer_4	666	0	1	500	2	0	next	other	0
+test	2	Picture	Instr_T1_1	1166	0	1	325616	2	0	next	other	0
+test	2	Response	4	326735	325569	1
+test	3	Picture	Instr_T1_2	331951	0	1	91032	2	0	next	other	0
+test	3	Response	4	422968	91017	1
+test	4	Picture	Instr_T1_3	428152	0	1	116708	2	0	next	other	0
+test	4	Response	1	517919	89767	1
+test	4	Response	1	534939	106787	1
+test	4	Response	4	544687	116535	2
+test	5	Picture	Instr_T1_4	544860	0	1	607716	2	0	next	other	0
+test	5	Response	3	568710	23850	1
+test	5	Response	4	1152404	607544	2
+test	6	Picture	Instr_T1_18	1157744	0	2	61856	3	0	next	other	0
+test	6	Response	4	1219427	61683	1
+test	7	Picture	1_T1_Picture_081b_Art:_i	1234939	0	1	20173	3	0	next	other	0
+test	7	Response	3	1255236	20297	1
+test	8	Picture	2_T1_Picture_024b_Art:_b	1260114	0	1	20174	2	0	next	other	0
+test	8	Response	3	1266330	6216	1
+test	9	Picture	3_T1_Picture_168b_Art:_i	1285290	0	1	20174	2	0	next	other	0
+test	10	Picture	4_T1_Picture_035a_Art:_b	1310465	0	2	20174	3	0	next	other	0
+test	11	Picture	5_T1_Picture_090a_Art:_a	1335641	0	1	20174	2	0	next	other	0
+test	12	Picture	6_T1_Picture_143a_Art:_i	1360817	0	1	20173	3	0	next	other	0
+test	13	Picture	7_T1_Picture_018a_Art:_i	1385992	0	1	20174	2	0	next	other	0
+test	14	Picture	8_T1_Picture_191b_Art:_a	1411168	0	1	20174	2	0	next	other	0
+test	15	Picture	9_T1_Picture_158a_Art:_b	1436343	0	2	20174	4	0	next	other	0
+test	16	Picture	10_T1_Picture_156a_Art:_a	1461519	0	1	20174	2	0	next	other	0
+test	16	Quit		1484178	22659

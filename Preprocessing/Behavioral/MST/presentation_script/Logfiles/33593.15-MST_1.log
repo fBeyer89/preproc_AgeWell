@@ -1,0 +1,907 @@
+Scenario - 
+Logfile written - 12/19/2018 10:46:27
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+33593.15	1	Picture	Randonummer_2	499	0	2	501	3	0	next	other	0
+33593.15	2	Picture	Instr_T1_1	1000	0	1	151887	2	0	next	other	0
+33593.15	2	Response	4	152804	151804	1
+33593.15	3	Picture	Instr_T1_2	158055	0	2	148720	3	0	next	other	0
+33593.15	3	Response	4	306661	148606	2
+33593.15	4	Picture	Instr_T1_3	311943	0	2	144052	3	0	next	other	0
+33593.15	4	Response	4	455832	143889	1
+33593.15	5	Picture	Instr_T1_4	455995	0	1	394640	2	0	next	other	0
+33593.15	5	Response	1	485513	29518	1
+33593.15	5	Response	3	500581	44586	1
+33593.15	5	Response	4	850467	394472	2
+33593.15	6	Picture	Instr_T1_18	855803	0	1	19340	3	0	next	other	0
+33593.15	6	Response	4	875097	19294	2
+33593.15	7	Picture	1_T1_Picture_097b_Art:_i	890482	0	1	20174	2	0	next	other	0
+33593.15	7	Response	1	906874	16392	1
+33593.15	8	Picture	2_T1_Picture_048b_Art:_i	915658	0	1	20174	2	0	next	other	0
+33593.15	8	Response	3	926062	10404	2
+33593.15	9	Picture	3_T1_Picture_158b_Art:_b	940834	0	1	20173	2	0	next	other	0
+33593.15	9	Response	3	955399	14565	1
+33593.15	10	Picture	4_T1_Picture_081b_Art:_i	966009	0	1	20174	2	0	next	other	0
+33593.15	10	Response	3	973397	7388	1
+33593.15	11	Picture	5_T1_Picture_055a_Art:_b	991185	0	1	20173	3	0	next	other	0
+33593.15	11	Response	3	1013463	22278	1
+33593.15	12	Picture	6_T1_Picture_148a_Art:_b	1016360	0	2	20174	3	0	next	other	0
+33593.15	12	Response	3	1030637	14277	1
+33593.15	13	Picture	7_T1_Picture_121b_Art:_a	1041536	0	1	20174	2	0	next	other	0
+33593.15	13	Response	1	1048024	6488	1
+33593.15	14	Picture	8_T1_Picture_073b_Art:_a	1066712	0	1	20173	3	0	next	other	0
+33593.15	14	Response	1	1075327	8615	1
+33593.15	15	Picture	9_T1_Picture_014a_Art:_i	1091887	0	1	20174	2	0	next	other	0
+33593.15	15	Response	3	1106054	14167	1
+33593.15	16	Picture	10_T1_Picture_178b_Art:_i	1117063	0	1	20174	2	0	next	other	0
+33593.15	16	Response	3	1126426	9363	1
+33593.15	17	Picture	11_T1_Picture_109a_Art:_a	1142238	0	2	20174	3	0	next	other	0
+33593.15	17	Response	3	1157824	15586	2
+33593.15	18	Picture	12_T1_Picture_116b_Art:_b	1167414	0	1	20174	2	0	next	other	0
+33593.15	18	Response	3	1181709	14295	1
+33593.15	19	Picture	13_T1_Picture_166a_Art:_i	1192589	0	2	20174	4	0	next	other	0
+33593.15	19	Response	3	1202237	9648	1
+33593.15	20	Picture	14_T1_Picture_076b_Art:_b	1217765	0	1	20174	2	0	next	other	0
+33593.15	20	Response	3	1229652	11887	1
+33593.15	21	Picture	15_T1_Picture_003a_Art:_a	1242941	0	1	20173	3	0	next	other	0
+33593.15	21	Response	1	1250744	7803	1
+33593.15	22	Picture	16_T1_Picture_056a_Art:_i	1268116	0	2	20174	3	0	next	other	0
+33593.15	22	Response	3	1277468	9352	1
+33593.15	23	Picture	17_T1_Picture_057a_Art:_b	1293292	0	1	20174	2	0	next	other	0
+33593.15	23	Response	3	1309429	16137	2
+33593.15	24	Picture	18_T1_Picture_110b_Art:_b	1318468	0	1	20173	3	0	next	other	0
+33593.15	24	Response	1	1334660	16192	1
+33593.15	25	Picture	19_T1_Picture_188b_Art:_i	1343643	0	1	20174	2	0	next	other	0
+33593.15	25	Response	3	1352891	9248	1
+33593.15	26	Picture	20_T1_Picture_127b_Art:_b	1368819	0	1	20174	2	0	next	other	0
+33593.15	26	Response	1	1391267	22448	1
+33593.15	27	Picture	21_T1_Picture_037b_Art:_b	1393994	0	2	20174	4	0	next	other	0
+33593.15	27	Response	1	1403837	9843	1
+33593.15	28	Picture	22_T1_Picture_124a_Art:_i	1419170	0	1	20174	2	0	next	other	0
+33593.15	28	Response	3	1428323	9153	1
+33593.15	29	Picture	23_T1_Picture_047b_Art:_b	1444346	0	1	20173	3	0	next	other	0
+33593.15	29	Response	3	1462545	18199	1
+33593.15	30	Picture	24_T1_Picture_087b_Art:_b	1469521	0	1	20174	2	0	next	other	0
+33593.15	30	Response	3	1478952	9431	1
+33593.15	31	Picture	25_T1_Picture_151b_Art:_a	1494697	0	1	20174	2	0	next	other	0
+33593.15	31	Response	3	1502681	7984	1
+33593.15	32	Picture	26_T1_Picture_089a_Art:_i	1519873	0	1	20173	2	0	next	other	0
+33593.15	32	Response	3	1534146	14273	1
+33593.15	33	Picture	27_T1_Picture_088b_Art:_i	1545048	0	1	20174	2	0	next	other	0
+33593.15	34	Picture	28_T1_Picture_167b_Art:_a	1570224	0	1	20174	2	0	next	other	0
+33593.15	34	Response	1	1577706	7482	2
+33593.15	35	Picture	29_T1_Picture_165a_Art:_i	1595399	0	1	20174	2	0	next	other	0
+33593.15	35	Response	1	1608886	13487	1
+33593.15	36	Picture	30_T1_Picture_179b_Art:_i	1620575	0	1	20174	2	0	next	other	0
+33593.15	36	Response	3	1629868	9293	1
+33593.15	37	Picture	31_T1_Picture_086a_Art:_a	1645750	0	2	20174	4	0	next	other	0
+33593.15	37	Response	3	1658765	13015	1
+33593.15	38	Picture	32_T1_Picture_017a_Art:_i	1670926	0	1	20174	2	0	next	other	0
+33593.15	38	Response	1	1685231	14305	1
+33593.15	39	Picture	33_T1_Picture_084b_Art:_a	1696102	0	1	20174	2	0	next	other	0
+33593.15	39	Response	1	1706153	10051	1
+33593.15	40	Picture	34_T1_Picture_050b_Art:_a	1721277	0	2	20174	3	0	next	other	0
+33593.15	40	Response	1	1732870	11593	1
+33593.15	41	Picture	35_T1_Picture_154b_Art:_i	1746453	0	1	20174	2	0	next	other	0
+33593.15	41	Response	3	1755476	9023	1
+33593.15	42	Picture	36_T1_Picture_192b_Art:_b	1771628	0	2	20174	4	0	next	other	0
+33593.15	42	Response	3	1784084	12456	1
+33593.15	43	Picture	37_T1_Picture_126b_Art:_b	1796804	0	1	20174	2	0	next	other	0
+33593.15	43	Response	1	1804431	7627	1
+33593.15	44	Picture	38_T1_Picture_107a_Art:_a	1821980	0	1	20174	2	0	next	other	0
+33593.15	44	Response	1	1834972	12992	1
+33593.15	45	Picture	39_T1_Picture_027a_Art:_i	1847155	0	2	20174	3	0	next	other	0
+33593.15	45	Response	3	1855095	7940	2
+33593.15	46	Picture	40_T1_Picture_030b_Art:_i	1872331	0	1	20174	2	0	next	other	0
+33593.15	46	Response	3	1887840	15509	1
+33593.15	47	Picture	41_T1_Picture_113b_Art:_a	1897506	0	2	20174	4	0	next	other	0
+33593.15	47	Response	3	1919910	22404	1
+33593.15	48	Picture	42_T1_Picture_044a_Art:_a	1922682	0	1	20174	2	0	next	other	0
+33593.15	48	Response	1	1930382	7700	1
+33593.15	49	Picture	43_T1_Picture_187a_Art:_i	1947858	0	1	20174	2	0	next	other	0
+33593.15	49	Response	3	1956356	8498	1
+33593.15	50	Picture	44_T1_Picture_144a_Art:_b	1973033	0	2	20174	3	0	next	other	0
+33593.15	50	Response	3	1989262	16229	2
+33593.15	51	Picture	45_T1_Picture_079b_Art:_a	1998209	0	1	20174	2	0	next	other	0
+33593.15	51	Response	1	2007081	8872	1
+33593.15	52	Picture	46_T1_Picture_061b_Art:_b	2023384	0	2	20174	4	0	next	other	0
+33593.15	52	Response	1	2033823	10439	1
+33593.15	53	Picture	47_T1_Picture_012a_Art:_i	2048560	0	1	20174	2	0	next	other	0
+33593.15	53	Response	3	2056104	7544	1
+33593.15	54	Picture	48_T1_Picture_156b_Art:_a	2073736	0	1	20174	2	0	next	other	0
+33593.15	54	Response	1	2082568	8832	1
+33593.15	55	Picture	49_T1_Picture_059a_Art:_b	2098911	0	2	20174	3	0	next	other	0
+33593.15	55	Response	1	2106965	8054	1
+33593.15	56	Picture	50_T1_Picture_171b_Art:_b	2124087	0	1	20174	2	0	next	other	0
+33593.15	56	Response	1	2131877	7790	1
+33593.15	57	Picture	51_T1_Picture_025a_Art:_a	2149263	0	1	20173	3	0	next	other	0
+33593.15	57	Response	1	2159898	10635	1
+33593.15	58	Picture	52_T1_Picture_091b_Art:_i	2174438	0	2	20174	3	0	next	other	0
+33593.15	58	Response	3	2182525	8087	1
+33593.15	59	Picture	53_T1_Picture_142a_Art:_i	2199614	0	1	20174	2	0	next	other	0
+33593.15	59	Response	3	2211004	11390	1
+33593.15	60	Picture	54_T1_Picture_155a_Art:_a	2224789	0	2	20174	3	0	next	other	0
+33593.15	60	Response	1	2239082	14293	2
+33593.15	61	Picture	55_T1_Picture_150a_Art:_a	2249965	0	1	20174	2	0	next	other	0
+33593.15	61	Response	1	2262851	12886	2
+33593.15	62	Picture	56_T1_Picture_051a_Art:_b	2275141	0	1	20173	3	0	next	other	0
+33593.15	62	Response	3	2288989	13848	1
+33593.15	63	Picture	57_T1_Picture_036a_Art:_a	2300316	0	1	20174	2	0	next	other	0
+33593.15	63	Response	1	2307615	7299	1
+33593.15	64	Picture	58_T1_Picture_177a_Art:_i	2325492	0	1	20174	2	0	next	other	0
+33593.15	64	Response	3	2339764	14272	1
+33593.15	65	Picture	59_T1_Picture_153b_Art:_b	2350667	0	2	20174	3	0	next	other	0
+33593.15	65	Response	3	2373452	22785	1
+33593.15	66	Picture	60_T1_Picture_168b_Art:_i	2375843	0	1	20174	2	0	next	other	0
+33593.15	66	Response	3	2386484	10641	1
+33593.15	67	Picture	61_T1_Picture_021a_Art:_b	2401019	0	1	20173	3	0	next	other	0
+33593.15	67	Response	3	2419541	18522	1
+33593.15	68	Picture	62_T1_Picture_175b_Art:_i	2426194	0	2	20174	3	0	next	other	0
+33593.15	68	Response	3	2438174	11980	1
+33593.15	69	Picture	63_T1_Picture_040b_Art:_a	2451370	0	1	20174	2	0	next	other	0
+33593.15	69	Response	1	2464137	12767	1
+33593.15	70	Picture	64_T1_Picture_092a_Art:_a	2476545	0	2	20174	4	0	next	other	0
+33593.15	70	Response	1	2485724	9179	1
+33593.15	71	Picture	65_T1_Picture_035a_Art:_b	2501721	0	1	20174	2	0	next	other	0
+33593.15	71	Response	3	2512621	10900	1
+33593.15	72	Picture	66_T1_Picture_103b_Art:_b	2526897	0	1	20174	2	0	next	other	0
+33593.15	72	Response	3	2541520	14623	1
+33593.15	73	Picture	67_T1_Picture_183b_Art:_a	2552072	0	2	20174	3	0	next	other	0
+33593.15	73	Response	1	2567608	15536	1
+33593.15	74	Picture	68_T1_Picture_172a_Art:_a	2577248	0	1	20174	2	0	next	other	0
+33593.15	74	Response	1	2588390	11142	1
+33593.15	75	Picture	69_T1_Picture_141a_Art:_b	2602424	0	1	20173	3	0	next	other	0
+33593.15	75	Response	3	2611270	8846	1
+33593.15	76	Picture	70_T1_Picture_019b_Art:_a	2627599	0	1	20174	2	0	next	other	0
+33593.15	76	Response	1	2636516	8917	1
+33593.15	77	Picture	71_T1_Picture_067b_Art:_i	2652775	0	1	20174	2	0	next	other	0
+33593.15	77	Response	3	2668138	15363	2
+33593.15	78	Picture	72_T1_Picture_099b_Art:_a	2677950	0	2	20174	3	0	next	other	0
+33593.15	78	Response	1	2690642	12692	1
+33593.15	79	Picture	73_T1_Picture_136a_Art:_a	2703126	0	1	20174	2	0	next	other	0
+33593.15	79	Response	1	2713489	10363	2
+33593.15	80	Picture	74_T1_Picture_184b_Art:_i	2728302	0	1	20173	3	0	next	other	0
+33593.15	80	Response	3	2735305	7003	1
+33593.15	81	Picture	75_T1_Picture_024a_Art:_b	2753477	0	1	20174	2	0	next	other	0
+33593.15	81	Response	3	2766787	13310	2
+33593.15	82	Picture	76_T1_Picture_007a_Art:_i	2778653	0	1	20174	2	0	next	other	0
+33593.15	82	Response	3	2789062	10409	1
+33593.15	83	Picture	77_T1_Picture_041b_Art:_i	2803828	0	2	20174	3	0	next	other	0
+33593.15	83	Response	3	2824200	20372	1
+33593.15	84	Picture	78_T1_Picture_137a_Art:_b	2829004	0	1	20174	2	0	next	other	0
+33593.15	84	Response	3	2840271	11267	1
+33593.15	85	Picture	79_T1_Picture_115a_Art:_b	2854179	0	2	20174	4	0	next	other	0
+33593.15	85	Response	3	2871651	17472	1
+33593.15	86	Picture	80_T1_Picture_078a_Art:_i	2879355	0	1	20174	2	0	next	other	0
+33593.15	86	Response	3	2890162	10807	2
+33593.15	87	Picture	81_T1_Picture_119b_Art:_b	2904531	0	1	20174	2	0	next	other	0
+33593.15	87	Response	1	2922596	18065	2
+33593.15	88	Picture	82_T1_Picture_029b_Art:_a	2929706	0	2	20174	3	0	next	other	0
+33593.15	88	Response	1	2946735	17029	1
+33593.15	89	Picture	83_T1_Picture_093b_Art:_b	2954882	0	1	20174	2	0	next	other	0
+33593.15	89	Response	3	2965252	10370	1
+33593.15	90	Picture	84_T1_Picture_053b_Art:_i	2980058	0	1	20174	2	0	next	other	0
+33593.15	90	Response	3	2990009	9951	1
+33593.15	91	Picture	85_T1_Picture_117b_Art:_a	3005233	0	2	20174	3	0	next	other	0
+33593.15	91	Response	1	3015809	10576	1
+33593.15	92	Picture	86_T1_Picture_189a_Art:_i	3030409	0	1	20174	2	0	next	other	0
+33593.15	92	Response	3	3043867	13458	1
+33593.15	93	Picture	87_T1_Picture_006a_Art:_i	3055584	0	2	20174	4	0	next	other	0
+33593.15	93	Response	3	3072463	16879	1
+33593.15	94	Picture	88_T1_Picture_111b_Art:_a	3080760	0	1	20174	2	0	next	other	0
+33593.15	94	Response	1	3090114	9354	1
+33593.15	95	Picture	89_T1_Picture_095a_Art:_b	3105936	0	1	20173	3	0	next	other	0
+33593.15	95	Response	1	3121226	15290	1
+33593.15	96	Picture	90_T1_Picture_152a_Art:_i	3131111	0	1	20174	2	0	next	other	0
+33593.15	96	Response	3	3141222	10111	1
+33593.15	97	Picture	91_T1_Picture_135a_Art:_a	3156287	0	1	20174	2	0	next	other	0
+33593.15	97	Response	1	3165739	9452	1
+33593.15	98	Picture	92_T1_Picture_039a_Art:_a	3181462	0	2	20174	4	0	next	other	0
+33593.15	98	Response	1	3189207	7745	1
+33593.15	99	Picture	93_T1_Picture_098a_Art:_i	3206638	0	1	20174	2	0	next	other	0
+33593.15	99	Response	3	3221302	14664	1
+33593.15	100	Picture	94_T1_Picture_071a_Art:_i	3231814	0	1	20174	2	0	next	other	0
+33593.15	100	Response	3	3242787	10973	1
+33593.15	101	Picture	95_T1_Picture_072b_Art:_b	3256989	0	1	20174	2	0	next	other	0
+33593.15	101	Response	3	3269059	12070	2
+33593.15	102	Picture	96_T1_Picture_190b_Art:_i	3282165	0	1	20174	2	0	next	other	0
+33593.15	102	Response	3	3294787	12622	1
+33593.15	103	Picture	97_T1_Picture_058b_Art:_i	3307341	0	1	20173	3	0	next	other	0
+33593.15	103	Response	3	3318427	11086	1
+33593.15	104	Picture	98_T1_Picture_173a_Art:_a	3332516	0	1	20174	2	0	next	other	0
+33593.15	104	Response	1	3341590	9074	1
+33593.15	105	Picture	99_T1_Picture_108a_Art:_a	3357692	0	1	20174	2	0	next	other	0
+33593.15	105	Response	1	3374217	16525	2
+33593.15	106	Picture	100_T1_Picture_063b_Art:_i	3382867	0	2	20174	3	0	next	other	0
+33593.15	106	Response	3	3395549	12682	2
+33593.15	107	Picture	101_T1_Picture_157b_Art:_i	3408043	0	1	20174	2	0	next	other	0
+33593.15	107	Response	3	3417843	9800	1
+33593.15	108	Picture	102_T1_Picture_042a_Art:_b	3433219	0	1	20173	3	0	next	other	0
+33593.15	108	Response	3	3446973	13754	1
+33593.15	109	Picture	103_T1_Picture_066a_Art:_b	3458394	0	1	20174	2	0	next	other	0
+33593.15	109	Response	3	3474603	16209	1
+33593.15	110	Picture	104_T1_Picture_045b_Art:_i	3483570	0	1	20174	2	0	next	other	0
+33593.15	110	Response	3	3495525	11955	1
+33593.15	111	Picture	105_T1_Picture_074a_Art:_a	3508745	0	2	20174	3	0	next	other	0
+33593.15	111	Response	1	3517440	8695	1
+33593.15	112	Picture	106_T1_Picture_060a_Art:_a	3533921	0	1	20174	2	0	next	other	0
+33593.15	112	Response	1	3543713	9792	1
+33593.15	113	Picture	107_T1_Picture_043a_Art:_b	3559096	0	2	20174	4	0	next	other	0
+33593.15	113	Response	3	3571148	12052	2
+33593.15	114	Picture	108_T1_Picture_085a_Art:_a	3584272	0	1	20174	2	0	next	other	0
+33593.15	114	Response	1	3591234	6962	1
+33593.15	115	Picture	109_T1_Picture_011b_Art:_i	3609448	0	1	20174	2	0	next	other	0
+33593.15	115	Response	3	3617936	8488	1
+33593.15	116	Picture	110_T1_Picture_054b_Art:_b	3634623	0	2	20174	3	0	next	other	0
+33593.15	116	Response	1	3644611	9988	1
+33593.15	117	Picture	111_T1_Picture_164a_Art:_i	3659799	0	1	20174	2	0	next	other	0
+33593.15	117	Response	3	3670560	10761	1
+33593.15	118	Picture	112_T1_Picture_131a_Art:_a	3684975	0	1	20173	3	0	next	other	0
+33593.15	118	Response	1	3692207	7232	2
+33593.15	119	Picture	113_T1_Picture_075b_Art:_a	3710150	0	1	20174	2	0	next	other	0
+33593.15	119	Response	1	3727956	17806	1
+33593.15	120	Picture	114_T1_Picture_068a_Art:_b	3735326	0	1	20174	2	0	next	other	0
+33593.15	120	Response	1	3751169	15843	1
+33593.15	121	Picture	115_T1_Picture_134a_Art:_a	3760501	0	2	20174	3	0	next	other	0
+33593.15	121	Response	1	3769087	8586	2
+33593.15	122	Picture	116_T1_Picture_162a_Art:_a	3785677	0	1	20174	2	0	next	other	0
+33593.15	122	Response	3	3795768	10091	1
+33593.15	123	Picture	117_T1_Picture_146b_Art:_i	3810853	0	1	20173	3	0	next	other	0
+33593.15	123	Response	1	3826899	16046	1
+33593.15	124	Picture	118_T1_Picture_112a_Art:_i	3836028	0	1	20174	2	0	next	other	0
+33593.15	124	Response	3	3844156	8128	1
+33593.15	125	Picture	119_T1_Picture_191b_Art:_a	3861204	0	1	20174	2	0	next	other	0
+33593.15	125	Response	1	3870711	9507	1
+33593.15	126	Picture	120_T1_Picture_123b_Art:_a	3886379	0	2	20174	4	0	next	other	0
+33593.15	126	Response	1	3895054	8675	1
+33593.15	127	Picture	121_T1_Picture_046b_Art:_b	3911555	0	1	20174	2	0	next	other	0
+33593.15	127	Response	3	3921853	10298	1
+33593.15	128	Picture	122_T1_Picture_129b_Art:_a	3936731	0	1	20173	3	0	next	other	0
+33593.15	128	Response	1	3949261	12530	1
+33593.15	129	Picture	123_T1_Picture_022a_Art:_a	3961906	0	1	20174	2	0	next	other	0
+33593.15	129	Response	1	3969549	7643	1
+33593.15	130	Picture	124_T1_Picture_038b_Art:_b	3987082	0	1	20174	2	0	next	other	0
+33593.15	130	Response	1	3995722	8640	2
+33593.15	131	Picture	125_T1_Picture_034b_Art:_b	4012257	0	2	20174	4	0	next	other	0
+33593.15	131	Response	3	4025704	13447	2
+33593.15	132	Picture	126_T1_Picture_159a_Art:_i	4037433	0	1	20174	2	0	next	other	0
+33593.15	132	Response	3	4050595	13162	2
+33593.15	133	Picture	127_T1_Picture_176b_Art:_a	4062609	0	1	20174	2	0	next	other	0
+33593.15	133	Response	1	4070299	7690	1
+33593.15	134	Picture	128_T1_Picture_118a_Art:_a	4087784	0	2	20174	3	0	next	other	0
+33593.15	134	Response	3	4102441	14657	1
+33593.15	135	Picture	Instr_T2_20	4133134	0	1	317446	2	0	next	other	0
+33593.15	135	Response	3	4408559	275425	1
+33593.15	135	Response	4	4450451	317317	1
+33593.15	136	Picture	Instr_T2_21	4455748	0	1	156222	2	0	next	other	0
+33593.15	136	Response	4	4611871	156123	1
+33593.15	137	Picture	Instr_T2_22	4617139	0	1	64689	3	0	next	other	0
+33593.15	137	Response	4	4681766	64627	1
+33593.15	138	Picture	Instr_T2_23	4686997	0	1	58187	3	0	next	other	0
+33593.15	138	Response	4	4745133	58136	2
+33593.15	139	Picture	Instr_T2_24	4750353	0	1	37513	2	0	next	other	0
+33593.15	139	Response	4	4787736	37383	2
+33593.15	140	Picture	Instr_T2_25	4787866	0	1	22175	2	0	next	other	0
+33593.15	140	Response	4	4809930	22064	2
+33593.15	141	Picture	Instr_T2_27	4815209	0	1	21841	2	0	next	other	0
+33593.15	141	Response	4	4836888	21679	2
+33593.15	142	Picture	Instr_T2_28	4837050	0	1	11004	2	0	next	other	0
+33593.15	142	Response	4	4847884	10834	1
+33593.15	143	Picture	Instr_T2_30	4853223	0	1	30344	2	0	next	other	0
+33593.15	143	Response	4	4883532	30309	1
+33593.15	144	Picture	Instr_T2_31	4883567	0	1	15672	2	0	next	other	0
+33593.15	144	Response	4	4899192	15625	2
+33593.15	145	Picture	Instr_T2_33	4904407	0	2	19174	3	0	next	other	0
+33593.15	145	Response	4	4923407	19000	2
+33593.15	146	Picture	Instr_T2_34	4923581	0	1	9837	2	0	next	other	0
+33593.15	146	Response	4	4933307	9726	2
+33593.15	147	Picture	Instr_T2_36	4938586	0	2	77528	3	0	next	other	0
+33593.15	147	Response	4	5016077	77491	1
+33593.15	148	Picture	Instr_T2_38	5021282	0	2	61189	3	0	next	other	0
+33593.15	148	Response	3	5074193	52911	2
+33593.15	148	Response	4	5082295	61013	2
+33593.15	149	Picture	Instr_T2_39	5082471	0	1	63689	2	0	next	other	0
+33593.15	149	Response	4	5146121	63650	2
+33593.15	150	Picture	Instr_T2_41	5151328	0	2	36347	3	0	next	other	0
+33593.15	150	Response	4	5187630	36302	1
+33593.15	151	Picture	Instr_T2_42	5187675	0	1	49851	2	0	next	other	0
+33593.15	151	Response	4	5237400	49725	2
+33593.15	152	Picture	Instr_T2_44	5242694	0	1	33345	3	0	next	other	0
+33593.15	152	Response	4	5276008	33314	1
+33593.15	153	Picture	Instr_T2_45	5276039	0	2	15172	4	0	next	other	0
+33593.15	153	Response	4	5291065	15026	2
+33593.15	154	Picture	Instr_T2_46	5291211	0	2	61522	3	0	next	other	0
+33593.15	154	Response	4	5352700	61489	1
+33593.15	155	Picture	Instr_T2_48	5357902	0	1	32178	2	0	next	other	0
+33593.15	155	Response	4	5390006	32104	1
+33593.15	156	Picture	Instr_T2_49	5390080	0	1	19507	2	0	next	other	0
+33593.15	156	Response	4	5409431	19351	2
+33593.15	157	Picture	Instr_T2_51	5414755	0	2	51838	184	0	next	other	0
+33593.15	157	Response	4	5466591	51836	1
+33593.15	158	Picture	Instr_T2_52	5466593	0	182	17353	184	0	next	other	0
+33593.15	158	Response	4	5483848	17255	2
+33593.15	159	Picture	Instr_T2_54	5489115	0	1	24175	3	0	next	other	0
+33593.15	159	Response	4	5513232	24117	1
+33593.15	160	Picture	Instr_T2_55	5513290	0	2	9670	4	0	next	other	0
+33593.15	160	Response	4	5522796	9506	1
+33593.15	161	Picture	Instr_T2_56	5522960	0	2	261093	3	0	next	other	0
+33593.15	161	Response	4	5783958	260998	2
+33593.15	162	Picture	Instr_T2_58	5789222	0	1	29343	3	0	next	other	0
+33593.15	162	Response	4	5818538	29316	1
+33593.15	163	Picture	1_T2_Picture_100a_Art:_new_cor_taste:_3	5828735	0	2	20174	4	0	next	false_alarm	328
+33593.15	163	Response	3	5840948	12213	1
+33593.15	164	Picture	FB_cor	5853911	0	1	500	3	0	next	other	0
+33593.15	165	Picture	2_T2_Picture_008a_Art:_new_cor_taste:_3	5854411	0	2	20174	3	0	next	false_alarm	331
+33593.15	165	Response	3	5865275	10864	1
+33593.15	166	Picture	FB_cor	5879587	0	1	500	2	0	next	other	0
+33593.15	167	Picture	3_T2_Picture_126a_Art:_sim_cor_taste:_2	5880087	0	1	20174	2	0	next	false_alarm	334
+33593.15	167	Response	1	5886893	6806	1
+33593.15	168	Picture	FB_inco	5905263	0	1	500	2	0	next	other	0
+33593.15	169	Picture	4_T2_Picture_105b_Art:_new_cor_taste:_3	5905763	0	1	20174	2	0	next	false_alarm	337
+33593.15	169	Response	2	5921430	15667	1
+33593.15	170	Picture	FB_inco	5930938	0	2	501	3	0	next	other	0
+33593.15	171	Picture	5_T2_Picture_108a_Art:_old_cor_taste:_1	5931439	0	1	20173	3	0	next	false_alarm	340
+33593.15	171	Response	1	5940505	9066	1
+33593.15	172	Picture	FB_cor	5956614	0	2	500	4	0	next	other	0
+33593.15	173	Picture	6_T2_Picture_016a_Art:_new_cor_taste:_3	5957114	0	2	20174	4	0	next	false_alarm	343
+33593.15	173	Response	3	5971656	14542	1
+33593.15	174	Picture	FB_cor	5982290	0	1	500	2	0	next	other	0
+33593.15	175	Picture	7_T2_Picture_111a_Art:_sim_cor_taste:_2	5982790	0	1	20174	2	0	next	false_alarm	346
+33593.15	175	Response	1	5992163	9373	1
+33593.15	176	Picture	FB_inco	6007966	0	1	500	2	0	next	other	0
+33593.15	177	Picture	8_T2_Picture_163a_Art:_new_cor_taste:_3	6008466	0	1	20174	2	0	next	false_alarm	349
+33593.15	177	Response	2	6027447	18981	2
+33593.15	178	Picture	FB_inco	6033642	0	1	500	2	0	next	other	0
+33593.15	179	Picture	9_T2_Picture_020b_Art:_new_cor_taste:_3	6034142	0	1	20173	3	0	next	false_alarm	352
+33593.15	179	Response	1	6051253	17111	1
+33593.15	180	Picture	FB_inco	6059317	0	2	500	4	0	next	other	0
+33593.15	181	Picture	10_T2_Picture_086b_Art:_sim_cor_taste:_2	6059817	0	2	20174	4	0	next	false_alarm	355
+33593.15	181	Response	2	6077912	18095	1
+33593.15	182	Picture	FB_cor	6084993	0	1	500	2	0	next	other	0
+33593.15	183	Picture	11_T2_Picture_085b_Art:_sim_cor_taste:_2	6085493	0	1	20174	2	0	next	false_alarm	358
+33593.15	183	Response	1	6094412	8919	2
+33593.15	184	Picture	FB_inco	6110669	0	1	500	2	0	next	other	0
+33593.15	185	Picture	12_T2_Picture_065a_Art:_new_cor_taste:_3	6111169	0	1	20174	2	0	next	false_alarm	361
+33593.15	185	Response	2	6128837	17668	1
+33593.15	186	Picture	FB_inco	6136345	0	1	500	2	0	next	other	0
+33593.15	187	Picture	13_T2_Picture_134a_Art:_old_cor_taste:_1	6136845	0	1	20174	2	0	next	false_alarm	364
+33593.15	187	Response	1	6145931	9086	1
+33593.15	188	Picture	FB_cor	6162021	0	1	500	2	0	next	other	0
+33593.15	189	Picture	14_T2_Picture_091a_Art:_sim_cor_taste:_2	6162521	0	1	20173	3	0	next	false_alarm	367
+33593.15	189	Response	1	6170884	8363	1
+33593.15	190	Picture	FB_inco	6187696	0	2	500	4	0	next	other	0
+33593.15	191	Picture	15_T2_Picture_082a_Art:_new_cor_taste:_3	6188196	0	2	20174	3	0	next	false_alarm	370
+33593.15	191	Response	2	6202539	14343	1
+33593.15	192	Picture	FB_inco	6213372	0	1	500	3	0	next	other	0
+33593.15	193	Picture	16_T2_Picture_054b_Art:_old_cor_taste:_1	6213872	0	2	20174	3	0	next	false_alarm	373
+33593.15	193	Response	1	6222365	8493	1
+33593.15	194	Picture	FB_cor	6239048	0	1	500	2	0	next	other	0
+33593.15	195	Picture	17_T2_Picture_191a_Art:_sim_cor_taste:_2	6239548	0	1	20174	2	0	next	false_alarm	376
+33593.15	195	Response	2	6253942	14394	1
+33593.15	196	Picture	FB_cor	6264724	0	1	500	2	0	next	other	0
+33593.15	197	Picture	18_T2_Picture_029a_Art:_sim_cor_taste:_2	6265224	0	1	20174	2	0	next	false_alarm	379
+33593.15	197	Response	1	6277229	12005	1
+33593.15	198	Picture	FB_inco	6290399	0	2	501	3	0	next	other	0
+33593.15	199	Picture	19_T2_Picture_106b_Art:_new_cor_taste:_3	6290900	0	1	20173	3	0	next	false_alarm	382
+33593.15	199	Response	3	6308904	18004	1
+33593.15	200	Picture	FB_cor	6316075	0	1	500	3	0	next	other	0
+33593.15	201	Picture	20_T2_Picture_056b_Art:_sim_cor_taste:_2	6316575	0	2	20174	3	0	next	false_alarm	385
+33593.15	201	Response	1	6330863	14288	1
+33593.15	202	Picture	FB_inco	6341751	0	1	500	2	0	next	other	0
+33593.15	203	Picture	21_T2_Picture_048a_Art:_sim_cor_taste:_2	6342251	0	1	20174	2	0	next	false_alarm	388
+33593.15	203	Response	2	6361628	19377	1
+33593.15	204	Picture	FB_cor	6367427	0	1	500	2	0	next	other	0
+33593.15	205	Picture	22_T2_Picture_112b_Art:_sim_cor_taste:_2	6367927	0	1	20174	2	0	next	false_alarm	391
+33593.15	205	Response	2	6383762	15835	1
+33593.15	206	Picture	FB_cor	6393103	0	1	500	2	0	next	other	0
+33593.15	207	Picture	23_T2_Picture_037b_Art:_old_cor_taste:_1	6393603	0	1	20174	2	0	next	false_alarm	394
+33593.15	207	Response	2	6409712	16109	2
+33593.15	208	Picture	FB_inco	6418778	0	2	500	4	0	next	other	0
+33593.15	209	Picture	24_T2_Picture_145a_Art:_new_cor_taste:_3	6419278	0	2	20174	4	0	next	false_alarm	397
+33593.15	209	Response	3	6435304	16026	1
+33593.15	210	Picture	FB_cor	6444454	0	1	500	2	0	next	other	0
+33593.15	211	Picture	25_T2_Picture_159a_Art:_old_cor_taste:_1	6444954	0	1	20174	2	0	next	false_alarm	400
+33593.15	211	Response	1	6455301	10347	1
+33593.15	212	Picture	FB_cor	6470130	0	1	500	2	0	next	other	0
+33593.15	213	Picture	26_T2_Picture_177a_Art:_old_cor_taste:_1	6470630	0	1	20174	2	0	next	false_alarm	403
+33593.15	213	Response	1	6480375	9745	1
+33593.15	214	Picture	FB_cor	6495806	0	1	500	2	0	next	other	0
+33593.15	215	Picture	27_T2_Picture_087b_Art:_old_cor_taste:_1	6496306	0	1	20174	2	0	next	false_alarm	406
+33593.15	215	Response	1	6505246	8940	1
+33593.15	216	Picture	FB_cor	6521481	0	2	500	4	0	next	other	0
+33593.15	217	Picture	28_T2_Picture_002a_Art:_new_cor_taste:_3	6521981	0	2	20174	4	0	next	false_alarm	409
+33593.15	217	Response	2	6536424	14443	1
+33593.15	218	Picture	FB_inco	6547157	0	1	500	3	0	next	other	0
+33593.15	219	Picture	29_T2_Picture_171a_Art:_sim_cor_taste:_2	6547657	0	2	20174	3	0	next	false_alarm	412
+33593.15	219	Response	1	6556734	9077	1
+33593.15	220	Picture	FB_inco	6572833	0	1	500	2	0	next	other	0
+33593.15	221	Picture	30_T2_Picture_188b_Art:_old_cor_taste:_1	6573333	0	1	20174	2	0	next	false_alarm	415
+33593.15	221	Response	2	6585158	11825	1
+33593.15	222	Picture	FB_inco	6598509	0	1	500	2	0	next	other	0
+33593.15	223	Picture	31_T2_Picture_123a_Art:_sim_cor_taste:_2	6599009	0	1	20174	2	0	next	false_alarm	418
+33593.15	223	Response	1	6608892	9883	1
+33593.15	224	Picture	FB_inco	6624185	0	1	500	2	0	next	other	0
+33593.15	225	Picture	32_T2_Picture_023b_Art:_new_cor_taste:_3	6624685	0	1	20173	3	0	next	false_alarm	421
+33593.15	225	Response	2	6638460	13775	1
+33593.15	226	Picture	FB_inco	6649860	0	2	501	3	0	next	other	0
+33593.15	227	Picture	33_T2_Picture_094a_Art:_new_cor_taste:_3	6650361	0	1	20173	2	0	next	false_alarm	424
+33593.15	227	Response	2	6668831	18470	2
+33593.15	228	Picture	FB_inco	6675536	0	1	500	2	0	next	other	0
+33593.15	229	Picture	34_T2_Picture_116b_Art:_old_cor_taste:_1	6676036	0	1	20174	2	0	next	false_alarm	427
+33593.15	229	Response	3	6685172	9136	1
+33593.15	230	Picture	FB_inco	6701212	0	1	500	2	0	next	other	0
+33593.15	231	Picture	35_T2_Picture_093a_Art:_sim_cor_taste:_2	6701712	0	1	20174	2	0	next	other	0
+33593.15	232	Picture	FB_miss	6726888	0	1	500	2	0	next	other	0
+33593.15	233	Picture	36_T2_Picture_068b_Art:_sim_cor_taste:_2	6727388	0	1	20174	2	0	next	false_alarm	432
+33593.15	233	Response	1	6734890	7502	2
+33593.15	234	Picture	FB_inco	6752563	0	2	501	3	0	next	other	0
+33593.15	235	Picture	37_T2_Picture_187b_Art:_sim_cor_taste:_2	6753064	0	1	20173	3	0	next	false_alarm	435
+33593.15	235	Response	1	6769190	16126	1
+33593.15	236	Picture	FB_inco	6778239	0	1	500	3	0	next	other	0
+33593.15	237	Picture	38_T2_Picture_128b_Art:_new_cor_taste:_3	6778739	0	2	20174	3	0	next	false_alarm	438
+33593.15	237	Response	3	6798435	19696	1
+33593.15	238	Picture	FB_cor	6803915	0	1	500	2	0	next	other	0
+33593.15	239	Picture	39_T2_Picture_080a_Art:_new_cor_taste:_3	6804415	0	1	20174	2	0	next	false_alarm	441
+33593.15	239	Response	3	6821649	17234	1
+33593.15	240	Picture	FB_cor	6829591	0	1	500	2	0	next	other	0
+33593.15	241	Picture	40_T2_Picture_001b_Art:_new_cor_taste:_3	6830091	0	1	20174	2	0	next	false_alarm	444
+33593.15	241	Response	2	6844269	14178	1
+33593.15	242	Picture	FB_inco	6855266	0	2	501	3	0	next	other	0
+33593.15	243	Picture	41_T2_Picture_157b_Art:_old_cor_taste:_1	6855767	0	1	20174	2	0	next	false_alarm	447
+33593.15	243	Response	1	6865802	10035	1
+33593.15	244	Picture	FB_cor	6880942	0	1	501	2	0	next	other	0
+33593.15	245	Picture	42_T2_Picture_144a_Art:_old_cor_taste:_1	6881443	0	1	20173	3	0	next	false_alarm	450
+33593.15	245	Response	1	6896032	14589	1
+33593.15	246	Picture	FB_cor	6906618	0	1	500	3	0	next	other	0
+33593.15	247	Picture	43_T2_Picture_073b_Art:_old_cor_taste:_1	6907118	0	2	20174	3	0	next	false_alarm	453
+33593.15	247	Response	1	6920053	12935	1
+33593.15	248	Picture	FB_cor	6932294	0	1	500	2	0	next	other	0
+33593.15	249	Picture	44_T2_Picture_075a_Art:_sim_cor_taste:_2	6932794	0	1	20174	2	0	next	false_alarm	456
+33593.15	249	Response	1	6944638	11844	1
+33593.15	250	Picture	FB_inco	6957970	0	1	500	2	0	next	other	0
+33593.15	251	Picture	45_T2_Picture_078b_Art:_sim_cor_taste:_2	6958470	0	1	20174	2	0	next	false_alarm	459
+33593.15	251	Response	1	6975216	16746	1
+33593.15	252	Picture	FB_inco	6983645	0	2	500	4	0	next	other	0
+33593.15	253	Picture	46_T2_Picture_021b_Art:_sim_cor_taste:_2	6984145	0	2	20174	4	0	next	false_alarm	462
+33593.15	253	Response	1	6994859	10714	1
+33593.15	254	Picture	FB_inco	7009321	0	1	500	3	0	next	other	0
+33593.15	255	Picture	47_T2_Picture_127b_Art:_old_cor_taste:_1	7009821	0	2	20174	3	0	next	false_alarm	465
+33593.15	255	Response	1	7020245	10424	2
+33593.15	256	Picture	FB_cor	7034997	0	1	500	2	0	next	other	0
+33593.15	257	Picture	48_T2_Picture_084a_Art:_sim_cor_taste:_2	7035497	0	1	20174	2	0	next	false_alarm	468
+33593.15	257	Response	1	7048971	13474	1
+33593.15	258	Picture	FB_inco	7060673	0	1	500	2	0	next	other	0
+33593.15	259	Picture	49_T2_Picture_164a_Art:_old_cor_taste:_1	7061173	0	1	20174	2	0	next	false_alarm	471
+33593.15	259	Response	1	7073406	12233	1
+33593.15	260	Picture	FB_cor	7086348	0	2	501	3	0	next	other	0
+33593.15	261	Picture	50_T2_Picture_043b_Art:_sim_cor_taste:_2	7086849	0	1	20174	2	0	next	false_alarm	474
+33593.15	261	Response	2	7097442	10593	1
+33593.15	262	Picture	FB_cor	7112024	0	2	500	4	0	next	other	0
+33593.15	263	Picture	51_T2_Picture_146b_Art:_old_cor_taste:_1	7112524	0	2	20174	4	0	next	false_alarm	477
+33593.15	263	Response	1	7124359	11835	1
+33593.15	264	Picture	FB_cor	7137700	0	1	500	2	0	next	other	0
+33593.15	265	Picture	52_T2_Picture_190a_Art:_sim_cor_taste:_2	7138200	0	1	20174	2	0	next	false_alarm	480
+33593.15	265	Response	3	7154932	16732	1
+33593.15	266	Picture	FB_inco	7163376	0	1	500	2	0	next	other	0
+33593.15	267	Picture	53_T2_Picture_103b_Art:_old_cor_taste:_1	7163876	0	1	20174	2	0	next	false_alarm	483
+33593.15	267	Response	2	7182686	18810	2
+33593.15	268	Picture	FB_inco	7189052	0	1	500	2	0	next	other	0
+33593.15	269	Picture	54_T2_Picture_121b_Art:_old_cor_taste:_1	7189552	0	1	20174	2	0	next	false_alarm	486
+33593.15	269	Response	3	7205542	15990	1
+33593.15	270	Picture	FB_inco	7214727	0	2	501	3	0	next	other	0
+33593.15	271	Picture	55_T2_Picture_136a_Art:_old_cor_taste:_1	7215228	0	1	20173	3	0	next	false_alarm	489
+33593.15	271	Response	1	7224146	8918	1
+33593.15	272	Picture	FB_cor	7240403	0	1	500	3	0	next	other	0
+33593.15	273	Picture	56_T2_Picture_064b_Art:_new_cor_taste:_3	7240903	0	2	20174	3	0	next	false_alarm	492
+33593.15	273	Response	3	7259659	18756	1
+33593.15	274	Picture	FB_cor	7266079	0	1	500	2	0	next	other	0
+33593.15	275	Picture	57_T2_Picture_150a_Art:_old_cor_taste:_1	7266579	0	1	20174	2	0	next	false_alarm	495
+33593.15	275	Response	1	7274863	8284	1
+33593.15	276	Picture	FB_cor	7291755	0	1	500	2	0	next	other	0
+33593.15	277	Picture	58_T2_Picture_088b_Art:_old_cor_taste:_1	7292255	0	1	20174	2	0	next	false_alarm	498
+33593.15	277	Response	3	7310951	18696	2
+33593.15	278	Picture	FB_inco	7317431	0	1	500	2	0	next	other	0
+33593.15	279	Picture	59_T2_Picture_039a_Art:_old_cor_taste:_1	7317931	0	1	20173	3	0	next	false_alarm	501
+33593.15	279	Response	1	7330088	12157	1
+33593.15	280	Picture	FB_cor	7343106	0	1	500	3	0	next	other	0
+33593.15	281	Picture	60_T2_Picture_165b_Art:_sim_cor_taste:_2	7343606	0	2	20174	3	0	next	false_alarm	504
+33593.15	281	Response	1	7359293	15687	1
+33593.15	282	Picture	FB_inco	7368782	0	1	500	3	0	next	other	0
+33593.15	283	Picture	61_T2_Picture_189a_Art:_old_cor_taste:_1	7369282	0	2	20174	3	0	next	false_alarm	507
+33593.15	283	Response	1	7387072	17790	1
+33593.15	284	Picture	FB_cor	7394458	0	1	500	2	0	next	other	0
+33593.15	285	Picture	62_T2_Picture_038a_Art:_sim_cor_taste:_2	7394958	0	1	20174	2	0	next	false_alarm	510
+33593.15	285	Response	1	7409775	14817	1
+33593.15	286	Picture	FB_inco	7420134	0	1	500	2	0	next	other	0
+33593.15	287	Picture	63_T2_Picture_168a_Art:_sim_cor_taste:_2	7420634	0	1	20174	2	0	next	false_alarm	513
+33593.15	287	Response	1	7430875	10241	1
+33593.15	288	Picture	FB_inco	7445809	0	2	501	3	0	next	other	0
+33593.15	289	Picture	64_T2_Picture_169b_Art:_new_cor_taste:_3	7446310	0	1	20173	3	0	next	false_alarm	516
+33593.15	289	Response	3	7463272	16962	1
+33593.15	290	Picture	FB_cor	7471485	0	1	500	3	0	next	other	0
+33593.15	291	Picture	65_T2_Picture_055b_Art:_sim_cor_taste:_2	7471985	0	2	20174	3	0	next	false_alarm	519
+33593.15	291	Response	3	7486003	14018	1
+33593.15	292	Picture	FB_inco	7497161	0	1	500	2	0	next	other	0
+33593.15	293	Picture	66_T2_Picture_032b_Art:_new_cor_taste:_3	7497661	0	1	20174	2	0	next	false_alarm	522
+33593.15	293	Response	2	7511383	13722	2
+33593.15	294	Picture	FB_inco	7522837	0	1	500	2	0	next	other	0
+33593.15	295	Picture	67_T2_Picture_133b_Art:_new_cor_taste:_3	7523337	0	1	20174	2	0	next	false_alarm	525
+33593.15	295	Response	3	7539629	16292	2
+33593.15	296	Picture	FB_cor	7548512	0	2	501	3	0	next	other	0
+33593.15	297	Picture	68_T2_Picture_060a_Art:_old_cor_taste:_1	7549013	0	1	20174	2	0	next	false_alarm	528
+33593.15	297	Response	1	7558048	9035	2
+33593.15	298	Picture	FB_cor	7574188	0	2	500	4	0	next	other	0
+33593.15	299	Picture	69_T2_Picture_063b_Art:_old_cor_taste:_1	7574688	0	2	20174	3	0	next	false_alarm	531
+33593.15	299	Response	1	7588471	13783	1
+33593.15	300	Picture	FB_cor	7599864	0	1	500	2	0	next	other	0
+33593.15	301	Picture	70_T2_Picture_013b_Art:_new_cor_taste:_3	7600364	0	1	20174	2	0	next	false_alarm	534
+33593.15	301	Response	3	7614340	13976	1
+33593.15	302	Picture	FB_cor	7625540	0	1	500	2	0	next	other	0
+33593.15	303	Picture	71_T2_Picture_166b_Art:_sim_cor_taste:_2	7626040	0	1	20174	2	0	next	false_alarm	537
+33593.15	303	Response	1	7640706	14666	1
+33593.15	304	Picture	FB_inco	7651216	0	1	500	2	0	next	other	0
+33593.15	305	Picture	72_T2_Picture_034a_Art:_sim_cor_taste:_2	7651716	0	1	20174	2	0	next	false_alarm	540
+33593.15	305	Response	1	7664263	12547	1
+33593.15	306	Picture	FB_inco	7676891	0	2	501	3	0	next	other	0
+33593.15	307	Picture	73_T2_Picture_155a_Art:_old_cor_taste:_1	7677392	0	1	20173	3	0	next	false_alarm	543
+33593.15	307	Response	1	7687377	9985	1
+33593.15	308	Picture	FB_cor	7702567	0	1	500	3	0	next	other	0
+33593.15	309	Picture	74_T2_Picture_110b_Art:_old_cor_taste:_1	7703067	0	2	20174	3	0	next	false_alarm	546
+33593.15	309	Response	1	7713143	10076	1
+33593.15	310	Picture	FB_cor	7728243	0	1	500	2	0	next	other	0
+33593.15	311	Picture	75_T2_Picture_059b_Art:_sim_cor_taste:_2	7728743	0	1	20174	2	0	next	false_alarm	549
+33593.15	311	Response	1	7739701	10958	1
+33593.15	312	Picture	FB_inco	7753919	0	1	500	2	0	next	other	0
+33593.15	313	Picture	76_T2_Picture_076b_Art:_old_cor_taste:_1	7754419	0	1	20174	2	0	next	false_alarm	552
+33593.15	313	Response	1	7763401	8982	1
+33593.15	314	Picture	FB_cor	7779594	0	2	501	3	0	next	other	0
+33593.15	315	Picture	77_T2_Picture_183a_Art:_sim_cor_taste:_2	7780095	0	1	20174	2	0	next	false_alarm	555
+33593.15	315	Response	1	7791938	11843	1
+33593.15	316	Picture	FB_inco	7805270	0	2	501	3	0	next	other	0
+33593.15	317	Picture	78_T2_Picture_142b_Art:_sim_cor_taste:_2	7805771	0	1	20173	3	0	next	false_alarm	558
+33593.15	317	Response	1	7816909	11138	1
+33593.15	318	Picture	FB_inco	7830946	0	1	500	3	0	next	other	0
+33593.15	319	Picture	79_T2_Picture_158a_Art:_sim_cor_taste:_2	7831446	0	2	20174	3	0	next	false_alarm	561
+33593.15	319	Response	2	7850096	18650	1
+33593.15	320	Picture	FB_cor	7856622	0	1	500	2	0	next	other	0
+33593.15	321	Picture	80_T2_Picture_025a_Art:_old_cor_taste:_1	7857122	0	1	20174	2	0	next	false_alarm	564
+33593.15	321	Response	1	7875715	18593	1
+33593.15	322	Picture	FB_cor	7882298	0	1	500	2	0	next	other	0
+33593.15	323	Picture	81_T2_Picture_118a_Art:_old_cor_taste:_1	7882798	0	1	20174	2	0	next	false_alarm	567
+33593.15	323	Response	1	7894817	12019	1
+33593.15	324	Picture	FB_cor	7907973	0	2	501	3	0	next	other	0
+33593.15	325	Picture	82_T2_Picture_074a_Art:_old_cor_taste:_1	7908474	0	1	20173	3	0	next	false_alarm	570
+33593.15	325	Response	1	7918740	10266	1
+33593.15	326	Picture	FB_cor	7933649	0	1	500	3	0	next	other	0
+33593.15	327	Picture	83_T2_Picture_072a_Art:_sim_cor_taste:_2	7934149	0	2	20174	4	0	next	false_alarm	573
+33593.15	327	Response	2	7950154	16005	1
+33593.15	328	Picture	FB_cor	7959325	0	1	500	2	0	next	other	0
+33593.15	329	Picture	84_T2_Picture_176b_Art:_old_cor_taste:_1	7959825	0	1	20174	2	0	next	false_alarm	576
+33593.15	329	Response	1	7979257	19432	1
+33593.15	330	Picture	FB_cor	7985001	0	1	500	2	0	next	other	0
+33593.15	331	Picture	85_T2_Picture_027a_Art:_old_cor_taste:_1	7985501	0	1	20174	2	0	next	false_alarm	579
+33593.15	331	Response	1	8005108	19607	1
+33593.15	332	Picture	FB_cor	8010677	0	1	500	2	0	next	other	0
+33593.15	333	Picture	86_T2_Picture_173b_Art:_sim_cor_taste:_2	8011177	0	1	20174	2	0	next	false_alarm	582
+33593.15	333	Response	1	8028414	17237	1
+33593.15	334	Picture	FB_inco	8036352	0	2	501	3	0	next	other	0
+33593.15	335	Picture	87_T2_Picture_135b_Art:_sim_cor_taste:_2	8036853	0	1	20173	3	0	next	false_alarm	585
+33593.15	335	Response	3	8050439	13586	2
+33593.15	336	Picture	FB_inco	8062028	0	1	500	2	0	next	other	0
+33593.15	337	Picture	88_T2_Picture_152b_Art:_sim_cor_taste:_2	8062528	0	1	20174	2	0	next	false_alarm	588
+33593.15	337	Response	3	8076656	14128	2
+33593.15	338	Picture	FB_inco	8087704	0	1	500	2	0	next	other	0
+33593.15	339	Picture	89_T2_Picture_015a_Art:_new_cor_taste:_3	8088204	0	1	20174	2	0	next	false_alarm	591
+33593.15	339	Response	3	8100931	12727	1
+33593.15	340	Picture	FB_cor	8113380	0	1	500	2	0	next	other	0
+33593.15	341	Picture	90_T2_Picture_083b_Art:_new_cor_taste:_3	8113880	0	1	20174	2	0	next	false_alarm	594
+33593.15	341	Response	3	8126691	12811	1
+33593.15	342	Picture	FB_cor	8139055	0	2	501	3	0	next	other	0
+33593.15	343	Picture	91_T2_Picture_061a_Art:_sim_cor_taste:_2	8139556	0	1	20173	3	0	next	false_alarm	597
+33593.15	343	Response	1	8147474	7918	1
+33593.15	344	Picture	FB_inco	8164731	0	1	500	3	0	next	other	0
+33593.15	345	Picture	92_T2_Picture_178b_Art:_old_cor_taste:_1	8165231	0	2	20174	3	0	next	false_alarm	600
+33593.15	345	Response	1	8177561	12330	1
+33593.15	346	Picture	FB_cor	8190407	0	1	500	2	0	next	other	0
+33593.15	347	Picture	93_T2_Picture_081b_Art:_old_cor_taste:_1	8190907	0	1	20174	2	0	next	false_alarm	603
+33593.15	347	Response	1	8203595	12688	1
+33593.15	348	Picture	FB_cor	8216083	0	1	500	2	0	next	other	0
+33593.15	349	Picture	94_T2_Picture_125b_Art:_new_cor_taste:_3	8216583	0	1	20174	2	0	next	false_alarm	606
+33593.15	349	Response	2	8235203	18620	1
+33593.15	350	Picture	FB_inco	8241759	0	1	500	2	0	next	other	0
+33593.15	351	Picture	95_T2_Picture_120a_Art:_new_cor_taste:_3	8242259	0	1	20174	2	0	next	false_alarm	609
+33593.15	351	Response	3	8256323	14064	2
+33593.15	352	Picture	FB_cor	8267434	0	2	500	4	0	next	other	0
+33593.15	353	Picture	96_T2_Picture_057b_Art:_sim_cor_taste:_2	8267934	0	2	20174	4	0	next	false_alarm	612
+33593.15	353	Response	1	8278035	10101	1
+33593.15	354	Picture	FB_inco	8293110	0	1	500	3	0	next	other	0
+33593.15	355	Picture	97_T2_Picture_137b_Art:_sim_cor_taste:_2	8293610	0	2	20174	3	0	next	false_alarm	615
+33593.15	355	Response	2	8309706	16096	2
+33593.15	356	Picture	FB_cor	8318786	0	1	500	2	0	next	other	0
+33593.15	357	Picture	98_T2_Picture_117b_Art:_old_cor_taste:_1	8319286	0	1	20174	2	0	next	false_alarm	618
+33593.15	357	Response	1	8330218	10932	1
+33593.15	358	Picture	FB_cor	8344462	0	1	500	2	0	next	other	0
+33593.15	359	Picture	99_T2_Picture_014b_Art:_sim_cor_taste:_2	8344962	0	1	20174	2	0	next	false_alarm	621
+33593.15	359	Response	2	8362103	17141	1
+33593.15	360	Picture	FB_cor	8370137	0	2	501	3	0	next	other	0
+33593.15	361	Picture	100_T2_Picture_003a_Art:_old_cor_taste:_1	8370638	0	1	20173	3	0	next	false_alarm	624
+33593.15	361	Response	1	8379760	9122	2
+33593.15	362	Picture	FB_cor	8395813	0	1	500	3	0	next	other	0
+33593.15	363	Picture	101_T2_Picture_167b_Art:_old_cor_taste:_1	8396313	0	2	20174	3	0	next	false_alarm	627
+33593.15	363	Response	1	8406945	10632	1
+33593.15	364	Picture	FB_cor	8421489	0	1	500	2	0	next	other	0
+33593.15	365	Picture	102_T2_Picture_022b_Art:_sim_cor_taste:_2	8421989	0	1	20174	2	0	next	false_alarm	630
+33593.15	365	Response	1	8431718	9729	1
+33593.15	366	Picture	FB_inco	8447165	0	1	500	2	0	next	other	0
+33593.15	367	Picture	103_T2_Picture_045a_Art:_sim_cor_taste:_2	8447665	0	1	20174	2	0	next	false_alarm	633
+33593.15	367	Response	2	8469865	22200	1
+33593.15	368	Picture	FB_cor	8472841	0	1	500	2	0	next	other	0
+33593.15	369	Picture	104_T2_Picture_101a_Art:_new_cor_taste:_3	8473341	0	1	20174	2	0	next	false_alarm	636
+33593.15	369	Response	3	8486870	13529	2
+33593.15	370	Picture	FB_cor	8498516	0	2	500	4	0	next	other	0
+33593.15	371	Picture	105_T2_Picture_012a_Art:_old_cor_taste:_1	8499016	0	2	20174	4	0	next	false_alarm	639
+33593.15	371	Response	3	8522525	23509	1
+33593.15	372	Picture	FB_inco	8524192	0	1	500	3	0	next	other	0
+33593.15	373	Picture	106_T2_Picture_130a_Art:_new_cor_taste:_3	8524692	0	2	20174	3	0	next	false_alarm	642
+33593.15	373	Response	3	8537818	13126	1
+33593.15	374	Picture	FB_cor	8549868	0	1	500	2	0	next	other	0
+33593.15	375	Picture	107_T2_Picture_160a_Art:_new_cor_taste:_3	8550368	0	1	20174	2	0	next	false_alarm	645
+33593.15	375	Response	3	8562685	12317	1
+33593.15	376	Picture	FB_cor	8575544	0	1	500	2	0	next	other	0
+33593.15	377	Picture	108_T2_Picture_030b_Art:_old_cor_taste:_1	8576044	0	1	20174	2	0	next	false_alarm	648
+33593.15	377	Response	2	8583091	7047	1
+33593.15	378	Picture	FB_inco	8601219	0	2	501	3	0	next	other	0
+33593.15	379	Picture	109_T2_Picture_062b_Art:_new_cor_taste:_3	8601720	0	1	20173	3	0	next	false_alarm	651
+33593.15	379	Response	3	8612786	11066	1
+33593.15	380	Picture	FB_cor	8626895	0	1	500	3	0	next	other	0
+33593.15	381	Picture	110_T2_Picture_033b_Art:_new_cor_taste:_3	8627395	0	2	20174	3	0	next	false_alarm	654
+33593.15	381	Response	1	8639700	12305	2
+33593.15	382	Picture	FB_inco	8652571	0	1	500	2	0	next	other	0
+33593.15	383	Picture	111_T2_Picture_040a_Art:_sim_cor_taste:_2	8653071	0	1	20174	2	0	next	false_alarm	657
+33593.15	383	Response	1	8660939	7868	1
+33593.15	384	Picture	FB_inco	8678247	0	1	500	2	0	next	other	0
+33593.15	385	Picture	112_T2_Picture_109b_Art:_sim_cor_taste:_2	8678747	0	1	20174	2	0	next	false_alarm	660
+33593.15	385	Response	1	8691229	12482	1
+33593.15	386	Picture	FB_inco	8703922	0	2	501	3	0	next	other	0
+33593.15	387	Picture	113_T2_Picture_154b_Art:_old_cor_taste:_1	8704423	0	1	20174	2	0	next	false_alarm	663
+33593.15	387	Response	1	8713039	8616	1
+33593.15	388	Picture	FB_cor	8729598	0	2	500	4	0	next	other	0
+33593.15	389	Picture	114_T2_Picture_095a_Art:_old_cor_taste:_1	8730098	0	2	20174	4	0	next	false_alarm	666
+33593.15	389	Response	1	8743642	13544	1
+33593.15	390	Picture	FB_cor	8755274	0	1	500	2	0	next	other	0
+33593.15	391	Picture	115_T2_Picture_011a_Art:_sim_cor_taste:_2	8755774	0	1	20174	2	0	next	false_alarm	669
+33593.15	391	Response	3	8764948	9174	1
+33593.15	392	Picture	FB_inco	8780950	0	1	500	2	0	next	other	0
+33593.15	393	Picture	116_T2_Picture_036b_Art:_sim_cor_taste:_2	8781450	0	1	20174	2	0	next	false_alarm	672
+33593.15	393	Response	2	8795173	13723	1
+33593.15	394	Picture	FB_cor	8806626	0	1	500	2	0	next	other	0
+33593.15	395	Picture	117_T2_Picture_031b_Art:_new_cor_taste:_3	8807126	0	1	20174	2	0	next	false_alarm	675
+33593.15	395	Response	3	8822986	15860	1
+33593.15	396	Picture	FB_cor	8832301	0	2	500	4	0	next	other	0
+33593.15	397	Picture	118_T2_Picture_035b_Art:_sim_cor_taste:_2	8832801	0	2	20174	4	0	next	false_alarm	678
+33593.15	397	Response	1	8842313	9512	1
+33593.15	398	Picture	FB_inco	8857977	0	1	500	3	0	next	other	0
+33593.15	399	Picture	119_T2_Picture_153a_Art:_sim_cor_taste:_2	8858477	0	2	20174	3	0	next	false_alarm	681
+33593.15	399	Response	1	8866731	8254	1
+33593.15	400	Picture	FB_inco	8883653	0	1	500	2	0	next	other	0
+33593.15	401	Picture	120_T2_Picture_079a_Art:_sim_cor_taste:_2	8884153	0	1	20174	2	0	next	false_alarm	684
+33593.15	401	Response	1	8893286	9133	1
+33593.15	402	Picture	FB_inco	8909329	0	1	500	2	0	next	other	0
+33593.15	403	Picture	121_T2_Picture_192b_Art:_old_cor_taste:_1	8909829	0	1	20174	2	0	next	false_alarm	687
+33593.15	403	Response	1	8920288	10459	1
+33593.15	404	Picture	FB_cor	8935005	0	1	500	2	0	next	other	0
+33593.15	405	Picture	122_T2_Picture_069b_Art:_new_cor_taste:_3	8935505	0	1	20174	2	0	next	false_alarm	690
+33593.15	405	Response	3	8945598	10093	1
+33593.15	406	Picture	FB_cor	8960680	0	2	500	4	0	next	other	0
+33593.15	407	Picture	123_T2_Picture_067b_Art:_old_cor_taste:_1	8961180	0	2	20174	4	0	next	false_alarm	693
+33593.15	407	Response	2	8978164	16984	1
+33593.15	408	Picture	FB_inco	8986356	0	1	500	2	0	next	other	0
+33593.15	409	Picture	124_T2_Picture_180b_Art:_new_cor_taste:_3	8986856	0	1	20174	2	0	next	false_alarm	696
+33593.15	409	Response	3	9000577	13721	1
+33593.15	410	Picture	FB_cor	9012032	0	1	500	2	0	next	other	0
+33593.15	411	Picture	125_T2_Picture_179b_Art:_old_cor_taste:_1	9012532	0	1	20174	2	0	next	false_alarm	699
+33593.15	411	Response	1	9022688	10156	1
+33593.15	412	Picture	FB_cor	9037708	0	1	500	2	0	next	other	0
+33593.15	413	Picture	126_T2_Picture_028a_Art:_new_cor_taste:_3	9038208	0	1	20174	2	0	next	false_alarm	702
+33593.15	413	Response	2	9051525	13317	1
+33593.15	414	Picture	FB_inco	9063383	0	2	501	3	0	next	other	0
+33593.15	415	Picture	127_T2_Picture_050a_Art:_sim_cor_taste:_2	9063884	0	1	20173	3	0	next	false_alarm	705
+33593.15	415	Response	1	9071897	8013	1
+33593.15	416	Picture	FB_inco	9089059	0	1	500	3	0	next	other	0
+33593.15	417	Picture	128_T2_Picture_104b_Art:_new_cor_taste:_3	9089559	0	2	20174	3	0	next	false_alarm	708
+33593.15	417	Response	3	9099414	9855	1
+33593.15	418	Picture	FB_cor	9114735	0	1	500	2	0	next	other	0
+33593.15	419	Picture	129_T2_Picture_185b_Art:_new_cor_taste:_3	9115235	0	1	20174	2	0	next	false_alarm	711
+33593.15	419	Response	3	9129944	14709	1
+33593.15	420	Picture	FB_cor	9140411	0	1	500	2	0	next	other	0
+33593.15	421	Picture	130_T2_Picture_170b_Art:_new_cor_taste:_3	9140911	0	1	20174	2	0	next	false_alarm	714
+33593.15	421	Response	3	9154445	13534	1
+33593.15	422	Picture	FB_cor	9166087	0	1	500	2	0	next	other	0
+33593.15	423	Picture	131_T2_Picture_124b_Art:_sim_cor_taste:_2	9166587	0	1	20174	2	0	next	false_alarm	717
+33593.15	423	Response	1	9176796	10209	1
+33593.15	424	Picture	FB_inco	9191762	0	2	500	4	0	next	other	0
+33593.15	425	Picture	132_T2_Picture_004b_Art:_new_cor_taste:_3	9192262	0	2	20174	4	0	next	false_alarm	720
+33593.15	425	Response	3	9206481	14219	1
+33593.15	426	Picture	FB_cor	9217438	0	1	500	3	0	next	other	0
+33593.15	427	Picture	133_T2_Picture_140a_Art:_new_cor_taste:_3	9217938	0	2	20174	3	0	next	false_alarm	723
+33593.15	427	Response	2	9231998	14060	2
+33593.15	428	Picture	FB_inco	9243114	0	1	500	2	0	next	other	0
+33593.15	429	Picture	134_T2_Picture_058a_Art:_sim_cor_taste:_2	9243614	0	1	20174	2	0	next	false_alarm	726
+33593.15	429	Response	2	9259465	15851	1
+33593.15	430	Picture	FB_cor	9268790	0	1	500	2	0	next	other	0
+33593.15	431	Picture	135_T2_Picture_141b_Art:_sim_cor_taste:_2	9269290	0	1	20174	2	0	next	false_alarm	729
+33593.15	431	Response	3	9280872	11582	1
+33593.15	432	Picture	FB_inco	9294465	0	2	501	3	0	next	other	0
+33593.15	433	Picture	136_T2_Picture_162b_Art:_sim_cor_taste:_2	9294966	0	1	20173	3	0	next	false_alarm	732
+33593.15	433	Response	1	9309332	14366	1
+33593.15	434	Picture	FB_inco	9320141	0	1	500	3	0	next	other	0
+33593.15	435	Picture	137_T2_Picture_019b_Art:_old_cor_taste:_1	9320641	0	2	20174	3	0	next	false_alarm	735
+33593.15	435	Response	1	9332008	11367	1
+33593.15	436	Picture	FB_cor	9345817	0	1	500	2	0	next	other	0
+33593.15	437	Picture	138_T2_Picture_132b_Art:_new_cor_taste:_3	9346317	0	1	20174	2	0	next	false_alarm	738
+33593.15	437	Response	3	9357050	10733	1
+33593.15	438	Picture	FB_cor	9371493	0	1	500	2	0	next	other	0
+33593.15	439	Picture	139_T2_Picture_046b_Art:_old_cor_taste:_1	9371993	0	1	20174	2	0	next	false_alarm	741
+33593.15	439	Response	1	9381811	9818	1
+33593.15	440	Picture	FB_cor	9397168	0	2	501	3	0	next	other	0
+33593.15	441	Picture	140_T2_Picture_175a_Art:_sim_cor_taste:_2	9397669	0	1	20173	3	0	next	false_alarm	744
+33593.15	441	Response	3	9415231	17562	1
+33593.15	442	Picture	FB_inco	9422844	0	2	501	3	0	next	other	0
+33593.15	443	Picture	141_T2_Picture_052a_Art:_new_cor_taste:_3	9423345	0	1	20173	3	0	next	false_alarm	747
+33593.15	443	Response	3	9441953	18608	1
+33593.15	444	Picture	FB_cor	9448520	0	1	500	2	0	next	other	0
+33593.15	445	Picture	142_T2_Picture_115a_Art:_old_cor_taste:_1	9449020	0	1	20174	2	0	next	false_alarm	750
+33593.15	445	Response	2	9463746	14726	1
+33593.15	446	Picture	FB_inco	9474196	0	1	500	2	0	next	other	0
+33593.15	447	Picture	143_T2_Picture_070a_Art:_new_cor_taste:_3	9474696	0	1	20174	2	0	next	false_alarm	753
+33593.15	447	Response	2	9494667	19971	1
+33593.15	448	Picture	FB_inco	9499872	0	1	500	2	0	next	other	0
+33593.15	449	Picture	144_T2_Picture_051a_Art:_old_cor_taste:_1	9500372	0	1	20174	2	0	next	false_alarm	756
+33593.15	449	Response	2	9518730	18358	1
+33593.15	450	Picture	FB_inco	9525547	0	2	500	4	0	next	other	0
+33593.15	451	Picture	145_T2_Picture_148a_Art:_old_cor_taste:_1	9526047	0	2	20174	4	0	next	false_alarm	759
+33593.15	451	Response	1	9534015	7968	2
+33593.15	452	Picture	FB_cor	9551223	0	1	500	3	0	next	other	0
+33593.15	453	Picture	146_T2_Picture_156a_Art:_sim_cor_taste:_2	9551723	0	2	20174	3	0	next	false_alarm	762
+33593.15	453	Response	1	9564041	12318	1
+33593.15	454	Picture	FB_inco	9576899	0	1	500	2	0	next	other	0
+33593.15	455	Picture	147_T2_Picture_147a_Art:_new_cor_taste:_3	9577399	0	1	20174	2	0	next	false_alarm	765
+33593.15	455	Response	3	9590985	13586	1
+33593.15	456	Picture	FB_cor	9602575	0	1	500	2	0	next	other	0
+33593.15	457	Picture	148_T2_Picture_066a_Art:_old_cor_taste:_1	9603075	0	1	20174	2	0	next	false_alarm	768
+33593.15	457	Response	1	9611735	8660	1
+33593.15	458	Picture	FB_cor	9628250	0	2	501	3	0	next	other	0
+33593.15	459	Picture	149_T2_Picture_143a_Art:_new_cor_taste:_3	9628751	0	1	20173	3	0	next	false_alarm	771
+33593.15	459	Response	3	9638472	9721	1
+33593.15	460	Picture	FB_cor	9653926	0	1	500	3	0	next	other	0
+33593.15	461	Picture	150_T2_Picture_151a_Art:_sim_cor_taste:_2	9654426	0	2	20174	4	0	next	false_alarm	774
+33593.15	461	Response	3	9666996	12570	1
+33593.15	462	Picture	FB_inco	9679602	0	1	500	3	0	next	other	0
+33593.15	463	Picture	151_T2_Picture_102a_Art:_new_cor_taste:_3	9680102	0	2	20174	3	0	next	false_alarm	777
+33593.15	463	Response	2	9699054	18952	1
+33593.15	464	Picture	FB_inco	9705278	0	1	500	2	0	next	other	0
+33593.15	465	Picture	152_T2_Picture_047a_Art:_sim_cor_taste:_2	9705778	0	1	20174	2	0	next	false_alarm	780
+33593.15	465	Response	1	9715390	9612	1
+33593.15	466	Picture	FB_inco	9730954	0	1	500	2	0	next	other	0
+33593.15	467	Picture	153_T2_Picture_053a_Art:_sim_cor_taste:_2	9731454	0	1	20174	2	0	next	false_alarm	783
+33593.15	467	Response	2	9750549	19095	1
+33593.15	468	Picture	FB_cor	9756629	0	2	501	3	0	next	other	0
+33593.15	469	Picture	154_T2_Picture_138a_Art:_new_cor_taste:_3	9757130	0	1	20173	3	0	next	false_alarm	786
+33593.15	469	Response	2	9776327	19197	1
+33593.15	470	Picture	FB_inco	9782305	0	1	500	3	0	next	other	0
+33593.15	471	Picture	155_T2_Picture_010b_Art:_new_cor_taste:_3	9782805	0	2	20174	3	0	next	false_alarm	789
+33593.15	471	Response	1	9798099	15294	1
+33593.15	472	Picture	FB_inco	9807981	0	1	500	3	0	next	other	0
+33593.15	473	Picture	156_T2_Picture_005a_Art:_new_cor_taste:_3	9808481	0	2	20174	3	0	next	false_alarm	792
+33593.15	473	Response	2	9826413	17932	1
+33593.15	474	Picture	FB_inco	9833657	0	1	500	2	0	next	other	0
+33593.15	475	Picture	157_T2_Picture_119b_Art:_old_cor_taste:_1	9834157	0	1	20174	2	0	next	false_alarm	795
+33593.15	475	Response	1	9854584	20427	1
+33593.15	476	Picture	FB_cor	9859332	0	2	501	3	0	next	other	0
+33593.15	477	Picture	158_T2_Picture_181b_Art:_new_cor_taste:_3	9859833	0	1	20174	2	0	next	false_alarm	798
+33593.15	477	Response	3	9869540	9707	1
+33593.15	478	Picture	FB_cor	9885008	0	1	500	3	0	next	other	0
+33593.15	479	Picture	159_T2_Picture_044a_Art:_old_cor_taste:_1	9885508	0	2	20174	4	0	next	false_alarm	801
+33593.15	479	Response	1	9897061	11553	2
+33593.15	480	Picture	FB_cor	9910684	0	1	500	3	0	next	other	0
+33593.15	481	Picture	160_T2_Picture_024a_Art:_old_cor_taste:_1	9911184	0	2	20174	3	0	next	false_alarm	804
+33593.15	481	Response	1	9920325	9141	1
+33593.15	482	Picture	FB_cor	9936360	0	1	500	2	0	next	other	0
+33593.15	483	Picture	161_T2_Picture_122a_Art:_new_cor_taste:_3	9936860	0	1	20174	2	0	next	false_alarm	807
+33593.15	483	Response	3	9954337	17477	1
+33593.15	484	Picture	FB_cor	9962036	0	1	500	2	0	next	other	0
+33593.15	485	Picture	162_T2_Picture_099a_Art:_sim_cor_taste:_2	9962536	0	1	20174	2	0	next	false_alarm	810
+33593.15	485	Response	1	9970586	8050	1
+33593.15	486	Picture	FB_inco	9987711	0	2	501	3	0	next	other	0
+33593.15	487	Picture	163_T2_Picture_090a_Art:_new_cor_taste:_3	9988212	0	1	20173	3	0	next	false_alarm	813
+33593.15	487	Response	1	9995741	7529	1
+33593.15	488	Picture	FB_inco	10013387	0	1	500	3	0	next	other	0
+33593.15	489	Picture	164_T2_Picture_007a_Art:_old_cor_taste:_1	10013887	0	2	20174	3	0	next	false_alarm	816
+33593.15	489	Response	1	10023117	9230	1
+33593.15	490	Picture	FB_cor	10039063	0	1	500	2	0	next	other	0
+33593.15	491	Picture	165_T2_Picture_092a_Art:_old_cor_taste:_1	10039563	0	1	20174	2	0	next	false_alarm	819
+33593.15	491	Response	1	10047411	7848	2
+33593.15	492	Picture	FB_cor	10064739	0	1	500	2	0	next	other	0
+33593.15	493	Picture	166_T2_Picture_042a_Art:_old_cor_taste:_1	10065239	0	1	20174	2	0	next	false_alarm	822
+33593.15	493	Response	3	10076293	11054	1
+33593.15	494	Picture	FB_inco	10090414	0	2	501	3	0	next	other	0
+33593.15	495	Picture	167_T2_Picture_149b_Art:_new_cor_taste:_3	10090915	0	1	20173	3	0	next	false_alarm	825
+33593.15	495	Response	3	10103546	12631	1
+33593.15	496	Picture	FB_cor	10116090	0	2	500	4	0	next	other	0
+33593.15	497	Picture	168_T2_Picture_018b_Art:_new_cor_taste:_3	10116590	0	2	20174	3	0	next	false_alarm	828
+33593.15	497	Response	3	10129204	12614	1
+33593.15	498	Picture	FB_cor	10141766	0	1	500	2	0	next	other	0
+33593.15	499	Picture	169_T2_Picture_161b_Art:_new_cor_taste:_3	10142266	0	1	20174	2	0	next	false_alarm	831
+33593.15	499	Response	3	10157026	14760	1
+33593.15	500	Picture	FB_cor	10167442	0	1	500	2	0	next	other	0
+33593.15	501	Picture	170_T2_Picture_006a_Art:_old_cor_taste:_1	10167942	0	1	20174	2	0	next	false_alarm	834
+33593.15	501	Response	2	10184709	16767	1
+33593.15	502	Picture	FB_inco	10193118	0	1	500	2	0	next	other	0
+33593.15	503	Picture	171_T2_Picture_186a_Art:_new_cor_taste:_3	10193618	0	1	20174	2	0	next	false_alarm	837
+33593.15	503	Response	3	10208096	14478	1
+33593.15	504	Picture	FB_cor	10218793	0	2	501	3	0	next	other	0
+33593.15	505	Picture	172_T2_Picture_077b_Art:_new_cor_taste:_3	10219294	0	1	20173	3	0	next	false_alarm	840
+33593.15	505	Response	3	10232359	13065	1
+33593.15	506	Picture	FB_cor	10244469	0	1	500	2	0	next	other	0
+33593.15	507	Picture	173_T2_Picture_071a_Art:_old_cor_taste:_1	10244969	0	1	20174	2	0	next	false_alarm	843
+33593.15	507	Response	3	10260970	16001	1
+33593.15	508	Picture	FB_inco	10270145	0	1	500	2	0	next	other	0
+33593.15	509	Picture	174_T2_Picture_174b_Art:_new_cor_taste:_3	10270645	0	1	20174	2	0	next	false_alarm	846
+33593.15	509	Response	2	10284187	13542	1
+33593.15	510	Picture	FB_inco	10295821	0	1	500	2	0	next	other	0
+33593.15	511	Picture	175_T2_Picture_089b_Art:_sim_cor_taste:_2	10296321	0	1	20174	2	0	next	false_alarm	849
+33593.15	511	Response	3	10308974	12653	1
+33593.15	512	Picture	FB_inco	10321496	0	2	501	3	0	next	other	0
+33593.15	513	Picture	176_T2_Picture_131a_Art:_old_cor_taste:_1	10321997	0	1	20174	2	0	next	false_alarm	852
+33593.15	513	Response	1	10330037	8040	1
+33593.15	514	Picture	FB_cor	10347172	0	2	500	4	0	next	other	0
+33593.15	515	Picture	177_T2_Picture_049b_Art:_new_cor_taste:_3	10347672	0	2	20174	3	0	next	false_alarm	855
+33593.15	515	Response	3	10360188	12516	2
+33593.15	516	Picture	FB_cor	10372848	0	1	500	2	0	next	other	0
+33593.15	517	Picture	178_T2_Picture_041b_Art:_old_cor_taste:_1	10373348	0	1	20174	2	0	next	false_alarm	858
+33593.15	517	Response	1	10384087	10739	1
+33593.15	518	Picture	FB_cor	10398524	0	1	500	2	0	next	other	0
+33593.15	519	Picture	179_T2_Picture_139a_Art:_new_cor_taste:_3	10399024	0	1	20174	2	0	next	false_alarm	861
+33593.15	519	Response	3	10408505	9481	1
+33593.15	520	Picture	FB_cor	10424200	0	1	500	2	0	next	other	0
+33593.15	521	Picture	180_T2_Picture_097b_Art:_old_cor_taste:_1	10424700	0	1	20174	2	0	next	false_alarm	864
+33593.15	521	Response	3	10436795	12095	1
+33593.15	522	Picture	FB_inco	10449875	0	2	500	4	0	next	other	0
+33593.15	523	Picture	181_T2_Picture_129b_Art:_old_cor_taste:_1	10450375	0	2	20174	4	0	next	false_alarm	867
+33593.15	523	Response	1	10458991	8616	1
+33593.15	524	Picture	FB_cor	10475551	0	1	500	2	0	next	other	0
+33593.15	525	Picture	182_T2_Picture_107b_Art:_sim_cor_taste:_2	10476051	0	1	20174	2	0	next	false_alarm	870
+33593.15	525	Response	1	10485830	9779	1
+33593.15	526	Picture	FB_inco	10501227	0	1	500	2	0	next	other	0
+33593.15	527	Picture	183_T2_Picture_009a_Art:_new_cor_taste:_3	10501727	0	1	20174	2	0	next	false_alarm	873
+33593.15	527	Response	3	10511193	9466	1
+33593.15	528	Picture	FB_cor	10526903	0	1	500	2	0	next	other	0
+33593.15	529	Picture	184_T2_Picture_017b_Art:_sim_cor_taste:_2	10527403	0	1	20174	2	0	next	false_alarm	876
+33593.15	529	Response	1	10540839	13436	1
+33593.15	530	Picture	FB_inco	10552579	0	1	500	2	0	next	other	0
+33593.15	531	Picture	185_T2_Picture_098b_Art:_sim_cor_taste:_2	10553079	0	1	20173	3	0	next	false_alarm	879
+33593.15	531	Response	2	10571779	18700	1
+33593.15	532	Picture	FB_cor	10578254	0	1	500	3	0	next	other	0
+33593.15	533	Picture	186_T2_Picture_184a_Art:_sim_cor_taste:_2	10578754	0	2	20174	3	0	next	false_alarm	882
+33593.15	533	Response	3	10591792	13038	1
+33593.15	534	Picture	FB_inco	10603930	0	1	500	2	0	next	other	0
+33593.15	535	Picture	187_T2_Picture_026b_Art:_new_cor_taste:_3	10604430	0	1	20174	2	0	next	false_alarm	885
+33593.15	535	Response	3	10617646	13216	1
+33593.15	536	Picture	FB_cor	10629606	0	1	500	2	0	next	other	0
+33593.15	537	Picture	188_T2_Picture_114a_Art:_new_cor_taste:_3	10630106	0	1	20174	2	0	next	false_alarm	888
+33593.15	537	Response	3	10646956	16850	1
+33593.15	538	Picture	FB_cor	10655282	0	1	500	2	0	next	other	0
+33593.15	539	Picture	189_T2_Picture_172a_Art:_old_cor_taste:_1	10655782	0	1	20174	2	0	next	false_alarm	891
+33593.15	539	Response	1	10664337	8555	1
+33593.15	540	Picture	FB_cor	10680957	0	2	500	4	0	next	other	0
+33593.15	541	Picture	190_T2_Picture_182b_Art:_new_cor_taste:_3	10681457	0	2	20174	4	0	next	false_alarm	894
+33593.15	541	Response	3	10696436	14979	1
+33593.15	542	Picture	FB_cor	10706633	0	1	500	2	0	next	other	0
+33593.15	543	Picture	191_T2_Picture_113b_Art:_old_cor_taste:_1	10707133	0	1	20174	2	0	next	false_alarm	897
+33593.15	543	Response	1	10724806	17673	1
+33593.15	544	Picture	FB_cor	10732309	0	1	500	2	0	next	other	0
+33593.15	545	Picture	192_T2_Picture_096b_Art:_new_cor_taste:_3	10732809	0	1	20174	2	0	next	false_alarm	900
+33593.15	545	Response	3	10744508	11699	1
+33593.15	546	Picture	FB_cor	10757985	0	1	500	2	0	next	other	0
+33593.15	547	Picture	ENDE__cor:_55_Anz_cor:_106_Anz_inco:_85_Anz_miss:_1	10778659	0	1	36587	2	0	next	other	0

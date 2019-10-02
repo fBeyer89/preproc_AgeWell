@@ -1,0 +1,875 @@
+Scenario - 
+Logfile written - 09/19/2018 12:34:26
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+33219.97	1	Picture	Randonummer_3	666	0	1	500	3	0	next	other	0
+33219.97	2	Picture	Instr_T1_1	1166	0	2	264103	4	0	next	hit	3
+33219.97	2	Response	4	265147	263981	1
+33219.97	3	Picture	Instr_T1_2	270438	0	1	125883	2	0	next	hit	5
+33219.97	3	Response	4	396244	125806	1
+33219.97	4	Picture	Instr_T1_3	401489	0	2	185696	213	0	next	hit	7
+33219.97	4	Response	4	587182	185693	2
+33219.97	5	Picture	Instr_T1_4	587185	0	211	29222	212	0	next	hit	9
+33219.97	5	Response	4	616242	29057	1
+33219.97	6	Picture	Instr_T1_18	621575	0	1	456178	3	0	next	hit	11
+33219.97	6	Response	4	1077726	456151	2
+33219.97	7	Picture	1_T1_Picture_117a_Art:_a	1093093	0	1	20174	3	0	next	other	0
+33219.97	8	Picture	2_T1_Picture_159b_Art:_i	1118269	0	2	20175	3	0	next	other	0
+33219.97	9	Picture	3_T1_Picture_191b_Art:_a	1143446	0	1	20174	3	0	next	other	0
+33219.97	10	Picture	4_T1_Picture_124b_Art:_i	1168622	0	1	20175	2	0	next	other	0
+33219.97	10	Response	3	1175914	7292	1
+33219.97	11	Picture	5_T1_Picture_179b_Art:_i	1193799	0	1	20174	3	0	next	other	0
+33219.97	11	Response	3	1215422	21623	1
+33219.97	12	Picture	6_T1_Picture_060a_Art:_a	1218975	0	1	20175	2	0	next	other	0
+33219.97	12	Response	3	1241902	22927	1
+33219.97	13	Picture	7_T1_Picture_057a_Art:_b	1244152	0	1	20174	3	0	next	other	0
+33219.97	13	Response	1	1266856	22704	1
+33219.97	14	Picture	8_T1_Picture_190b_Art:_i	1269328	0	2	20175	3	0	next	other	0
+33219.97	14	Response	3	1279436	10108	1
+33219.97	15	Picture	9_T1_Picture_011a_Art:_i	1294505	0	1	20174	2	0	next	other	0
+33219.97	15	Response	3	1306055	11550	1
+33219.97	16	Picture	10_T1_Picture_111b_Art:_a	1319681	0	2	20175	3	0	next	other	0
+33219.97	16	Response	3	1337468	17787	2
+33219.97	17	Picture	11_T1_Picture_136a_Art:_a	1344858	0	1	20174	3	0	next	other	0
+33219.97	17	Response	3	1363617	18759	1
+33219.97	18	Picture	12_T1_Picture_081a_Art:_i	1370034	0	1	20175	2	0	next	other	0
+33219.97	18	Response	3	1387678	17644	1
+33219.97	19	Picture	13_T1_Picture_101a_Art:_i	1395211	0	1	20174	3	0	next	other	0
+33219.97	19	Response	3	1418544	23333	1
+33219.97	20	Picture	14_T1_Picture_116b_Art:_b	1420387	0	2	20175	3	0	next	other	0
+33219.97	20	Response	3	1434989	14602	1
+33219.97	21	Picture	15_T1_Picture_025b_Art:_a	1445564	0	1	20174	2	0	next	other	0
+33219.97	21	Response	1	1469147	23583	1
+33219.97	22	Picture	16_T1_Picture_066b_Art:_b	1470740	0	1	20175	2	0	next	other	0
+33219.97	23	Picture	17_T1_Picture_174a_Art:_i	1495917	0	1	20174	3	0	next	other	0
+33219.97	23	Response	3	1506526	10609	1
+33219.97	24	Picture	18_T1_Picture_115a_Art:_b	1521093	0	2	20175	3	0	next	other	0
+33219.97	24	Response	1	1534020	12927	1
+33219.97	25	Picture	19_T1_Picture_130b_Art:_b	1546270	0	1	20174	3	0	next	other	0
+33219.97	25	Response	3	1560421	14151	1
+33219.97	26	Picture	20_T1_Picture_029b_Art:_a	1571446	0	1	20175	2	0	next	other	0
+33219.97	26	Response	3	1587979	16533	1
+33219.97	27	Picture	21_T1_Picture_082b_Art:_i	1596623	0	1	20174	3	0	next	other	0
+33219.97	27	Response	1	1611176	14553	1
+33219.97	28	Picture	22_T1_Picture_162b_Art:_a	1621799	0	2	20175	3	0	next	other	0
+33219.97	28	Response	3	1645846	24047	1
+33219.97	29	Picture	23_T1_Picture_001a_Art:_b	1646976	0	1	20174	3	0	next	other	0
+33219.97	30	Picture	24_T1_Picture_128b_Art:_b	1672152	0	2	20175	3	0	next	other	0
+33219.97	30	Response	1	1686337	14185	1
+33219.97	31	Picture	25_T1_Picture_154b_Art:_i	1697329	0	1	20174	3	0	next	other	0
+33219.97	31	Response	3	1705629	8300	1
+33219.97	32	Picture	26_T1_Picture_138a_Art:_b	1722505	0	1	20175	2	0	next	other	0
+33219.97	32	Response	1	1744279	21774	1
+33219.97	33	Picture	27_T1_Picture_033a_Art:_i	1747682	0	1	20174	3	0	next	other	0
+33219.97	33	Response	3	1757654	9972	1
+33219.97	34	Picture	28_T1_Picture_122a_Art:_a	1772858	0	2	20175	3	0	next	other	0
+33219.97	34	Response	1	1781746	8888	1
+33219.97	35	Picture	29_T1_Picture_112b_Art:_i	1798035	0	1	20174	3	0	next	other	0
+33219.97	35	Response	3	1809298	11263	1
+33219.97	36	Picture	30_T1_Picture_008a_Art:_a	1823211	0	2	20175	3	0	next	other	0
+33219.97	36	Response	3	1840532	17321	2
+33219.97	37	Picture	31_T1_Picture_120b_Art:_b	1848388	0	1	20174	3	0	next	other	0
+33219.97	37	Response	3	1866203	17815	1
+33219.97	38	Picture	32_T1_Picture_054b_Art:_b	1873564	0	2	20175	3	0	next	other	0
+33219.97	38	Response	3	1888191	14627	1
+33219.97	39	Picture	33_T1_Picture_014b_Art:_i	1898741	0	1	20174	3	0	next	other	0
+33219.97	39	Response	1	1921167	22426	1
+33219.97	40	Picture	34_T1_Picture_004b_Art:_i	1923917	0	2	20175	3	0	next	other	0
+33219.97	40	Response	3	1935954	12037	1
+33219.97	41	Picture	35_T1_Picture_172b_Art:_a	1949094	0	1	20174	3	0	next	other	0
+33219.97	41	Response	1	1959245	10151	1
+33219.97	42	Picture	36_T1_Picture_123b_Art:_a	1974270	0	2	20175	3	0	next	other	0
+33219.97	42	Response	3	1981810	7540	1
+33219.97	43	Picture	37_T1_Picture_047a_Art:_b	1999447	0	1	20174	3	0	next	other	0
+33219.97	43	Response	1	2009516	10069	1
+33219.97	44	Picture	38_T1_Picture_003b_Art:_a	2024623	0	2	20175	3	0	next	other	0
+33219.97	44	Response	3	2046498	21875	1
+33219.97	45	Picture	39_T1_Picture_137a_Art:_b	2049800	0	1	20174	3	0	next	other	0
+33219.97	45	Response	1	2060356	10556	1
+33219.97	46	Picture	40_T1_Picture_091a_Art:_i	2074976	0	2	20175	3	0	next	other	0
+33219.97	46	Response	3	2091162	16186	1
+33219.97	47	Picture	41_T1_Picture_103a_Art:_b	2100153	0	1	20174	3	0	next	other	0
+33219.97	48	Picture	42_T1_Picture_142b_Art:_i	2125329	0	2	20175	3	0	next	other	0
+33219.97	48	Response	3	2134945	9616	1
+33219.97	49	Picture	43_T1_Picture_178b_Art:_i	2150506	0	1	20174	3	0	next	other	0
+33219.97	49	Response	1	2166370	15864	1
+33219.97	50	Picture	44_T1_Picture_131a_Art:_a	2175682	0	2	20175	3	0	next	other	0
+33219.97	50	Response	3	2189015	13333	1
+33219.97	51	Picture	45_T1_Picture_078b_Art:_i	2200859	0	1	20174	3	0	next	other	0
+33219.97	51	Response	3	2217828	16969	1
+33219.97	52	Picture	46_T1_Picture_005a_Art:_i	2226035	0	2	20175	3	0	next	other	0
+33219.97	52	Response	3	2243530	17495	2
+33219.97	53	Picture	47_T1_Picture_180b_Art:_a	2251212	0	1	20174	3	0	next	other	0
+33219.97	53	Response	3	2269121	17909	1
+33219.97	54	Picture	48_T1_Picture_113a_Art:_a	2276388	0	2	20175	3	0	next	other	0
+33219.97	54	Response	1	2284538	8150	1
+33219.97	55	Picture	49_T1_Picture_013a_Art:_i	2301565	0	1	20174	3	0	next	other	0
+33219.97	55	Response	3	2314923	13358	1
+33219.97	56	Picture	50_T1_Picture_083b_Art:_i	2326741	0	2	20175	3	0	next	other	0
+33219.97	56	Response	3	2340939	14198	1
+33219.97	57	Picture	51_T1_Picture_084b_Art:_a	2351918	0	1	20174	3	0	next	other	0
+33219.97	57	Response	1	2364782	12864	1
+33219.97	58	Picture	52_T1_Picture_108b_Art:_a	2377094	0	2	20175	3	0	next	other	0
+33219.97	58	Response	1	2393974	16880	1
+33219.97	59	Picture	53_T1_Picture_067a_Art:_i	2402271	0	1	20175	2	0	next	other	0
+33219.97	59	Response	3	2417931	15660	1
+33219.97	60	Picture	54_T1_Picture_030b_Art:_i	2427447	0	2	20175	3	0	next	other	0
+33219.97	60	Response	3	2445572	18125	1
+33219.97	61	Picture	55_T1_Picture_010a_Art:_a	2452624	0	1	20174	3	0	next	other	0
+33219.97	61	Response	3	2470413	17789	1
+33219.97	62	Picture	56_T1_Picture_186b_Art:_b	2477800	0	2	20175	3	0	next	other	0
+33219.97	62	Response	3	2490797	12997	1
+33219.97	63	Picture	57_T1_Picture_155b_Art:_a	2502977	0	1	20174	3	0	next	other	0
+33219.97	63	Response	3	2519955	16978	2
+33219.97	64	Picture	58_T1_Picture_185b_Art:_i	2528153	0	2	20175	3	0	next	other	0
+33219.97	64	Response	3	2541521	13368	1
+33219.97	65	Picture	59_T1_Picture_026a_Art:_i	2553330	0	1	20174	3	0	next	other	0
+33219.97	65	Response	1	2561749	8419	1
+33219.97	66	Picture	60_T1_Picture_182a_Art:_b	2578506	0	2	20175	3	0	next	other	0
+33219.97	66	Response	3	2589823	11317	1
+33219.97	67	Picture	61_T1_Picture_158a_Art:_b	2603683	0	1	20174	3	0	next	other	0
+33219.97	67	Response	3	2624243	20560	1
+33219.97	68	Picture	62_T1_Picture_018b_Art:_i	2628859	0	2	20175	3	0	next	other	0
+33219.97	68	Response	3	2643558	14699	1
+33219.97	69	Picture	63_T1_Picture_126b_Art:_b	2654036	0	1	20174	3	0	next	other	0
+33219.97	69	Response	1	2669698	15662	1
+33219.97	70	Picture	64_T1_Picture_184a_Art:_i	2679212	0	2	20175	3	0	next	other	0
+33219.97	70	Response	3	2695043	15831	1
+33219.97	71	Picture	65_T1_Picture_036a_Art:_a	2704389	0	1	20174	3	0	next	other	0
+33219.97	71	Response	1	2715627	11238	1
+33219.97	72	Picture	66_T1_Picture_094b_Art:_i	2729565	0	2	20175	3	0	next	other	0
+33219.97	72	Response	3	2742961	13396	1
+33219.97	73	Picture	67_T1_Picture_073b_Art:_a	2754742	0	1	20174	3	0	next	other	0
+33219.97	73	Response	3	2766610	11868	1
+33219.97	74	Picture	68_T1_Picture_156b_Art:_a	2779918	0	2	20175	3	0	next	other	0
+33219.97	74	Response	1	2795337	15419	2
+33219.97	75	Picture	69_T1_Picture_009a_Art:_b	2805095	0	1	20174	3	0	next	other	0
+33219.97	75	Response	3	2820856	15761	2
+33219.97	76	Picture	70_T1_Picture_031a_Art:_b	2830272	0	1	20174	2	0	next	other	0
+33219.97	76	Response	3	2848736	18464	2
+33219.97	77	Picture	71_T1_Picture_058a_Art:_i	2855448	0	1	20175	2	0	next	other	0
+33219.97	77	Response	1	2876213	20765	1
+33219.97	78	Picture	72_T1_Picture_169a_Art:_b	2880624	0	2	20175	3	0	next	other	0
+33219.97	78	Response	3	2893802	13178	1
+33219.97	79	Picture	73_T1_Picture_146b_Art:_i	2905801	0	1	20175	2	0	next	other	0
+33219.97	79	Response	3	2919469	13668	2
+33219.97	80	Picture	74_T1_Picture_040b_Art:_a	2930977	0	2	20175	3	0	next	other	0
+33219.97	80	Response	3	2946141	15164	1
+33219.97	81	Picture	75_T1_Picture_134a_Art:_a	2956154	0	1	20175	2	0	next	other	0
+33219.97	81	Response	3	2974743	18589	1
+33219.97	82	Picture	76_T1_Picture_110b_Art:_b	2981330	0	2	20175	3	0	next	other	0
+33219.97	83	Picture	77_T1_Picture_173b_Art:_a	3006507	0	1	20175	2	0	next	other	0
+33219.97	84	Picture	78_T1_Picture_102a_Art:_b	3031683	0	2	20175	3	0	next	other	0
+33219.97	84	Response	1	3044907	13224	1
+33219.97	85	Picture	79_T1_Picture_020b_Art:_a	3056860	0	1	20175	2	0	next	other	0
+33219.97	86	Picture	80_T1_Picture_098a_Art:_i	3082036	0	2	20175	3	0	next	other	0
+33219.97	86	Response	1	3103743	21707	1
+33219.97	87	Picture	81_T1_Picture_072b_Art:_b	3107213	0	1	20174	3	0	next	other	0
+33219.97	87	Response	1	3130494	23281	1
+33219.97	88	Picture	82_T1_Picture_089a_Art:_i	3132389	0	2	20175	3	0	next	other	0
+33219.97	88	Response	1	3150416	18027	1
+33219.97	89	Picture	83_T1_Picture_007b_Art:_i	3157566	0	1	20175	2	0	next	other	0
+33219.97	89	Response	1	3177537	19971	1
+33219.97	90	Picture	84_T1_Picture_075a_Art:_a	3182742	0	2	20175	3	0	next	other	0
+33219.97	90	Response	1	3199774	17032	1
+33219.97	91	Picture	85_T1_Picture_187a_Art:_i	3207919	0	1	20175	2	0	next	other	0
+33219.97	91	Response	3	3225896	17977	1
+33219.97	92	Picture	86_T1_Picture_080b_Art:_b	3233095	0	2	20175	3	0	next	other	0
+33219.97	92	Response	1	3244673	11578	1
+33219.97	93	Picture	87_T1_Picture_092a_Art:_a	3258272	0	1	20174	3	0	next	other	0
+33219.97	93	Response	1	3281243	22971	1
+33219.97	94	Picture	88_T1_Picture_170b_Art:_b	3283449	0	1	20174	2	0	next	other	0
+33219.97	95	Picture	89_T1_Picture_175b_Art:_i	3308625	0	1	20175	2	0	next	other	0
+33219.97	95	Response	1	3323522	14897	1
+33219.97	96	Picture	90_T1_Picture_012b_Art:_i	3333802	0	1	20174	2	0	next	other	0
+33219.97	96	Response	1	3350749	16947	2
+33219.97	97	Picture	91_T1_Picture_144b_Art:_b	3358978	0	1	20175	2	0	next	other	0
+33219.97	98	Picture	92_T1_Picture_157a_Art:_i	3384154	0	2	20175	3	0	next	other	0
+33219.97	98	Response	1	3401446	17292	1
+33219.97	99	Picture	93_T1_Picture_168a_Art:_i	3409331	0	1	20175	2	0	next	other	0
+33219.97	99	Response	1	3425541	16210	1
+33219.97	100	Picture	94_T1_Picture_118a_Art:_a	3434508	0	1	20174	2	0	next	other	0
+33219.97	100	Response	3	3453756	19248	1
+33219.97	101	Picture	95_T1_Picture_129b_Art:_a	3459684	0	1	20175	2	0	next	other	0
+33219.97	101	Response	3	3472325	12641	1
+33219.97	102	Picture	96_T1_Picture_106a_Art:_i	3484860	0	2	20175	3	0	next	other	0
+33219.97	103	Picture	97_T1_Picture_096b_Art:_a	3510037	0	1	20175	2	0	next	other	0
+33219.97	103	Response	3	3518862	8825	1
+33219.97	104	Picture	98_T1_Picture_127b_Art:_b	3535214	0	1	20174	2	0	next	other	0
+33219.97	104	Response	1	3558414	23200	1
+33219.97	105	Picture	99_T1_Picture_192a_Art:_b	3560390	0	1	20175	2	0	next	other	0
+33219.97	105	Response	3	3573202	12812	1
+33219.97	106	Picture	100_T1_Picture_183a_Art:_a	3585567	0	1	20174	2	0	next	other	0
+33219.97	106	Response	1	3599085	13518	1
+33219.97	107	Picture	101_T1_Picture_100b_Art:_i	3610743	0	1	20174	3	0	next	other	0
+33219.97	107	Response	3	3633859	23116	2
+33219.97	108	Picture	102_T1_Picture_062a_Art:_b	3635920	0	1	20174	2	0	next	other	0
+33219.97	108	Response	1	3651881	15961	1
+33219.97	109	Picture	103_T1_Picture_109a_Art:_a	3661096	0	1	20174	3	0	next	other	0
+33219.97	109	Response	3	3671837	10741	1
+33219.97	110	Picture	104_T1_Picture_048a_Art:_i	3686273	0	1	20174	2	0	next	other	0
+33219.97	110	Response	1	3695557	9284	1
+33219.97	111	Picture	105_T1_Picture_039b_Art:_a	3711449	0	1	20175	2	0	next	other	0
+33219.97	111	Response	3	3724208	12759	1
+33219.97	112	Picture	106_T1_Picture_022b_Art:_a	3736625	0	2	20175	3	0	next	other	0
+33219.97	112	Response	1	3756202	19577	1
+33219.97	113	Picture	107_T1_Picture_002b_Art:_b	3761802	0	1	20175	2	0	next	other	0
+33219.97	113	Response	3	3781619	19817	2
+33219.97	114	Picture	108_T1_Picture_016a_Art:_b	3786978	0	2	20175	3	0	next	other	0
+33219.97	114	Response	1	3796798	9820	1
+33219.97	115	Picture	109_T1_Picture_149b_Art:_i	3812155	0	1	20175	2	0	next	other	0
+33219.97	115	Response	1	3823874	11719	1
+33219.97	116	Picture	110_T1_Picture_059b_Art:_b	3837332	0	1	20174	2	0	next	other	0
+33219.97	116	Response	3	3850334	13002	1
+33219.97	117	Picture	111_T1_Picture_141b_Art:_b	3862508	0	1	20175	2	0	next	other	0
+33219.97	117	Response	1	3874990	12482	1
+33219.97	118	Picture	112_T1_Picture_151b_Art:_a	3887685	0	1	20174	2	0	next	other	0
+33219.97	118	Response	1	3905422	17737	1
+33219.97	119	Picture	113_T1_Picture_079a_Art:_a	3912861	0	1	20175	2	0	next	other	0
+33219.97	119	Response	1	3936471	23610	1
+33219.97	120	Picture	114_T1_Picture_024b_Art:_b	3938038	0	1	20174	2	0	next	other	0
+33219.97	120	Response	3	3959999	21961	1
+33219.97	121	Picture	115_T1_Picture_050b_Art:_a	3963214	0	1	20174	3	0	next	other	0
+33219.97	121	Response	1	3978191	14977	1
+33219.97	121	Response	1	3984576	21362	2
+33219.97	122	Picture	116_T1_Picture_085b_Art:_a	3988391	0	1	20174	2	0	next	other	0
+33219.97	122	Response	1	4002570	14179	2
+33219.97	123	Picture	117_T1_Picture_042b_Art:_b	4013567	0	1	20175	2	0	next	other	0
+33219.97	123	Response	3	4027699	14132	1
+33219.97	124	Picture	118_T1_Picture_150a_Art:_a	4038744	0	1	20174	2	0	next	other	0
+33219.97	124	Response	1	4049216	10472	2
+33219.97	125	Picture	119_T1_Picture_053a_Art:_i	4063920	0	1	20175	2	0	next	other	0
+33219.97	125	Response	3	4081976	18056	1
+33219.97	126	Picture	120_T1_Picture_064b_Art:_i	4089097	0	1	20174	2	0	next	other	0
+33219.97	126	Response	1	4112373	23276	1
+33219.97	127	Picture	121_T1_Picture_163a_Art:_b	4114273	0	1	20175	2	0	next	other	0
+33219.97	127	Response	1	4133155	18882	1
+33219.97	128	Picture	122_T1_Picture_176b_Art:_a	4139450	0	1	20174	2	0	next	other	0
+33219.97	128	Response	1	4155557	16107	1
+33219.97	129	Picture	123_T1_Picture_188a_Art:_i	4164626	0	1	20175	2	0	next	other	0
+33219.97	129	Response	1	4186515	21889	1
+33219.97	130	Picture	124_T1_Picture_104a_Art:_b	4189803	0	1	20174	2	0	next	other	0
+33219.97	131	Picture	125_T1_Picture_167a_Art:_a	4214979	0	1	20175	2	0	next	other	0
+33219.97	131	Response	3	4224509	9530	1
+33219.97	132	Picture	126_T1_Picture_090a_Art:_a	4240155	0	2	20175	3	0	next	other	0
+33219.97	132	Response	1	4247400	7245	1
+33219.97	133	Picture	127_T1_Picture_046b_Art:_b	4265332	0	1	20175	2	0	next	other	0
+33219.97	133	Response	1	4279366	14034	1
+33219.97	134	Picture	128_T1_Picture_135b_Art:_a	4290509	0	1	20174	2	0	next	other	0
+33219.97	134	Response	1	4303712	13203	1
+33219.97	135	Picture	Instr_T2_20	4335682	0	179	819998	180	0	next	hit	257
+33219.97	135	Response	4	5155531	819849	1
+33219.97	136	Picture	Instr_T2_21	5160849	0	1	239093	2	0	next	hit	259
+33219.97	136	Response	4	5399837	238988	2
+33219.97	137	Picture	Instr_T2_22	5405111	0	1	61357	2	0	next	hit	261
+33219.97	137	Response	4	5466309	61198	1
+33219.97	138	Picture	Instr_T2_23	5471637	0	1	98538	2	0	next	hit	263
+33219.97	138	Response	4	5570151	98514	2
+33219.97	139	Picture	Instr_T2_24	5575344	0	1	53020	3	0	next	hit	265
+33219.97	139	Response	4	5628259	52915	2
+33219.97	140	Picture	Instr_T2_25	5628364	0	2	24677	3	0	next	hit	267
+33219.97	140	Response	4	5652957	24593	1
+33219.97	141	Picture	Instr_T2_27	5658209	0	2	68860	4	0	next	hit	269
+33219.97	141	Response	4	5726913	68704	5
+33219.97	142	Picture	Instr_T2_28	5727069	0	2	20509	3	0	next	hit	271
+33219.97	142	Response	4	5747442	20373	2
+33219.97	143	Picture	Instr_T2_30	5752746	0	2	44351	3	0	next	hit	273
+33219.97	143	Response	4	5796940	44194	1
+33219.97	144	Picture	Instr_T2_31	5797097	0	1	21175	2	0	next	hit	275
+33219.97	144	Response	4	5818244	21147	1
+33219.97	145	Picture	Instr_T2_33	5823441	0	1	34013	2	0	next	hit	277
+33219.97	145	Response	4	5857401	33960	1
+33219.97	146	Picture	Instr_T2_34	5857454	0	1	27010	3	0	next	hit	279
+33219.97	146	Response	4	5884426	26972	1
+33219.97	147	Picture	Instr_T2_36	5889633	0	1	62024	3	0	next	hit	281
+33219.97	147	Response	4	5951624	61991	1
+33219.97	148	Picture	Instr_T2_38	5956826	0	1	43184	2	0	next	hit	283
+33219.97	148	Response	4	5999946	43120	2
+33219.97	149	Picture	Instr_T2_39	6000010	0	1	28010	3	0	next	hit	285
+33219.97	149	Response	4	6027873	27863	1
+33219.97	150	Picture	Instr_T2_41	6033189	0	1	22009	2	0	next	hit	287
+33219.97	150	Response	4	6055159	21970	1
+33219.97	151	Picture	Instr_T2_42	6055198	0	1	18007	2	0	next	hit	289
+33219.97	151	Response	4	6073092	17894	1
+33219.97	152	Picture	Instr_T2_44	6078373	0	2	25344	3	0	next	hit	291
+33219.97	152	Response	4	6103613	25240	2
+33219.97	153	Picture	Instr_T2_45	6103717	0	1	24343	2	0	next	hit	293
+33219.97	153	Response	4	6127907	24190	2
+33219.97	154	Picture	Instr_T2_46	6128060	0	1	49686	2	0	next	hit	295
+33219.97	154	Response	4	6177649	49589	2
+33219.97	155	Picture	Instr_T2_48	6182914	0	2	43851	3	0	next	hit	297
+33219.97	155	Response	4	6226695	43781	2
+33219.97	156	Picture	Instr_T2_49	6226765	0	1	18507	2	0	next	hit	299
+33219.97	156	Response	4	6245128	18363	1
+33219.97	157	Picture	Instr_T2_51	6250441	0	1	30512	2	0	next	hit	301
+33219.97	157	Response	4	6280831	30390	1
+33219.97	158	Picture	Instr_T2_52	6280953	0	1	22342	2	0	next	hit	303
+33219.97	158	Response	4	6303202	22249	1
+33219.97	159	Picture	Instr_T2_54	6308463	0	2	65693	3	0	next	hit	305
+33219.97	159	Response	4	6374088	65625	1
+33219.97	160	Picture	Instr_T2_55	6374156	0	1	15005	3	0	next	hit	307
+33219.97	160	Response	4	6389000	14844	1
+33219.97	161	Picture	Instr_T2_56	6389161	0	2	396989	3	0	next	hit	309
+33219.97	161	Response	4	6786135	396974	2
+33219.97	162	Picture	Instr_T2_58	6791319	0	1	248263	2	0	next	hit	311
+33219.97	162	Response	4	7039449	248130	2
+33219.97	163	Picture	1_T2_Picture_045a_Art:_new_cor_taste:_3	7049753	0	1	20174	3	0	next	other	0
+33219.97	164	Picture	FB_miss	7074929	0	2	500	4	0	next	other	0
+33219.97	165	Picture	2_T2_Picture_181b_Art:_new_cor_taste:_3	7075429	0	2	20175	3	0	next	false_alarm	315
+33219.97	165	Response	2	7097461	22032	1
+33219.97	166	Picture	FB_inco	7100606	0	1	500	2	0	next	other	0
+33219.97	167	Picture	3_T2_Picture_008b_Art:_sim_cor_taste:_2	7101106	0	1	20175	2	0	next	false_alarm	318
+33219.97	167	Response	1	7125322	24216	1
+33219.97	168	Picture	FB_inco	7126283	0	1	500	2	0	next	other	0
+33219.97	169	Picture	4_T2_Picture_036a_Art:_old_cor_taste:_1	7126783	0	1	20174	3	0	next	other	0
+33219.97	170	Picture	FB_miss	7151959	0	2	501	3	0	next	other	0
+33219.97	171	Picture	5_T2_Picture_115a_Art:_old_cor_taste:_1	7152460	0	1	20174	2	0	next	false_alarm	323
+33219.97	171	Response	3	7171839	19379	1
+33219.97	172	Picture	FB_inco	7177636	0	1	500	2	0	next	other	0
+33219.97	173	Picture	6_T2_Picture_179b_Art:_old_cor_taste:_1	7178136	0	1	20175	2	0	next	false_alarm	326
+33219.97	173	Response	2	7193804	15668	1
+33219.97	174	Picture	FB_inco	7203313	0	1	500	2	0	next	other	0
+33219.97	175	Picture	7_T2_Picture_061a_Art:_new_cor_taste:_3	7203813	0	1	20174	3	0	next	other	0
+33219.97	176	Picture	FB_miss	7228989	0	2	501	3	0	next	other	0
+33219.97	177	Picture	8_T2_Picture_063b_Art:_new_cor_taste:_3	7229490	0	1	20174	2	0	next	false_alarm	331
+33219.97	177	Response	1	7238486	8996	2
+33219.97	178	Picture	FB_inco	7254666	0	1	500	3	0	next	other	0
+33219.97	179	Picture	9_T2_Picture_091a_Art:_old_cor_taste:_1	7255166	0	2	20175	3	0	next	false_alarm	334
+33219.97	179	Response	3	7266232	11066	1
+33219.97	180	Picture	FB_inco	7280343	0	1	500	2	0	next	other	0
+33219.97	181	Picture	10_T2_Picture_035a_Art:_new_cor_taste:_3	7280843	0	1	20175	2	0	next	false_alarm	337
+33219.97	181	Response	1	7302987	22144	1
+33219.97	182	Picture	FB_inco	7306020	0	1	500	2	0	next	other	0
+33219.97	183	Picture	11_T2_Picture_101a_Art:_old_cor_taste:_1	7306520	0	1	20174	3	0	next	false_alarm	340
+33219.97	183	Response	2	7323374	16854	1
+33219.97	184	Picture	FB_inco	7331696	0	2	500	4	0	next	other	0
+33219.97	185	Picture	12_T2_Picture_123b_Art:_old_cor_taste:_1	7332196	0	2	20175	3	0	next	false_alarm	343
+33219.97	185	Response	3	7346715	14519	1
+33219.97	186	Picture	FB_inco	7357373	0	1	500	2	0	next	other	0
+33219.97	187	Picture	13_T2_Picture_090a_Art:_old_cor_taste:_1	7357873	0	1	20175	2	0	next	false_alarm	346
+33219.97	187	Response	2	7373458	15585	1
+33219.97	188	Picture	FB_inco	7383050	0	1	500	2	0	next	other	0
+33219.97	189	Picture	14_T2_Picture_043a_Art:_new_cor_taste:_3	7383550	0	1	20174	3	0	next	false_alarm	349
+33219.97	189	Response	1	7396748	13198	1
+33219.97	190	Picture	FB_inco	7408726	0	1	501	2	0	next	other	0
+33219.97	191	Picture	15_T2_Picture_039a_Art:_sim_cor_taste:_2	7409227	0	1	20174	2	0	next	false_alarm	352
+33219.97	191	Response	2	7421775	12548	1
+33219.97	192	Picture	FB_cor	7434403	0	1	500	2	0	next	other	0
+33219.97	193	Picture	16_T2_Picture_145a_Art:_new_cor_taste:_3	7434903	0	1	20175	2	0	next	false_alarm	355
+33219.97	193	Response	1	7447916	13013	1
+33219.97	194	Picture	FB_inco	7460080	0	1	500	2	0	next	other	0
+33219.97	195	Picture	17_T2_Picture_185b_Art:_old_cor_taste:_1	7460580	0	1	20174	3	0	next	false_alarm	358
+33219.97	195	Response	1	7482224	21644	1
+33219.97	196	Picture	FB_cor	7485756	0	2	501	3	0	next	other	0
+33219.97	197	Picture	18_T2_Picture_009b_Art:_sim_cor_taste:_2	7486257	0	1	20174	2	0	next	false_alarm	361
+33219.97	197	Response	2	7502506	16249	1
+33219.97	198	Picture	FB_cor	7511433	0	1	500	2	0	next	other	0
+33219.97	199	Picture	19_T2_Picture_153b_Art:_new_cor_taste:_3	7511933	0	1	20175	2	0	next	false_alarm	364
+33219.97	199	Response	3	7536786	24853	1
+33219.97	200	Picture	FB_cor	7537110	0	1	500	2	0	next	other	0
+33219.97	201	Picture	20_T2_Picture_065a_Art:_new_cor_taste:_3	7537610	0	1	20175	2	0	next	false_alarm	367
+33219.97	201	Response	2	7560956	23346	2
+33219.97	202	Picture	FB_inco	7562787	0	1	500	2	0	next	other	0
+33219.97	203	Picture	21_T2_Picture_052a_Art:_new_cor_taste:_3	7563287	0	1	20174	2	0	next	false_alarm	370
+33219.97	203	Response	1	7582184	18897	1
+33219.97	204	Picture	FB_inco	7588463	0	1	500	3	0	next	other	0
+33219.97	205	Picture	22_T2_Picture_058b_Art:_sim_cor_taste:_2	7588963	0	2	20175	3	0	next	false_alarm	373
+33219.97	205	Response	2	7607744	18781	1
+33219.97	206	Picture	FB_cor	7614140	0	1	500	2	0	next	other	0
+33219.97	207	Picture	23_T2_Picture_144a_Art:_sim_cor_taste:_2	7614640	0	1	20175	2	0	next	other	0
+33219.97	208	Picture	FB_miss	7639816	0	2	501	3	0	next	other	0
+33219.97	208	Response	1	7640298	482	1
+33219.97	209	Picture	24_T2_Picture_106a_Art:_old_cor_taste:_1	7640317	0	1	20174	3	0	next	other	0
+33219.97	210	Picture	FB_miss	7665493	0	1	500	3	0	next	other	0
+33219.97	211	Picture	25_T2_Picture_171a_Art:_new_cor_taste:_3	7665993	0	2	20175	3	0	next	false_alarm	381
+33219.97	211	Response	3	7688614	22621	2
+33219.97	212	Picture	FB_cor	7691170	0	1	500	2	0	next	other	0
+33219.97	213	Picture	26_T2_Picture_060b_Art:_sim_cor_taste:_2	7691670	0	1	20175	2	0	next	false_alarm	384
+33219.97	213	Response	2	7702985	11315	1
+33219.97	214	Picture	FB_cor	7716847	0	1	500	2	0	next	other	0
+33219.97	215	Picture	27_T2_Picture_132a_Art:_new_cor_taste:_3	7717347	0	1	20174	3	0	next	false_alarm	387
+33219.97	215	Response	1	7731272	13925	1
+33219.97	216	Picture	FB_inco	7742523	0	2	500	4	0	next	other	0
+33219.97	217	Picture	28_T2_Picture_076b_Art:_new_cor_taste:_3	7743023	0	2	20175	3	0	next	other	0
+33219.97	218	Picture	FB_miss	7768200	0	1	500	2	0	next	other	0
+33219.97	219	Picture	29_T2_Picture_037a_Art:_new_cor_taste:_3	7768700	0	1	20175	2	0	next	false_alarm	392
+33219.97	219	Response	2	7769129	429	2
+33219.97	219	Response	2	7788714	20014	1
+33219.97	220	Picture	FB_inco	7793877	0	1	500	2	0	next	other	0
+33219.97	221	Picture	30_T2_Picture_062b_Art:_sim_cor_taste:_2	7794377	0	1	20174	3	0	next	false_alarm	396
+33219.97	221	Response	1	7812739	18362	1
+33219.97	222	Picture	FB_inco	7819553	0	2	501	3	0	next	other	0
+33219.97	223	Picture	31_T2_Picture_079a_Art:_old_cor_taste:_1	7820054	0	1	20174	2	0	next	other	0
+33219.97	224	Picture	FB_miss	7845230	0	1	500	3	0	next	other	0
+33219.97	225	Picture	32_T2_Picture_137b_Art:_sim_cor_taste:_2	7845730	0	2	20175	3	0	next	false_alarm	401
+33219.97	225	Response	2	7848586	2856	1
+33219.97	226	Picture	FB_cor	7870907	0	1	500	2	0	next	other	0
+33219.97	227	Picture	33_T2_Picture_190b_Art:_old_cor_taste:_1	7871407	0	1	20175	2	0	next	false_alarm	404
+33219.97	227	Response	1	7874440	3033	1
+33219.97	227	Response	2	7894787	23380	2
+33219.97	228	Picture	FB_cor	7896583	0	2	501	3	0	next	other	0
+33219.97	229	Picture	34_T2_Picture_066a_Art:_sim_cor_taste:_2	7897084	0	1	20174	2	0	next	false_alarm	408
+33219.97	229	Response	2	7914282	17198	1
+33219.97	230	Picture	FB_cor	7922260	0	1	500	3	0	next	other	0
+33219.97	231	Picture	35_T2_Picture_042a_Art:_sim_cor_taste:_2	7922760	0	2	20175	3	0	next	false_alarm	411
+33219.97	231	Response	1	7937106	14346	1
+33219.97	232	Picture	FB_inco	7947937	0	1	500	2	0	next	other	0
+33219.97	233	Picture	36_T2_Picture_175b_Art:_old_cor_taste:_1	7948437	0	1	20175	2	0	next	false_alarm	414
+33219.97	233	Response	2	7963294	14857	1
+33219.97	234	Picture	FB_inco	7973613	0	2	501	3	0	next	other	0
+33219.97	235	Picture	37_T2_Picture_139b_Art:_new_cor_taste:_3	7974114	0	1	20174	2	0	next	false_alarm	417
+33219.97	235	Response	1	7988984	14870	1
+33219.97	236	Picture	FB_inco	7999290	0	2	500	4	0	next	other	0
+33219.97	237	Picture	38_T2_Picture_013b_Art:_sim_cor_taste:_2	7999790	0	2	20175	3	0	next	false_alarm	420
+33219.97	237	Response	2	8024095	24305	1
+33219.97	238	Picture	FB_cor	8024967	0	1	500	2	0	next	other	0
+33219.97	239	Picture	39_T2_Picture_054b_Art:_old_cor_taste:_1	8025467	0	1	20175	2	0	next	other	0
+33219.97	240	Picture	FB_miss	8050644	0	1	500	2	0	next	other	0
+33219.97	241	Picture	40_T2_Picture_085a_Art:_sim_cor_taste:_2	8051144	0	1	20174	3	0	next	false_alarm	425
+33219.97	241	Response	3	8061831	10687	2
+33219.97	242	Picture	FB_inco	8076320	0	2	501	3	0	next	other	0
+33219.97	243	Picture	41_T2_Picture_081b_Art:_sim_cor_taste:_2	8076821	0	1	20174	2	0	next	false_alarm	428
+33219.97	243	Response	1	8089097	12276	1
+33219.97	244	Picture	FB_inco	8101997	0	1	500	2	0	next	other	0
+33219.97	245	Picture	42_T2_Picture_120b_Art:_old_cor_taste:_1	8102497	0	1	20175	2	0	next	false_alarm	431
+33219.97	245	Response	2	8108878	6381	1
+33219.97	246	Picture	FB_inco	8127674	0	1	500	2	0	next	other	0
+33219.97	247	Picture	43_T2_Picture_183a_Art:_old_cor_taste:_1	8128174	0	1	20174	3	0	next	false_alarm	434
+33219.97	247	Response	2	8140192	12018	1
+33219.97	248	Picture	FB_inco	8153350	0	2	501	3	0	next	other	0
+33219.97	249	Picture	44_T2_Picture_173b_Art:_old_cor_taste:_1	8153851	0	1	20174	2	0	next	false_alarm	437
+33219.97	249	Response	1	8165147	11296	1
+33219.97	250	Picture	FB_cor	8179027	0	1	500	2	0	next	other	0
+33219.97	251	Picture	45_T2_Picture_032b_Art:_new_cor_taste:_3	8179527	0	1	20175	2	0	next	false_alarm	440
+33219.97	251	Response	3	8190981	11454	1
+33219.97	252	Picture	FB_cor	8204704	0	1	500	2	0	next	other	0
+33219.97	253	Picture	46_T2_Picture_149b_Art:_old_cor_taste:_1	8205204	0	1	20175	2	0	next	false_alarm	443
+33219.97	253	Response	3	8213613	8409	1
+33219.97	254	Picture	FB_inco	8230380	0	2	501	3	0	next	other	0
+33219.97	255	Picture	47_T2_Picture_142a_Art:_sim_cor_taste:_2	8230881	0	1	20174	2	0	next	false_alarm	446
+33219.97	255	Response	3	8248354	17473	1
+33219.97	256	Picture	FB_inco	8256057	0	1	500	3	0	next	other	0
+33219.97	257	Picture	48_T2_Picture_023a_Art:_new_cor_taste:_3	8256557	0	2	20175	3	0	next	false_alarm	449
+33219.97	257	Response	2	8272459	15902	1
+33219.97	258	Picture	FB_inco	8281734	0	1	500	2	0	next	other	0
+33219.97	259	Picture	49_T2_Picture_078a_Art:_sim_cor_taste:_2	8282234	0	1	20175	2	0	next	false_alarm	452
+33219.97	259	Response	1	8305077	22843	1
+33219.97	260	Picture	FB_inco	8307410	0	2	501	3	0	next	other	0
+33219.97	261	Picture	50_T2_Picture_011b_Art:_sim_cor_taste:_2	8307911	0	1	20174	3	0	next	other	0
+33219.97	262	Picture	FB_miss	8333087	0	1	500	3	0	next	other	0
+33219.97	263	Picture	51_T2_Picture_029b_Art:_old_cor_taste:_1	8333587	0	2	20175	3	0	next	false_alarm	457
+33219.97	263	Response	3	8342376	8789	1
+33219.97	264	Picture	FB_inco	8358764	0	1	500	2	0	next	other	0
+33219.97	265	Picture	52_T2_Picture_129b_Art:_old_cor_taste:_1	8359264	0	1	20175	2	0	next	other	0
+33219.97	266	Picture	FB_miss	8384441	0	1	500	2	0	next	other	0
+33219.97	267	Picture	53_T2_Picture_152b_Art:_new_cor_taste:_3	8384941	0	1	20174	3	0	next	false_alarm	462
+33219.97	267	Response	1	8389994	5053	1
+33219.97	267	Response	3	8408391	23450	1
+33219.97	268	Picture	FB_inco	8410117	0	2	501	3	0	next	other	0
+33219.97	269	Picture	54_T2_Picture_140b_Art:_new_cor_taste:_3	8410618	0	1	20174	2	0	next	other	0
+33219.97	270	Picture	FB_miss	8435794	0	1	500	2	0	next	other	0
+33219.97	271	Picture	55_T2_Picture_180a_Art:_sim_cor_taste:_2	8436294	0	1	20175	2	0	next	false_alarm	468
+33219.97	271	Response	1	8455662	19368	1
+33219.97	271	Response	3	8457487	21193	1
+33219.97	272	Picture	FB_inco	8461471	0	1	500	2	0	next	other	0
+33219.97	273	Picture	56_T2_Picture_150b_Art:_sim_cor_taste:_2	8461971	0	1	20174	3	0	next	false_alarm	472
+33219.97	273	Response	3	8482287	20316	1
+33219.97	274	Picture	FB_inco	8487147	0	2	501	3	0	next	other	0
+33219.97	275	Picture	57_T2_Picture_019b_Art:_new_cor_taste:_3	8487648	0	1	20174	2	0	next	false_alarm	475
+33219.97	275	Response	2	8508742	21094	1
+33219.97	276	Picture	FB_inco	8512824	0	1	500	3	0	next	other	0
+33219.97	277	Picture	58_T2_Picture_102b_Art:_sim_cor_taste:_2	8513324	0	2	20175	3	0	next	other	0
+33219.97	278	Picture	FB_miss	8538501	0	1	500	2	0	next	other	0
+33219.97	279	Picture	59_T2_Picture_146b_Art:_old_cor_taste:_1	8539001	0	1	20175	2	0	next	false_alarm	480
+33219.97	279	Response	1	8539790	789	1
+33219.97	280	Picture	FB_cor	8564177	0	2	501	3	0	next	other	0
+33219.97	281	Picture	60_T2_Picture_077b_Art:_new_cor_taste:_3	8564678	0	1	20174	2	0	next	false_alarm	483
+33219.97	281	Response	3	8576819	12141	1
+33219.97	282	Picture	FB_cor	8589854	0	1	500	3	0	next	other	0
+33219.97	283	Picture	61_T2_Picture_119b_Art:_new_cor_taste:_3	8590354	0	2	20175	3	0	next	false_alarm	486
+33219.97	283	Response	2	8604886	14532	1
+33219.97	284	Picture	FB_inco	8615531	0	1	500	2	0	next	other	0
+33219.97	285	Picture	62_T2_Picture_024b_Art:_old_cor_taste:_1	8616031	0	1	20175	2	0	next	other	0
+33219.97	286	Picture	FB_miss	8641208	0	1	500	2	0	next	other	0
+33219.97	287	Picture	63_T2_Picture_130b_Art:_old_cor_taste:_1	8641708	0	1	20174	3	0	next	false_alarm	491
+33219.97	287	Response	3	8643122	1414	1
+33219.97	287	Response	1	8662989	21281	1
+33219.97	288	Picture	FB_inco	8666884	0	1	500	3	0	next	other	0
+33219.97	289	Picture	64_T2_Picture_133a_Art:_new_cor_taste:_3	8667384	0	2	20175	3	0	next	false_alarm	495
+33219.97	289	Response	3	8688266	20882	2
+33219.97	290	Picture	FB_cor	8692561	0	1	500	2	0	next	other	0
+33219.97	291	Picture	65_T2_Picture_098b_Art:_sim_cor_taste:_2	8693061	0	1	20175	2	0	next	false_alarm	498
+33219.97	291	Response	3	8716026	22965	1
+33219.97	292	Picture	FB_inco	8718238	0	1	500	2	0	next	other	0
+33219.97	293	Picture	66_T2_Picture_122a_Art:_old_cor_taste:_1	8718738	0	1	20174	3	0	next	false_alarm	501
+33219.97	293	Response	3	8741833	23095	1
+33219.97	294	Picture	FB_inco	8743914	0	2	501	3	0	next	other	0
+33219.97	295	Picture	67_T2_Picture_056a_Art:_new_cor_taste:_3	8744415	0	1	20174	2	0	next	false_alarm	504
+33219.97	295	Response	1	8759487	15072	1
+33219.97	296	Picture	FB_inco	8769591	0	1	500	2	0	next	other	0
+33219.97	297	Picture	68_T2_Picture_165b_Art:_new_cor_taste:_3	8770091	0	1	20175	2	0	next	false_alarm	507
+33219.97	297	Response	3	8784517	14426	1
+33219.97	298	Picture	FB_cor	8795268	0	1	500	2	0	next	other	0
+33219.97	299	Picture	69_T2_Picture_002a_Art:_sim_cor_taste:_2	8795768	0	1	20174	3	0	next	false_alarm	510
+33219.97	299	Response	1	8816197	20429	2
+33219.97	300	Picture	FB_inco	8820944	0	2	501	3	0	next	other	0
+33219.97	301	Picture	70_T2_Picture_155b_Art:_old_cor_taste:_1	8821445	0	1	20174	2	0	next	false_alarm	513
+33219.97	301	Response	2	8843146	21701	1
+33219.97	302	Picture	FB_inco	8846621	0	1	500	3	0	next	other	0
+33219.97	303	Picture	71_T2_Picture_022b_Art:_old_cor_taste:_1	8847121	0	2	20175	3	0	next	other	0
+33219.97	304	Picture	FB_miss	8872298	0	1	500	2	0	next	other	0
+33219.97	305	Picture	72_T2_Picture_005b_Art:_sim_cor_taste:_2	8872798	0	1	20174	3	0	next	false_alarm	518
+33219.97	305	Response	1	8874917	2119	1
+33219.97	306	Picture	FB_inco	8897975	0	1	500	2	0	next	other	0
+33219.97	307	Picture	73_T2_Picture_044b_Art:_new_cor_taste:_3	8898475	0	1	20174	2	0	next	false_alarm	521
+33219.97	307	Response	3	8899157	682	2
+33219.97	308	Picture	FB_cor	8923651	0	1	500	3	0	next	other	0
+33219.97	309	Picture	74_T2_Picture_046b_Art:_old_cor_taste:_1	8924151	0	2	20175	3	0	next	false_alarm	524
+33219.97	309	Response	2	8925362	1211	1
+33219.97	310	Picture	FB_inco	8949328	0	1	500	2	0	next	other	0
+33219.97	311	Picture	75_T2_Picture_095b_Art:_new_cor_taste:_3	8949828	0	1	20175	2	0	next	false_alarm	527
+33219.97	311	Response	2	8969951	20123	2
+33219.97	311	Response	3	8970128	20300	1
+33219.97	312	Picture	FB_inco	8975005	0	1	500	2	0	next	other	0
+33219.97	313	Picture	76_T2_Picture_047a_Art:_old_cor_taste:_1	8975505	0	1	20174	3	0	next	false_alarm	531
+33219.97	313	Response	1	8997289	21784	1
+33219.97	314	Picture	FB_cor	9000681	0	2	500	4	0	next	other	0
+33219.97	315	Picture	77_T2_Picture_094a_Art:_sim_cor_taste:_2	9001181	0	2	20175	3	0	next	false_alarm	534
+33219.97	315	Response	1	9022095	20914	1
+33219.97	316	Picture	FB_inco	9026358	0	1	500	2	0	next	other	0
+33219.97	317	Picture	78_T2_Picture_092a_Art:_old_cor_taste:_1	9026858	0	1	20175	2	0	next	false_alarm	537
+33219.97	317	Response	2	9045811	18953	1
+33219.97	318	Picture	FB_inco	9052035	0	1	500	2	0	next	other	0
+33219.97	319	Picture	79_T2_Picture_178a_Art:_sim_cor_taste:_2	9052535	0	1	20174	3	0	next	false_alarm	540
+33219.97	319	Response	1	9067289	14754	1
+33219.97	320	Picture	FB_inco	9077711	0	2	500	4	0	next	other	0
+33219.97	321	Picture	80_T2_Picture_025a_Art:_sim_cor_taste:_2	9078211	0	2	20175	3	0	next	false_alarm	543
+33219.97	321	Response	2	9101524	23313	1
+33219.97	322	Picture	FB_cor	9103388	0	1	500	2	0	next	other	0
+33219.97	323	Picture	81_T2_Picture_160a_Art:_new_cor_taste:_3	9103888	0	1	20175	2	0	next	false_alarm	546
+33219.97	323	Response	3	9128155	24267	1
+33219.97	324	Picture	FB_cor	9129065	0	1	500	2	0	next	other	0
+33219.97	325	Picture	82_T2_Picture_104a_Art:_old_cor_taste:_1	9129565	0	1	20174	3	0	next	other	0
+33219.97	326	Picture	FB_miss	9154741	0	2	501	3	0	next	other	0
+33219.97	327	Picture	83_T2_Picture_004a_Art:_sim_cor_taste:_2	9155242	0	1	20174	2	0	next	false_alarm	551
+33219.97	327	Response	2	9167327	12085	1
+33219.97	328	Picture	FB_cor	9180418	0	1	500	3	0	next	other	0
+33219.97	329	Picture	84_T2_Picture_001b_Art:_sim_cor_taste:_2	9180918	0	2	20175	3	0	next	false_alarm	554
+33219.97	329	Response	1	9191416	10498	1
+33219.97	330	Picture	FB_inco	9206095	0	1	500	2	0	next	other	0
+33219.97	331	Picture	85_T2_Picture_040b_Art:_old_cor_taste:_1	9206595	0	1	20174	3	0	next	false_alarm	557
+33219.97	331	Response	1	9221791	15196	1
+33219.97	332	Picture	FB_cor	9231771	0	2	501	3	0	next	other	0
+33219.97	333	Picture	86_T2_Picture_128a_Art:_sim_cor_taste:_2	9232272	0	1	20174	2	0	next	false_alarm	560
+33219.97	333	Response	1	9254286	22014	1
+33219.97	334	Picture	FB_inco	9257448	0	1	500	3	0	next	other	0
+33219.97	335	Picture	87_T2_Picture_026b_Art:_sim_cor_taste:_2	9257948	0	2	20175	3	0	next	false_alarm	563
+33219.97	335	Response	2	9278273	20325	2
+33219.97	336	Picture	FB_cor	9283125	0	1	500	2	0	next	other	0
+33219.97	337	Picture	88_T2_Picture_072a_Art:_sim_cor_taste:_2	9283625	0	1	20175	2	0	next	false_alarm	566
+33219.97	337	Response	2	9303614	19989	1
+33219.97	338	Picture	FB_cor	9308802	0	1	500	2	0	next	other	0
+33219.97	339	Picture	89_T2_Picture_018b_Art:_old_cor_taste:_1	9309302	0	1	20174	2	0	next	false_alarm	569
+33219.97	339	Response	1	9332478	23176	1
+33219.97	340	Picture	FB_cor	9334478	0	1	500	3	0	next	other	0
+33219.97	341	Picture	90_T2_Picture_164a_Art:_new_cor_taste:_3	9334978	0	2	20175	3	0	next	other	0
+33219.97	342	Picture	FB_miss	9360155	0	1	500	2	0	next	other	0
+33219.97	343	Picture	91_T2_Picture_141a_Art:_sim_cor_taste:_2	9360655	0	1	20175	2	0	next	false_alarm	574
+33219.97	343	Response	3	9377382	16727	1
+33219.97	344	Picture	FB_inco	9385832	0	1	500	2	0	next	other	0
+33219.97	345	Picture	92_T2_Picture_159a_Art:_sim_cor_taste:_2	9386332	0	1	20174	3	0	next	false_alarm	577
+33219.97	345	Response	1	9405171	18839	1
+33219.97	346	Picture	FB_inco	9411508	0	1	501	2	0	next	other	0
+33219.97	347	Picture	93_T2_Picture_157a_Art:_old_cor_taste:_1	9412009	0	1	20174	2	0	next	false_alarm	580
+33219.97	347	Response	3	9423489	11480	1
+33219.97	348	Picture	FB_inco	9437185	0	1	500	2	0	next	other	0
+33219.97	349	Picture	94_T2_Picture_057b_Art:_sim_cor_taste:_2	9437685	0	1	20175	2	0	next	false_alarm	583
+33219.97	349	Response	1	9443574	5889	1
+33219.97	350	Picture	FB_inco	9462862	0	1	500	2	0	next	other	0
+33219.97	351	Picture	95_T2_Picture_033b_Art:_sim_cor_taste:_2	9463362	0	1	20174	3	0	next	false_alarm	586
+33219.97	351	Response	2	9476803	13441	1
+33219.97	352	Picture	FB_cor	9488538	0	2	501	3	0	next	other	0
+33219.97	353	Picture	96_T2_Picture_107b_Art:_new_cor_taste:_3	9489039	0	1	20174	2	0	next	false_alarm	589
+33219.97	353	Response	1	9504337	15298	1
+33219.97	354	Picture	FB_inco	9514215	0	1	500	3	0	next	other	0
+33219.97	355	Picture	97_T2_Picture_161b_Art:_new_cor_taste:_3	9514715	0	2	20175	3	0	next	other	0
+33219.97	356	Picture	FB_miss	9539892	0	1	500	2	0	next	other	0
+33219.97	357	Picture	98_T2_Picture_012a_Art:_sim_cor_taste:_2	9540392	0	1	20175	2	0	next	false_alarm	594
+33219.97	357	Response	3	9545968	5576	1
+33219.97	358	Picture	FB_inco	9565569	0	1	500	2	0	next	other	0
+33219.97	359	Picture	99_T2_Picture_089a_Art:_old_cor_taste:_1	9566069	0	1	20174	2	0	next	false_alarm	597
+33219.97	359	Response	1	9566316	247	1
+33219.97	359	Response	1	9587906	21837	1
+33219.97	360	Picture	FB_cor	9591245	0	1	500	3	0	next	other	0
+33219.97	361	Picture	100_T2_Picture_084a_Art:_sim_cor_taste:_2	9591745	0	2	20175	3	0	next	false_alarm	601
+33219.97	361	Response	2	9615202	23457	1
+33219.97	362	Picture	FB_cor	9616922	0	1	500	2	0	next	other	0
+33219.97	363	Picture	101_T2_Picture_021b_Art:_new_cor_taste:_3	9617422	0	1	20175	2	0	next	false_alarm	604
+33219.97	363	Response	1	9637229	19807	2
+33219.97	364	Picture	FB_inco	9642599	0	1	500	2	0	next	other	0
+33219.97	365	Picture	102_T2_Picture_006b_Art:_new_cor_taste:_3	9643099	0	1	20174	3	0	next	other	0
+33219.97	366	Picture	FB_miss	9668275	0	2	500	4	0	next	other	0
+33219.97	367	Picture	103_T2_Picture_131b_Art:_sim_cor_taste:_2	9668775	0	2	20175	3	0	next	false_alarm	609
+33219.97	367	Response	2	9683692	14917	1
+33219.97	368	Picture	FB_cor	9693952	0	1	500	2	0	next	other	0
+33219.97	369	Picture	104_T2_Picture_096a_Art:_sim_cor_taste:_2	9694452	0	1	20175	2	0	next	false_alarm	612
+33219.97	369	Response	3	9709267	14815	1
+33219.97	370	Picture	FB_inco	9719629	0	1	500	2	0	next	other	0
+33219.97	371	Picture	105_T2_Picture_015a_Art:_new_cor_taste:_3	9720129	0	1	20174	3	0	next	false_alarm	615
+33219.97	371	Response	3	9738193	18064	2
+33219.97	372	Picture	FB_cor	9745305	0	2	500	4	0	next	other	0
+33219.97	373	Picture	106_T2_Picture_154b_Art:_old_cor_taste:_1	9745805	0	2	20175	3	0	next	false_alarm	618
+33219.97	373	Response	3	9759208	13403	1
+33219.97	374	Picture	FB_inco	9770982	0	1	500	2	0	next	other	0
+33219.97	375	Picture	107_T2_Picture_136b_Art:_sim_cor_taste:_2	9771482	0	1	20175	2	0	next	false_alarm	621
+33219.97	375	Response	2	9796014	24532	1
+33219.97	376	Picture	FB_cor	9796659	0	1	500	2	0	next	other	0
+33219.97	377	Picture	108_T2_Picture_148a_Art:_new_cor_taste:_3	9797159	0	1	20174	3	0	next	false_alarm	624
+33219.97	377	Response	3	9816815	19656	2
+33219.97	378	Picture	FB_cor	9822335	0	2	500	4	0	next	other	0
+33219.97	379	Picture	109_T2_Picture_176b_Art:_old_cor_taste:_1	9822835	0	2	20175	3	0	next	false_alarm	627
+33219.97	379	Response	1	9836765	13930	1
+33219.97	380	Picture	FB_cor	9848012	0	1	500	3	0	next	other	0
+33219.97	381	Picture	110_T2_Picture_172b_Art:_old_cor_taste:_1	9848512	0	2	20175	3	0	next	false_alarm	630
+33219.97	381	Response	1	9864050	15538	1
+33219.97	382	Picture	FB_cor	9873689	0	1	500	2	0	next	other	0
+33219.97	383	Picture	111_T2_Picture_126a_Art:_sim_cor_taste:_2	9874189	0	1	20175	2	0	next	false_alarm	633
+33219.97	383	Response	3	9895620	21431	1
+33219.97	384	Picture	FB_inco	9899365	0	2	501	3	0	next	other	0
+33219.97	385	Picture	112_T2_Picture_114a_Art:_new_cor_taste:_3	9899866	0	1	20174	2	0	next	other	0
+33219.97	386	Picture	FB_miss	9925042	0	1	500	3	0	next	other	0
+33219.97	387	Picture	113_T2_Picture_187b_Art:_sim_cor_taste:_2	9925542	0	2	20175	3	0	next	false_alarm	638
+33219.97	387	Response	2	9925642	100	1
+33219.97	388	Picture	FB_cor	9950719	0	1	500	2	0	next	other	0
+33219.97	389	Picture	114_T2_Picture_083b_Art:_old_cor_taste:_1	9951219	0	1	20175	2	0	next	false_alarm	641
+33219.97	389	Response	1	9963826	12607	1
+33219.97	390	Picture	FB_cor	9976395	0	2	501	3	0	next	other	0
+33219.97	391	Picture	115_T2_Picture_191a_Art:_sim_cor_taste:_2	9976896	0	1	20174	2	0	next	false_alarm	644
+33219.97	391	Response	2	10000612	23716	1
+33219.97	392	Picture	FB_cor	10002072	0	1	500	3	0	next	other	0
+33219.97	393	Picture	116_T2_Picture_048a_Art:_old_cor_taste:_1	10002572	0	2	20175	3	0	next	false_alarm	647
+33219.97	393	Response	1	10018945	16373	1
+33219.97	394	Picture	FB_cor	10027749	0	1	500	2	0	next	other	0
+33219.97	395	Picture	117_T2_Picture_143a_Art:_new_cor_taste:_3	10028249	0	1	20175	2	0	next	false_alarm	650
+33219.97	395	Response	2	10048766	20517	1
+33219.97	396	Picture	FB_inco	10053426	0	1	500	2	0	next	other	0
+33219.97	397	Picture	118_T2_Picture_108a_Art:_sim_cor_taste:_2	10053926	0	1	20174	3	0	next	other	0
+33219.97	398	Picture	FB_miss	10079102	0	2	500	4	0	next	other	0
+33219.97	399	Picture	119_T2_Picture_050a_Art:_sim_cor_taste:_2	10079602	0	2	20175	3	0	next	false_alarm	655
+33219.97	399	Response	2	10080822	1220	1
+33219.97	400	Picture	FB_cor	10104779	0	1	500	2	0	next	other	0
+33219.97	401	Picture	120_T2_Picture_186a_Art:_sim_cor_taste:_2	10105279	0	1	20175	2	0	next	false_alarm	658
+33219.97	401	Response	1	10128023	22744	2
+33219.97	402	Picture	FB_inco	10130456	0	1	500	2	0	next	other	0
+33219.97	403	Picture	121_T2_Picture_100b_Art:_old_cor_taste:_1	10130956	0	1	20174	3	0	next	false_alarm	661
+33219.97	403	Response	1	10147998	17042	1
+33219.97	404	Picture	FB_cor	10156132	0	2	501	3	0	next	other	0
+33219.97	405	Picture	122_T2_Picture_135a_Art:_sim_cor_taste:_2	10156633	0	1	20174	2	0	next	false_alarm	664
+33219.97	405	Response	2	10179750	23117	1
+33219.97	406	Picture	FB_cor	10181809	0	1	500	2	0	next	other	0
+33219.97	407	Picture	123_T2_Picture_059a_Art:_sim_cor_taste:_2	10182309	0	1	20175	2	0	next	false_alarm	667
+33219.97	407	Response	1	10199388	17079	1
+33219.97	408	Picture	FB_inco	10207486	0	1	500	2	0	next	other	0
+33219.97	409	Picture	124_T2_Picture_010a_Art:_old_cor_taste:_1	10207986	0	1	20175	2	0	next	false_alarm	670
+33219.97	409	Response	3	10223428	15442	1
+33219.97	410	Picture	FB_inco	10233162	0	2	501	3	0	next	other	0
+33219.97	411	Picture	125_T2_Picture_038b_Art:_new_cor_taste:_3	10233663	0	1	20174	3	0	next	false_alarm	673
+33219.97	411	Response	2	10255667	22004	1
+33219.97	412	Picture	FB_inco	10258839	0	1	500	2	0	next	other	0
+33219.97	413	Picture	126_T2_Picture_064b_Art:_old_cor_taste:_1	10259339	0	1	20175	2	0	next	other	0
+33219.97	414	Picture	FB_miss	10284516	0	1	500	2	0	next	other	0
+33219.97	415	Picture	127_T2_Picture_147b_Art:_new_cor_taste:_3	10285016	0	1	20175	2	0	next	false_alarm	678
+33219.97	415	Response	2	10301864	16848	1
+33219.97	416	Picture	FB_inco	10310193	0	1	500	2	0	next	other	0
+33219.97	417	Picture	128_T2_Picture_182a_Art:_old_cor_taste:_1	10310693	0	1	20174	2	0	next	false_alarm	681
+33219.97	417	Response	1	10322777	12084	1
+33219.97	418	Picture	FB_cor	10335869	0	2	500	4	0	next	other	0
+33219.97	419	Picture	129_T2_Picture_138b_Art:_sim_cor_taste:_2	10336369	0	2	20175	3	0	next	false_alarm	684
+33219.97	419	Response	1	10355538	19169	1
+33219.97	420	Picture	FB_inco	10361546	0	1	500	2	0	next	other	0
+33219.97	421	Picture	130_T2_Picture_053b_Art:_sim_cor_taste:_2	10362046	0	1	20175	2	0	next	false_alarm	687
+33219.97	421	Response	1	10383034	20988	1
+33219.97	422	Picture	FB_inco	10387223	0	1	500	2	0	next	other	0
+33219.97	423	Picture	131_T2_Picture_156b_Art:_old_cor_taste:_1	10387723	0	1	20174	3	0	next	false_alarm	690
+33219.97	423	Response	1	10406336	18613	1
+33219.97	424	Picture	FB_cor	10412899	0	1	500	3	0	next	other	0
+33219.97	425	Picture	132_T2_Picture_070a_Art:_new_cor_taste:_3	10413399	0	2	20175	3	0	next	other	0
+33219.97	426	Picture	FB_miss	10438576	0	1	500	2	0	next	other	0
+33219.97	427	Picture	133_T2_Picture_016a_Art:_old_cor_taste:_1	10439076	0	1	20175	2	0	next	false_alarm	695
+33219.97	427	Response	2	10460738	21662	2
+33219.97	428	Picture	FB_inco	10464253	0	1	500	2	0	next	other	0
+33219.97	429	Picture	134_T2_Picture_125b_Art:_new_cor_taste:_3	10464753	0	1	20174	3	0	next	false_alarm	698
+33219.97	429	Response	1	10487337	22584	2
+33219.97	430	Picture	FB_inco	10489929	0	2	500	4	0	next	other	0
+33219.97	431	Picture	135_T2_Picture_055b_Art:_new_cor_taste:_3	10490429	0	2	20175	3	0	next	false_alarm	701
+33219.97	431	Response	1	10507044	16615	2
+33219.97	432	Picture	FB_inco	10515606	0	1	500	3	0	next	other	0
+33219.97	433	Picture	136_T2_Picture_017b_Art:_new_cor_taste:_3	10516106	0	2	20175	3	0	next	false_alarm	704
+33219.97	433	Response	3	10533395	17289	1
+33219.97	434	Picture	FB_cor	10541283	0	1	500	2	0	next	other	0
+33219.97	435	Picture	137_T2_Picture_075b_Art:_sim_cor_taste:_2	10541783	0	1	20175	2	0	next	other	0
+33219.97	436	Picture	FB_miss	10566959	0	2	501	3	0	next	other	0
+33219.97	437	Picture	138_T2_Picture_169b_Art:_sim_cor_taste:_2	10567460	0	1	20174	2	0	next	false_alarm	709
+33219.97	437	Response	3	10581626	14166	2
+33219.97	438	Picture	FB_inco	10592636	0	1	500	2	0	next	other	0
+33219.97	439	Picture	139_T2_Picture_007b_Art:_old_cor_taste:_1	10593136	0	1	20175	2	0	next	false_alarm	712
+33219.97	439	Response	2	10607029	13893	1
+33219.97	440	Picture	FB_inco	10618313	0	1	500	2	0	next	other	0
+33219.97	441	Picture	140_T2_Picture_118b_Art:_sim_cor_taste:_2	10618813	0	1	20175	2	0	next	false_alarm	715
+33219.97	441	Response	3	10634137	15324	1
+33219.97	442	Picture	FB_inco	10643990	0	1	500	2	0	next	other	0
+33219.97	443	Picture	141_T2_Picture_166b_Art:_new_cor_taste:_3	10644490	0	1	20174	3	0	next	false_alarm	718
+33219.97	443	Response	3	10663289	18799	1
+33219.97	444	Picture	FB_cor	10669666	0	1	500	3	0	next	other	0
+33219.97	445	Picture	142_T2_Picture_030a_Art:_sim_cor_taste:_2	10670166	0	2	20175	3	0	next	false_alarm	721
+33219.97	445	Response	1	10689871	19705	2
+33219.97	446	Picture	FB_inco	10695343	0	1	500	2	0	next	other	0
+33219.97	447	Picture	143_T2_Picture_087b_Art:_new_cor_taste:_3	10695843	0	1	20175	2	0	next	false_alarm	724
+33219.97	447	Response	3	10715922	20079	1
+33219.97	448	Picture	FB_cor	10721019	0	2	501	3	0	next	other	0
+33219.97	449	Picture	144_T2_Picture_127b_Art:_old_cor_taste:_1	10721520	0	1	20174	3	0	next	false_alarm	727
+33219.97	449	Response	3	10736348	14828	1
+33219.97	450	Picture	FB_inco	10746696	0	1	500	3	0	next	other	0
+33219.97	451	Picture	145_T2_Picture_073b_Art:_old_cor_taste:_1	10747196	0	2	20175	3	0	next	false_alarm	730
+33219.97	451	Response	1	10762981	15785	2
+33219.97	452	Picture	FB_cor	10772373	0	1	500	2	0	next	other	0
+33219.97	453	Picture	146_T2_Picture_041b_Art:_new_cor_taste:_3	10772873	0	1	20175	2	0	next	false_alarm	733
+33219.97	453	Response	3	10792401	19528	1
+33219.97	454	Picture	FB_cor	10798050	0	1	500	2	0	next	other	0
+33219.97	455	Picture	147_T2_Picture_170a_Art:_sim_cor_taste:_2	10798550	0	1	20174	3	0	next	false_alarm	736
+33219.97	455	Response	3	10821065	22515	1
+33219.97	456	Picture	FB_inco	10823726	0	2	500	4	0	next	other	0
+33219.97	457	Picture	148_T2_Picture_168a_Art:_old_cor_taste:_1	10824226	0	2	20175	3	0	next	false_alarm	739
+33219.97	457	Response	1	10839813	15587	1
+33219.97	458	Picture	FB_cor	10849403	0	1	500	3	0	next	other	0
+33219.97	459	Picture	149_T2_Picture_167b_Art:_sim_cor_taste:_2	10849903	0	2	20175	3	0	next	false_alarm	742
+33219.97	459	Response	2	10866106	16203	1
+33219.97	460	Picture	FB_cor	10875080	0	1	500	2	0	next	other	0
+33219.97	461	Picture	150_T2_Picture_189a_Art:_new_cor_taste:_3	10875580	0	1	20174	3	0	next	other	0
+33219.97	462	Picture	FB_miss	10900756	0	2	501	3	0	next	other	0
+33219.97	463	Picture	151_T2_Picture_163a_Art:_old_cor_taste:_1	10901257	0	1	20174	2	0	next	false_alarm	747
+33219.97	463	Response	1	10926018	24761	1
+33219.97	464	Picture	FB_cor	10926433	0	1	500	3	0	next	other	0
+33219.97	465	Picture	152_T2_Picture_031a_Art:_old_cor_taste:_1	10926933	0	2	20175	3	0	next	false_alarm	750
+33219.97	465	Response	1	10950667	23734	1
+33219.97	466	Picture	FB_cor	10952110	0	1	500	2	0	next	other	0
+33219.97	467	Picture	153_T2_Picture_080b_Art:_old_cor_taste:_1	10952610	0	1	20175	2	0	next	other	0
+33219.97	468	Picture	FB_miss	10977786	0	2	501	3	0	next	other	0
+33219.97	469	Picture	154_T2_Picture_028b_Art:_new_cor_taste:_3	10978287	0	1	20174	2	0	next	false_alarm	755
+33219.97	469	Response	3	10984310	6023	2
+33219.97	470	Picture	FB_cor	11003463	0	1	500	3	0	next	other	0
+33219.97	471	Picture	155_T2_Picture_105b_Art:_new_cor_taste:_3	11003963	0	2	20175	3	0	next	false_alarm	758
+33219.97	471	Response	1	11016012	12049	1
+33219.97	472	Picture	FB_inco	11029140	0	1	500	2	0	next	other	0
+33219.97	473	Picture	156_T2_Picture_151a_Art:_sim_cor_taste:_2	11029640	0	1	20175	2	0	next	false_alarm	761
+33219.97	473	Response	2	11045731	16091	1
+33219.97	474	Picture	FB_cor	11054817	0	1	500	2	0	next	other	0
+33219.97	475	Picture	157_T2_Picture_020a_Art:_sim_cor_taste:_2	11055317	0	1	20174	3	0	next	false_alarm	764
+33219.97	475	Response	2	11077819	22502	1
+33219.97	476	Picture	FB_cor	11080493	0	2	500	4	0	next	other	0
+33219.97	477	Picture	158_T2_Picture_099b_Art:_new_cor_taste:_3	11080993	0	2	20175	3	0	next	false_alarm	767
+33219.97	477	Response	2	11104527	23534	2
+33219.97	478	Picture	FB_inco	11106170	0	1	500	2	0	next	other	0
+33219.97	479	Picture	159_T2_Picture_097a_Art:_new_cor_taste:_3	11106670	0	1	20175	2	0	next	other	0
+33219.97	480	Picture	FB_miss	11131847	0	1	500	2	0	next	other	0
+33219.97	481	Picture	160_T2_Picture_003a_Art:_sim_cor_taste:_2	11132347	0	1	20174	3	0	next	false_alarm	772
+33219.97	481	Response	1	11142843	10496	1
+33219.97	482	Picture	FB_inco	11157523	0	2	501	3	0	next	other	0
+33219.97	483	Picture	161_T2_Picture_134a_Art:_old_cor_taste:_1	11158024	0	1	20174	2	0	next	false_alarm	775
+33219.97	483	Response	2	11177321	19297	1
+33219.97	484	Picture	FB_inco	11183200	0	1	500	2	0	next	other	0
+33219.97	485	Picture	162_T2_Picture_068b_Art:_new_cor_taste:_3	11183700	0	1	20175	2	0	next	false_alarm	778
+33219.97	485	Response	2	11205549	21849	1
+33219.97	486	Picture	FB_inco	11208877	0	1	500	2	0	next	other	0
+33219.97	487	Picture	163_T2_Picture_162a_Art:_sim_cor_taste:_2	11209377	0	1	20174	3	0	next	false_alarm	781
+33219.97	487	Response	2	11231179	21802	1
+33219.97	488	Picture	FB_cor	11234553	0	2	501	3	0	next	other	0
+33219.97	489	Picture	164_T2_Picture_067b_Art:_sim_cor_taste:_2	11235054	0	1	20174	2	0	next	false_alarm	784
+33219.97	489	Response	1	11247724	12670	2
+33219.97	490	Picture	FB_inco	11260230	0	1	500	3	0	next	other	0
+33219.97	491	Picture	165_T2_Picture_082a_Art:_sim_cor_taste:_2	11260730	0	2	20175	3	0	next	false_alarm	787
+33219.97	491	Response	1	11277373	16643	1
+33219.97	492	Picture	FB_inco	11285907	0	1	500	2	0	next	other	0
+33219.97	493	Picture	166_T2_Picture_184a_Art:_old_cor_taste:_1	11286407	0	1	20175	2	0	next	false_alarm	790
+33219.97	493	Response	1	11298085	11678	2
+33219.97	494	Picture	FB_cor	11311584	0	1	500	2	0	next	other	0
+33219.97	495	Picture	167_T2_Picture_112a_Art:_sim_cor_taste:_2	11312084	0	1	20174	2	0	next	false_alarm	793
+33219.97	495	Response	1	11321157	9073	1
+33219.97	496	Picture	FB_inco	11337260	0	1	500	3	0	next	other	0
+33219.97	497	Picture	168_T2_Picture_117a_Art:_old_cor_taste:_1	11337760	0	2	20175	3	0	next	false_alarm	796
+33219.97	497	Response	1	11352019	14259	1
+33219.97	498	Picture	FB_cor	11362937	0	1	500	2	0	next	other	0
+33219.97	499	Picture	169_T2_Picture_069a_Art:_new_cor_taste:_3	11363437	0	1	20175	2	0	next	false_alarm	799
+33219.97	499	Response	1	11378381	14944	1
+33219.97	500	Picture	FB_inco	11388614	0	1	500	2	0	next	other	0
+33219.97	501	Picture	170_T2_Picture_103a_Art:_old_cor_taste:_1	11389114	0	1	20174	3	0	next	false_alarm	802
+33219.97	501	Response	2	11403032	13918	1
+33219.97	502	Picture	FB_inco	11414290	0	1	500	3	0	next	other	0
+33219.97	503	Picture	171_T2_Picture_174b_Art:_sim_cor_taste:_2	11414790	0	2	20175	3	0	next	false_alarm	805
+33219.97	503	Response	1	11428157	13367	2
+33219.97	504	Picture	FB_inco	11439967	0	1	500	2	0	next	other	0
+33219.97	505	Picture	172_T2_Picture_093a_Art:_new_cor_taste:_3	11440467	0	1	20175	2	0	next	false_alarm	808
+33219.97	505	Response	2	11458006	17539	2
+33219.97	506	Picture	FB_inco	11465644	0	1	500	2	0	next	other	0
+33219.97	507	Picture	173_T2_Picture_113a_Art:_old_cor_taste:_1	11466144	0	1	20174	3	0	next	false_alarm	811
+33219.97	507	Response	1	11479383	13239	1
+33219.97	508	Picture	FB_cor	11491320	0	1	501	2	0	next	other	0
+33219.97	509	Picture	174_T2_Picture_049b_Art:_new_cor_taste:_3	11491821	0	1	20174	2	0	next	false_alarm	814
+33219.97	509	Response	3	11510039	18218	2
+33219.97	510	Picture	FB_cor	11516997	0	1	500	3	0	next	other	0
+33219.97	511	Picture	175_T2_Picture_124b_Art:_old_cor_taste:_1	11517497	0	2	20175	3	0	next	false_alarm	817
+33219.97	511	Response	3	11537109	19612	1
+33219.97	512	Picture	FB_inco	11542674	0	1	500	2	0	next	other	0
+33219.97	513	Picture	176_T2_Picture_034a_Art:_new_cor_taste:_3	11543174	0	1	20175	2	0	next	false_alarm	820
+33219.97	513	Response	2	11561152	17978	2
+33219.97	514	Picture	FB_inco	11568350	0	2	501	3	0	next	other	0
+33219.97	515	Picture	177_T2_Picture_121a_Art:_new_cor_taste:_3	11568851	0	1	20174	2	0	next	false_alarm	823
+33219.97	515	Response	3	11592273	23422	1
+33219.97	516	Picture	FB_cor	11594027	0	1	500	3	0	next	other	0
+33219.97	517	Picture	178_T2_Picture_109b_Art:_sim_cor_taste:_2	11594527	0	2	20175	3	0	next	false_alarm	826
+33219.97	517	Response	2	11615821	21294	1
+33219.97	518	Picture	FB_cor	11619704	0	1	500	2	0	next	other	0
+33219.97	519	Picture	179_T2_Picture_086a_Art:_new_cor_taste:_3	11620204	0	1	20175	2	0	next	false_alarm	829
+33219.97	519	Response	3	11641818	21614	1
+33219.97	520	Picture	FB_cor	11645381	0	1	500	2	0	next	other	0
+33219.97	521	Picture	180_T2_Picture_158a_Art:_old_cor_taste:_1	11645881	0	1	20174	3	0	next	false_alarm	832
+33219.97	521	Response	3	11664881	19000	1
+33219.97	522	Picture	FB_inco	11671057	0	1	500	3	0	next	other	0
+33219.97	523	Picture	181_T2_Picture_192a_Art:_old_cor_taste:_1	11671557	0	2	20175	3	0	next	false_alarm	835
+33219.97	523	Response	2	11690279	18722	2
+33219.97	524	Picture	FB_inco	11696734	0	1	500	2	0	next	other	0
+33219.97	525	Picture	182_T2_Picture_177b_Art:_new_cor_taste:_3	11697234	0	1	20175	2	0	next	false_alarm	838
+33219.97	525	Response	2	11716969	19735	1
+33219.97	526	Picture	FB_inco	11722411	0	1	500	2	0	next	other	0
+33219.97	527	Picture	183_T2_Picture_116b_Art:_old_cor_taste:_1	11722911	0	1	20174	3	0	next	false_alarm	841
+33219.97	527	Response	2	11736369	13458	1
+33219.97	528	Picture	FB_inco	11748087	0	1	500	3	0	next	other	0
+33219.97	529	Picture	184_T2_Picture_188a_Art:_old_cor_taste:_1	11748587	0	2	20175	3	0	next	false_alarm	844
+33219.97	529	Response	1	11764754	16167	1
+33219.97	530	Picture	FB_cor	11773764	0	1	500	2	0	next	other	0
+33219.97	531	Picture	185_T2_Picture_051b_Art:_new_cor_taste:_3	11774264	0	1	20175	2	0	next	false_alarm	847
+33219.97	531	Response	3	11796477	22213	1
+33219.97	532	Picture	FB_cor	11799441	0	1	500	2	0	next	other	0
+33219.97	533	Picture	186_T2_Picture_111b_Art:_old_cor_taste:_1	11799941	0	1	20174	3	0	next	false_alarm	850
+33219.97	533	Response	1	11821953	22012	1
+33219.97	534	Picture	FB_cor	11825117	0	2	501	3	0	next	other	0
+33219.97	535	Picture	187_T2_Picture_110b_Art:_old_cor_taste:_1	11825618	0	1	20174	2	0	next	false_alarm	853
+33219.97	535	Response	1	11845643	20025	2
+33219.97	536	Picture	FB_cor	11850794	0	1	500	2	0	next	other	0
+33219.97	537	Picture	188_T2_Picture_088a_Art:_new_cor_taste:_3	11851294	0	1	20175	2	0	next	false_alarm	856
+33219.97	537	Response	2	11864594	13300	1
+33219.97	538	Picture	FB_inco	11876471	0	1	500	2	0	next	other	0
+33219.97	539	Picture	189_T2_Picture_071a_Art:_new_cor_taste:_3	11876971	0	1	20174	3	0	next	false_alarm	859
+33219.97	539	Response	3	11889477	12506	1
+33219.97	540	Picture	FB_cor	11902147	0	2	501	3	0	next	other	0
+33219.97	541	Picture	190_T2_Picture_027b_Art:_new_cor_taste:_3	11902648	0	1	20174	2	0	next	false_alarm	862
+33219.97	541	Response	2	11915581	12933	1
+33219.97	542	Picture	FB_inco	11927824	0	1	500	3	0	next	other	0
+33219.97	543	Picture	191_T2_Picture_014b_Art:_old_cor_taste:_1	11928324	0	2	20175	3	0	next	false_alarm	865
+33219.97	543	Response	1	11946288	17964	2
+33219.97	544	Picture	FB_cor	11953501	0	1	500	2	0	next	other	0
+33219.97	545	Picture	192_T2_Picture_074a_Art:_new_cor_taste:_3	11954001	0	1	20175	2	0	next	false_alarm	868
+33219.97	545	Response	3	11976362	22361	1
+33219.97	546	Picture	FB_cor	11979177	0	2	501	3	0	next	other	0
+33219.97	547	Picture	ENDE__cor:_36_Anz_cor:_71_Anz_inco:_95_Anz_miss:_26	11999685	0	2	36849	3	0	next	other	0
