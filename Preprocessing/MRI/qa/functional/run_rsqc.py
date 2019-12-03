@@ -139,14 +139,6 @@ def create_rs_qc(subjectlist):
 df=pd.read_table('/data/pt_02030/scripts/participants.txt',header=None)
 
 subj=df[0].values[5:]#skip the first 5 in the list.
-##exclude LI00801352, LI00474819, LI00102052 because they were acquired with different names
-##currently rerunning preprocessing for LI00851114
-#not run yet LI01633237 LI01913297 LI01950830 LI0196269X LI02010212 LI00790855
-#rerun dvars: LI0057625X
-#errors: LI01530759
-
-#subj_cleaned=np.delete(subj, [np.where(subj == 'LI01633237'), np.where(subj == 'LI00801352')])
-#subj=(['LI0055863X'])
 qc=create_rs_qc(subj)
 #qc.run()    
    

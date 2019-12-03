@@ -3,9 +3,11 @@ SUBJECTS_DIR="/data/pt_02030/freesurfer/"
 FREESURFER_HOME="/data/pt_02030/scripts/freesurfer_6_dev/"
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
+subjectlist="/data/pt_02030/Analysis/Preprocessing/MRI/participants.txt"
+
 ##Hippocampus subfield processing.
 
-for subj in 33593.15
+for subj in `cat ${subjectlist}`
 do
 
 ##first coregister FLAIR image to FS preprocessed

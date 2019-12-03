@@ -582,36 +582,132 @@ pre.editor-colors .fold-marker:after {
 }
 </style>
         </head>
-        <body class='markdown-preview' data-use-github-style><h3 id="scripts-for-agewell_mri-nro-211">Scripts for AGEWELL_MRI (NRO-211)</h3>
+        <body class='markdown-preview' data-use-github-style><h2 id="preproc_agewell">preproc_AgeWell</h2>
+<h3 id="preprocessing-pipelines-for-the-agewell-study-based-on-hcp-pipeline">Preprocessing pipelines for the AGEWELL study (based on HCP pipeline)</h3>
 <ul>
-<li><p>bash_scripts  </p>
+<li><p>BIDS format: bring imaging data into BIDS data convention (bids_conversion.py). For first participants, this was done retrospectively (additional pipeline in folder bids_conversion_for_finished_subjects)</p>
+</li>
+<li><p>Structural preprocessing: CBSTOOLS for MP2RAGE- skullstripping, further processing of skull-stripped brain with Freesurfer + registration to MNI152 1mm space (ANTS)</p>
+</li>
+<li><p>Functional (rsfMRI) preprocessing: removal of first 4 volumes, motion correction (MCFlirt), coregistration to anatomical (BBREGISTER)
+, unwarping (TOPUP) applied in a single step, removal of linear trend.</p>
+</li>
+<li><p>Diffusion MRI preprocessing: artefacts correction including denoising (MRTrix: dwidenoise) and Gibb's ringing removal (MRTrix: mrdegibbs); field distortion correction (FSL: topup); motion correction and outliner replacement (FSL: eddy); tensor model fitting (FSL: dtifit)</p>
+</li>
+<li><p>Creating a report for quick overview of the data.</p>
+</li>
+</ul>
+<p>Based on the implementation of HCP pipelines for nipype (<a href="https://github.com/beOn/hcpre">https://github.com/beOn/hcpre</a>)</p>
+<p>Using software packages and nipype: (environment_FS6.sh)
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">CBSTOOLS --version 3.1 MRICRON AFNI --version '17.2.17' ANTSENV --version '2.2.0' FSL --version 5.0.11 FREESURFER --version 6.0.0p1, nipype version 1.2.0</code></p>
+<p>load conda environment: <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">agewell_nip1.2</code> which is saved in <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">agewell_env.2.yml</code></p>
+<p>To run it do:
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">python run_workflow_hcplike.py --run -n 8 --config conf_for_Agewell.conf</code>
+conf_for_Agewell.conf: configuration file where only ID of participant (subjects = ['XXXXX.XX'] should be changed.</p>
+<p>Working directory is defined in "run_workflow_hcplike.py", ll.76: working_dir="" (don't change, unless directory is full). The working directory contains all intermediate steps,
+which could be helpful for debugging.</p>
+<p>Information on MRI sequences can be found in <strong>agewell.pdf</strong></p>
+<h3 id="outcomes">Outcomes</h3>
+<p>Main results of the <a href="https://github.com/fBeyer89/preproc_AgeWell/nipy1.4">preprocessing pipeline</a> in /data/pt_02030/Data/preprocessed.</p>
 <ul>
-<li>copy_agewell_data.sh &gt; copy data from MR incoming</li>
+<li><p>dti</p>
+<ul>
+<li>diffusion<ul>
+<li>/X/fa2anat.mat (bbregister FA to anat reg matrix)</li>
+<li>/X/fa2anat.dat (bbregister FA to anat reg matrix)</li>
+<li>/X/fa2anat_bbreg.nii.gz (bbregister FA to anat reg result)</li>
+<li>/X/dtifit__V3.nii.gz</li>
+<li>/X/dtifit__MD.nii.gz (MD map in individual's anatomical space)</li>
+<li>/X/dtifit__L3.nii.gz</li>
+<li>/X/dtifit__L2.nii.gz</li>
+<li>/X/dtifit__L1.nii.gz</li>
+<li>/X/dtifit__V2.nii.gz</li>
+<li>/X/dtifit__V1.nii.gz  </li>
+<li>/X/dtifit__FA.nii.gz  (FA map in individual's anatomical space)</li>
+<li>/X/eddy_corrected.eddy_residuals.nii.gz (eddy residuals)</li>
+<li>/X/eddy_corrected.eddy_cnr_maps.nii.gz (CNR maps from eddy)</li>
+<li>/X/eddy_corrected.eddy_movement_rms (movement params)</li>
+<li>/X/eddy_corrected.nii.gz (eddy result)</li>
+<li>/X/eddy_corrected.eddy_rotated_bvecs (rotated bvecs)</li>
+<li>/X/eddy_corrected.eddy_outlier_report</li>
+<li>/X/eddy_corrected.eddy_post_eddy_shell_alignment_parameters</li>
+<li>/X/dwi_appa_field.nii.gz (distortion correction field)</li>
+<li>/X/dwi_appa_base_fieldcoef.nii.gz (distortion correction field coefficients)</li>
+</ul>
+</li>
+<li>tracula<ul>
+<li>/X/ (output of tracula tractography software)</li>
+<li>stats (summary of tracula statistics)</li>
 </ul>
 </li>
 </ul>
+</li>
+<li><p>freesurfer</p>
 <ul>
-<li><p>nipy1.4</p>
-<ul>
-<li><strong>anatomical, DWI and resting-state</strong> preprocessing based on nipype.<br>See readme in this folder.</li>
+<li>/X/: cross-sectional Freesurfer runs with FREESURFER version 6.0.0p1</li>
+<li>QA:<ul>
+<li>/X/: results of QAtools for each participant</li>
+<li>QA_list.ods: list describing FS Quality according to visual inspection.</li>
 </ul>
-</li>
-<li><p>tracula</p>
-<ul>
-<li><strong>tract reconstruction</strong> with Freesurfer.<br>Use run_tracula.sh together with configuration file dmrirc.</li>
-</ul>
-</li>
-<li><p>qa</p>
-<ul>
-<li><p>freesurfer: run_freesurfer_qa.sh uses QAtools_v1.2 to create FS visual reports. QA was done according to <a href="www.ncbi.nlm.nih.gov%2Fpubmed%2F30633965&amp;usg=AOvVaw3LFn7aLEFsuOjNZHdgnyQw">Klapwijk et. al 2018</a>.</p>
-</li>
-<li><p>diffusion: subject- and group-level eddy QC scripts</p>
-</li>
-<li><p>functional: run_rsqc.py creates more detailed QA plots for rsfMRI</p>
 </li>
 </ul>
 </li>
-<li><p>Scan_protocol_Skyra_Agewell_BL.pdf: Siemens protocol of scans performed in AgeWell-baseline.</p>
+<li><p>resting</p>
+<ul>
+<li><p>structural</p>
+<ul>
+<li>/X/transform_Warped.nii.gz (brain.mgz warped to MNI space)</li>
+<li>/X/transform1Warp.nii.gz (Warpfield for this transform)</li>
+<li>/X/transform1InverseWarp.nii.gz (inverse Warpfield for this transform)</li>
+<li>/X/transform0GenericAffine.mat (affine matrix for this transform)</li>
+<li>/X/T1_brain_mask.nii.gz (brainmask.mgz as nifti)</li>
+<li>/X/T1.nii.gz (T1.mgz (before skullstrip) as nifti)</li>
+<li>/X/brain.nii.gz (brain.mgz as nifti, input of the transform)</li>
+</ul>
 </li>
-</ul></body>
+<li><p>resting</p>
+<ul>
+<li>unwarp<ul>
+<li>/X/rest_mean2fmap_unwarped.nii.gz (EPI registered to fieldmap unwarped)</li>
+<li>/X/rest_mean2fmap.nii.gz (EPI registered to fielmap)</li>
+<li>/X/fullwarpfield.nii.gz (Warpfield to perform transform)</li>
+</ul>
+</li>
+<li>transform_ts<ul>
+<li>/X/rest2anat_detrend.nii (fMRI timeseries in downsampled individual's anatomical space, detrended)</li>
+<li>/X/T1_resampled.nii.gz (T1 resampled to EPI resolution</li>
+<li>/X/rest_mean2anat_lowres.nii.gz (mean EPI to lowres anatomical image)</li>
+<li>/X/rest2anat.nii.gz (fMRI timeseries in downsampled individual's anatomical space)</li>
+</ul>
+</li>
+<li>moco<ul>
+<li>/X/tsnr.nii.gz (temporal SNR image)</li>
+<li>/X/rest_realigned_mean.nii.gz (average of realigned EPI timeseries)</li>
+<li>/X/rest_realigned.nii.gz_rel.rms (relative rms values)</li>
+<li>/X/rest_realigned.nii.gz_abs.rms (absolute rms values)</li>
+<li>/X/rest_realigned.nii.gz.par (rotational and translational motion parameters from MCFLIRT)</li>
+</ul>
+</li>
+<li>anat_coreg<ul>
+<li>/X/rest_mean2anat_highres.nii.gz (bbregister result mean EPI to anatomical image)</li>
+<li>/X/rest2anat.mat (registration matrix from bbregister)</li>
+<li>/X/rest2anat.dat</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>reports (qa reports from preprocessing)</p>
+<ul>
+<li>X_report.pdf (general report generated during preprocessing showing main result for anatomical, DWI and functional preprocessing)</li>
+<li>detailedQA<ul>
+<li>/X/: summary_fmriplot.png shows outliers (from AFNI3DOutliercount), FD and DVARS trace over all volumes. Below carpet plot of red: GM, green: WM, orange: CSF and blue: cerebellum voxels for the minimally preprocessed data.</li>
+<li>metrics: text files of fd (fd.txt) and outlier and DVARS metrics (confounds.csv)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>All intermediate</p></body>
       </html>

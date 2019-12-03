@@ -3,13 +3,13 @@ FREESURFER --version 6.0.0p1
 
 
 ##prepare the data structure from our preprocessing (-> use preprocessed file)
-mkdir -p "data/pt_02030/preprocessed/dti/tracula/33724.98/dlabel/diff/"
-cp /data/pt_02030/preprocessed/dti/diffusion/33724.98/eddy_corrected.nii.gz /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/dwi.nii.gz
-cp /data/pt_02030/preprocessed/dti/diffusion/33724.98/eddy_corrected.nii.gz /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/data.nii.gz
-cp /data/pt_02030/preprocessed/dti/diffusion/33724.98/eddy_corrected.eddy_rotated_bvecs /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/bvecs
-cp /data/p_02030/nifti/33724.98/cmrrmbep2dDTI32Chs024a1001.bval /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/bvals
-cp /data/p_02030/nifti/33724.98/cmrrmbep2dDTI32Chs022a001.nii /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/dwi_orig.nii.gz
-cp /data/pt_02030/wd_preprocessing/hcp_prep_workflow/dwi_preproc/distor_correct/_subject_33219.97/bet/dwi_appa_corrected_maths_brain.nii.gz /data/pt_02030/preprocessed/dti/tracula/33724.98/dmri/lowb.nii.gz
+mkdir -p "data/pt_02030/preprocessed/dti/tracula/X8/dlabel/diff/"
+cp /data/pt_02030/preprocessed/dti/diffusion/X8/eddy_corrected.nii.gz /data/pt_02030/preprocessed/dti/tracula/X8/dmri/dwi.nii.gz
+cp /data/pt_02030/preprocessed/dti/diffusion/X8/eddy_corrected.nii.gz /data/pt_02030/preprocessed/dti/tracula/X8/dmri/data.nii.gz
+cp /data/pt_02030/preprocessed/dti/diffusion/X8/eddy_corrected.eddy_rotated_bvecs /data/pt_02030/preprocessed/dti/tracula/X8/dmri/bvecs
+cp /data/p_02030/nifti/X8/cmrrmbep2dDTI32Chs024a1001.bval /data/pt_02030/preprocessed/dti/tracula/X8/dmri/bvals
+cp /data/p_02030/nifti/X8/cmrrmbep2dDTI32Chs022a001.nii /data/pt_02030/preprocessed/dti/tracula/X8/dmri/dwi_orig.nii.gz
+cp /data/pt_02030/wd_preprocessing/hcp_prep_workflow/dwi_preproc/distor_correct/_subject_33219.97/bet/dwi_appa_corrected_maths_brain.nii.gz /data/pt_02030/preprocessed/dti/tracula/X8/dmri/lowb.nii.gz
 
 
 
