@@ -13,7 +13,7 @@
 /Preprocessing/MRI/nipy1.4/test_debug_functions/
 /Preprocessing/MRI/nipy1.4/*.conf
 /Preprocessing/MRI/nipy1.4/*/*.conf
-.participants.txt
+participants.txt
 /Preprocessing/Behavioral/MST/presentation_script/Logfiles
 .Rhistory
 QAtools_v1.2
