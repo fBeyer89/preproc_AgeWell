@@ -10,10 +10,7 @@ from compute_fd import compute_fd
 import numpy as np
 
 
-subj_list=['34113.a5', '34138.54','34114.8a','33920.4d','33954.4a',
-             '33899.38','33953.9e','33839.5e','33911.d9','33725.1f',
-             '33809.60','33808.e4','33593.15','33724.98','33698.f1',
-             '33555.22','33503.0e','33486.7e','33307.92','33434.7f','33219.97']
+subj_list=[]
 summaryfd=np.zeros(shape=(3,len(subj_list)))
 i=0
 for subj in subj_list:

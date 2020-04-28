@@ -136,7 +136,7 @@ def create_rs_qc(subjectlist):
     return qc
 
 
-df=pd.read_table('/data/pt_02030/scripts/participants_MRI.txt',header=None)
+df=pd.read_table('/data/p_02030/BIDS/participants.tsv',header=None)
 
 subj=df[0].values[5:]#skip the first 5 in the list.
 qc=create_rs_qc(subj)
