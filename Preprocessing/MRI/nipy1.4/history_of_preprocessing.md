@@ -31,3 +31,7 @@
 
 #### DWI
  * subject '34536.9b' has three DWI scans with 35,58 and 67 volumes (series 23). Only the scan with 67 volumes should be used! Preprocessing throws error because of *"TraitError: The 'ep_dwi_echo_spacings' trait of a NiiWranglerOutputSpec instance must be 'NONE' or a float, but a value of [0.00047501064023834134, 0.00047501064023834134, 0.00047501064023834134] <type 'list'> was specified."* Therefore changed NiiWrangler in interfaces.py to use number of series that should be used when more than one scan is present (ll. 419 & 513)
+
+**09.04.2020**
+
+ * subject '34626.f1' has much fat around the neck, therefore brain extraction with CBSTOOLS failed. Modified anatomical workflow such that *masked2.nii.gz* gets used for FS.

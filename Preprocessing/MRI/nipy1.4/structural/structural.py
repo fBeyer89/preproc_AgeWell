@@ -59,7 +59,8 @@ def create_structural():
         [(inputnode, mp2rage, [('inv2', 'inputnode.inv2'),
                                ('t1map', 'inputnode.t1map'),
                                ('uni', 'inputnode.uni')]),
-         (mp2rage, reconall, [('outputnode.uni_stripped', 'inputnode.anat')]),
+         (mp2rage, reconall, [('outputnode.uni_masked', 'inputnode.anat')]), #only for 34626.f1
+         #(mp2rage, reconall, [('outputnode.uni_stripped', 'inputnode.anat')]),
          (inputnode, reconall, [('subject', 'inputnode.fs_subject_id')]),
          (inputnode, reconall, [('freesurfer_dir', 'inputnode.fs_subjects_dir')]),
          (inputnode, mgzconvert, [('freesurfer_dir', 'inputnode.fs_subjects_dir')]),

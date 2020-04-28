@@ -1,7 +1,15 @@
-#run freesurfer quality checks in depth
-FREESURFER --version 6.0
-export SUBJECTS_DIR="/data/pt_02030/freesurfer"
-export QA_TOOLS="/home/raid1/fbeyer/Documents/Scripts/AgeWell/QAtools_v1.2"
-subjectlist="/data/pt_02030/Analysis/participants.txt"
+#run freesurfer quality checks according to 
+#Klapwijk: Qoala-T: A supervised-learning tool for quality control of FreeSurfer segmented MRI data
+SUBJECTS_DIR="/data/pt_02030/Data/preprocessed/freesurfer"
+#SUBJECTS_DIR="/data/pt_nro186_lifeupdate/preprocessing/FREESURFER/VERIO/"
+for subj in 34561.a3
 
-$QA_TOOLS/recon_checker -s `cat ${subjectlist}`
+
+
+do
+view="tkmedit ${subj} brainmask.mgz -surfs -aux wm.mgz"
+eval $view
+
+done
+
+

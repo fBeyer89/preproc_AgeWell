@@ -12,14 +12,14 @@ echo "copying $subj"
 
 if [ ! -d /data/p_02030/$subj/*.SKYRA ];
 then
-rsync -ruv /scr/mrincoming/$subj*201* /data/p_02030/$subj
+rsync -ruv /scr/mrincoming/$subj*202* /data/p_02030/$subj
 else 
 echo "for $subj raw DICOM has been copied"
 fi
 
 if [ ! -d /data/p_02030/$subj/ASL ];
 then
-rsync -ruv /scr/mrincoming/ASL_2018/$subj*201* /data/p_02030/$subj/ASL
+rsync -ruv /scr/mrincoming/ASL_2018/$subj*202* /data/p_02030/$subj/ASL
 else 
 echo "$subj ASL has been copied"
 fi

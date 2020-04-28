@@ -13,10 +13,12 @@
 /Preprocessing/MRI/nipy1.4/test_debug_functions/
 /Preprocessing/MRI/nipy1.4/*.conf
 /Preprocessing/MRI/nipy1.4/*/*.conf
-participants.txt
+/Preprocessing/MRI/bash_scripts/IDs.txt
+/Preprocessing/MRI/qa/freesurfer/*
 /Preprocessing/Behavioral/MST/presentation_script/Logfiles
+/Preprocessing/Behavioral/MST/README.html
+/Preprocessing/Behavioral/MST/README.MD
 .Rhistory
 QAtools_v1.2
 freesurfer_6_dev
-/participants.txt
-/participants_MRI.txt
+
