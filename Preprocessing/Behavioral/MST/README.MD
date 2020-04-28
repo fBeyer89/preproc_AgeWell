@@ -28,18 +28,6 @@ These files are used to run and analyze the **Mnemonic similarity task** in the 
 It's unclear why and how this happened (as it seems to be across testers &
 laboratories). It was discovered so late because it only occurred after July 2019.
 
-| ID |	experiment date | laboratory | experimentor |
-| ----- |:-----:| -----:| -----:|
-| 34354a9	| 20190807 | RZ2 |	FB |
-| 3441831	| 20190916 | RZ2	| JJ
-| 34460c8| 	20190826 | RZ4	| JJ
-| 3447159| 	20190826 | RZ4	| JJ
-| 344722c| 	20190916 | RZ4	| JJ
-| 345369b| 	20190917 | RZ4	| JJ
-| 34537fb| 	20190917 | RZ4	| JJ
-| 34559b2| 	20191007 | RZ2	| FB
-| 34562e2| 	20191007 | RZ2	| FB
-
 ### Final results table
 
 LDI (lure discrimination index) and REC (recognition score) final results for 46 subjects are saved
